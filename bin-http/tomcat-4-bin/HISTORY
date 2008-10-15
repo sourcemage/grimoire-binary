@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	CONFIGURE: Removed. No z-rejected warnings
+
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed MAINTAINER.
 
