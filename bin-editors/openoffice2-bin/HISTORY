@@ -1,3 +1,7 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* PREPARE: Removed rejected message
+	* UNATTEND_SAFE: Removed.            
+
 2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* CONFLICTS: added openoffice3-bin
 	* INSTALL: fixed a typo when reverting message to DEFAULT_COLOR
