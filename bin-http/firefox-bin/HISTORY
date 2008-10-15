@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	CONFIGURE: Removed z-rejected warnings
+
 2008-10-14 George Sherwood <gsherwood@sourcemage.org>
 	PREPARE: Adjusted devel version question
 	DETAILS: Updated devel to 3.1b1. Updated devel SOURCE_URL
