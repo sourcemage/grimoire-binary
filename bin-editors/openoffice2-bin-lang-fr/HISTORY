@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* UNATTEND_SAFE: Removed.            
+
 2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.4.1
 
