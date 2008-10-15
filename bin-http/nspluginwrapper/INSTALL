@@ -1,0 +1,8 @@
+cd ${SOURCE_DIRECTORY} &&
+if [[ ! -d ${INSTALL_ROOT}/usr/lib/${SPELL}/ ]] ; then
+   mkdir ${INSTALL_ROOT}/usr/lib/${SPELL}/ 
+fi
+
+cp -r ${SOURCE_DIRECTORY}/usr/lib/nspluginwrapper/* ${INSTALL_ROOT}/usr/lib/${SPELL}/
+install --directory ${INSTALL_ROOT}/usr/share/doc/${SPELL}/
+install --mode=644 ${SOURCE_DIRECTORY}/usr/share/doc/${SPELL}*/* ${INSTALL_ROOT}/usr/share/doc/${SPELL}/

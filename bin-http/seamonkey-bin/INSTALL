@@ -1,0 +1,20 @@
+# tarball has been extracted, just copy to the correct directory.
+INSTALLDIR=/opt/seamonkey
+
+
+mkdir -pv $INSTALLDIR                            &&
+cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR           &&
+cp -v $SCRIPT_DIRECTORY/seamonkey-bin /usr/bin/       &&
+
+#
+# Create symlink to mozilla or firefox if selected
+# Only create if /usr/bin/mozilla or firefox does not exist or is
+# already a symlink
+#
+if [ "$SEAMONKBIN_MOZLINK" == "y" ]; then
+   if ! test -f $INSTALL_ROOT/usr/bin/mozilla ||
+        test -h $INSTALL_ROOT/usr/bin/mozilla ; then
+     ln -sv $TRACK_ROOT/usr/bin/seamonkey-bin /usr/bin/mozilla 
+   fi
+fi 
+

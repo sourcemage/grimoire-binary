@@ -1,0 +1,21 @@
+           SPELL=seamonkey-bin
+         VERSION=1.1.12
+          SOURCE=seamonkey-${VERSION}.en-US.linux-i686.tar.gz
+     SOURCE_HASH=sha512:02b2acef6f5380bad774aaefde2babb9b4d020f19bdf4af7a3296f94c4aa89afb3f96bccf6d4eee675b6415cba2b5fdbd8b16905919950aad668a601cff2f980
+   SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/${SOURCE}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/seamonkey
+        WEB_SITE=http://www.mozilla.org/seamonkey
+         ENTERED=20070722
+  SECURITY_PATCH=6
+      LICENSE[0]=MOZILLA
+          REJECT="is non-source"
+           SHORT="The binary version of seamonkey."
+cat << EOF
+The SeaMonkey project is a community effort to deliver 
+production-quality releases of code derived from the application 
+formerly known as "Mozilla Application Suite". Whereas the main focus of 
+the Mozilla Foundation is on Mozilla Firefox and Mozilla Thunderbird, 
+our group of dedicated volunteers works to ensure that you can have 
+"everything but the kitchen sink" — and have it stable enough for 
+corporate use.
+EOF

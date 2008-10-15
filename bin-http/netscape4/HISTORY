@@ -1,0 +1,59 @@
+2006-11-15 Alexander Tsamutali <astsmtl@gmail.com>
+	* PROVIDES: Added NS-PLUGIN-COMPATIBLE
+
+2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: use TRACK_ROOT when linking #9163
+
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* PROVIDES: [automated] Fixed invalid entries.
+
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed MAINTAINER.
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
+2004-11-22 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Changed `exit 1` to `return 1`  (Bug #7649)
+
+2004-08-08 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD, DETAILS: modified for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire rejected message.
+
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+
+2003-11-03 Eric Sandall <sandalle@sourcemage.org>
+	* PROVIDES: Upper-case provides
+	* HISTORY: Formatted to Guru Handbook
+
+2003-01-23 Geoffrey Derber <gderber@sourcemage.org>
+	* PROVIDES: Added provides graphical_web_browser
+	  needed for flash.
+	* BUILD: Added && to the end of the build lines
+
+2002-09-09 Geoffrey Derber <ashaman@flyingtemple.com>
+	* DETAILS: Added md5 checksum and license fields.
+	* USEGCC2: Removed
+	* PRE_BUILD: Updated warning script.
+	* Added updated script to grimoire.
+
+2002-09-08 Glenn Shannon <warl0k@lvcm.com>
+	* Updated script.
+
+2002-06-60 Geoffrey Derber <ashaman@flyingtemple.com>
+	* Renamed netscape4.
+
+2002-04-23 Eric Schabell <eric@schabell.com>
+	* PRE_BUILD: Changed so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
+
+2002-03-19 Eric Schabell <eric@schabell.com>
+	* HISTORY: Added. The reason for rejection
+	  was due to non-source spell.
+

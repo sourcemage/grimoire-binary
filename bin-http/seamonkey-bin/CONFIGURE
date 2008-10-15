@@ -1,0 +1,5 @@
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG   &&
+
+config_query SEAMONKBIN_MOZLINK  "Create a symlink to mozilla?" n 

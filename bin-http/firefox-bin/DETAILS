@@ -1,0 +1,33 @@
+           SPELL=firefox-bin
+if [ "$FIREFOX_DEVEL" == "y" ]; then
+         VERSION=3.1b1
+          SOURCE=firefox-$VERSION.tar.bz2
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE2
+else
+         VERSION=3.0.3
+          SOURCE=firefox-${VERSION}.tar.bz2
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
+   SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
+  SOURCE2_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
+        WEB_SITE=http://www.mozilla.org/firefox
+         ENTERED=20040902
+  SECURITY_PATCH=12
+      LICENSE[0]=MOZILLA
+          REJECT="is non-source"
+           SHORT="The binary version of firefox."
+cat << EOF
+Mozilla firefox, formerly known as Mozilla Firebird, formerly known 
+as Phoenix, is a redesign of the Mozilla browser component, similar 
+to Galeon, K-Meleon and Camino, but written using the XUL user 
+interface language and designed to be cross-platform.
+
+If you choose a gtk+ build you should visit 
+http://wiki.sourcemage.org/index.php?page=FaqUsage#mozfonts
+to learn how to add font anti-aliasing in prefs.js
+EOF

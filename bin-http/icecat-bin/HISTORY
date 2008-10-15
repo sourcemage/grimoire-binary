@@ -1,0 +1,12 @@
+2008-04-13 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: updated spell to 2.0.0.13-g1
+
+2008-02-06 Pol Vinogradov <vin.public@gmail.com>
+	* CONFLICTS: removed
+
+2007-12-20 Pol Vinogradov <vin.public@gmail.com>
+	* CONFLICTS: added icecat
+
+2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
+	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, INSTALL, PROVIDES:
+	  Created this spell

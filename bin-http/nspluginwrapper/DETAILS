@@ -1,0 +1,18 @@
+            SPELL=nspluginwrapper
+          VERSION=0.9.91.5
+           SOURCE=$SPELL-$VERSION-1.x86_64.rpm
+          SOURCE2=$SPELL-i386-$VERSION-1.x86_64.rpm
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+SOURCE2_DIRECTORY=$SOURCE_DIRECTORY
+    SOURCE_URL[0]=http://www.gibix.net/projects/nspluginwrapper/files/$SPELL-$VERSION-1.x86_64.rpm
+   SOURCE2_URL[0]=http://www.gibix.net/projects/nspluginwrapper/files/$SPELL-i386-$VERSION-1.x86_64.rpm
+      SOURCE_HASH=sha512:566e29ceee46cb2f2661e1d48af3f279f0ab852bf9e90cf96d29ec69f0380b9512e77456b30aeb494e9eabe62588cf7f0c141e331d049fce3c65b1dcda9ce7db
+     SOURCE2_HASH=sha512:a762c7805bdd86c3b3485f1d3cab0fed147b6c0b14b7c8a191867c60c10f1d23cada0f97f37aae4dc793e5d2cd4011d4faa36115b4d65798b120561d3e4e98c5
+         WEB_SITE=http://www.gibix.net/dokuwiki/en:projects:nspluginwrapper
+          ENTERED=20060729
+       LICENSE[0]=GPL
+           REJECT="is binary only"
+            SHORT="Netscape Plugin Wrapper - Load 32bit plugins on 64bit browser."
+cat << EOF
+Netscape Plugin Wrapper - Load 32bit plugins on 64bit browser.
+EOF

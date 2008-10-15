@@ -1,0 +1,6 @@
+# Standard rejected warnings.
+source $GRIMOIRE/REJECTED_MSG &&
+
+config_query ICECAT_LINK "Create a symlink to icecat?" n &&
+config_query FIREFOX_LINK "Create a symlink to firefox?" n &&
+config_query MOZILLA_LINK "Create a symlink to mozilla?" n

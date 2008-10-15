@@ -1,0 +1,16 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/opt/xulrunner &&
+
+mkdir -pv $INSTALL_DIRECTORY &&
+cp -rv $SOURCE_DIRECTORY/* $INSTALL_DIRECTORY &&
+ln -sv $INSTALL_DIRECTORY/xulrunner /usr/bin/xulrunner-bin &&
+
+if [ "$SYMLINK_XULRUNNER" == "y" ]; then
+   if ! test -f $INSTALL_ROOT/usr/bin/xulrunner ||
+        test -h $INSTALL_ROOT/usr/bin/xulrunner ; then
+     ln -sv $INSTALL_ROOT/usr/bin/xulrunner-bin $INSTALL_ROOT/usr/bin/xulrunner
+   fi
+fi &&
+
+if [ "$REGISTER_GLOBAL" == "y" ]; then
+   xulrunner-bin --register-global
+fi

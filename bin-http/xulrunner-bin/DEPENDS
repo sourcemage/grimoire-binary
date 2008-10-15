@@ -1,0 +1,12 @@
+depends g++ &&
+depends zlib &&
+depends expat &&
+depends libpng &&
+depends glitz &&
+depends cairo &&
+depends fontconfig &&
+depends freetype2 &&
+depends pango &&
+depends glib2 &&
+depends atk &&
+depends gtk+2

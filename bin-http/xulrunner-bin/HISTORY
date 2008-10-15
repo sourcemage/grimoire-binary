@@ -1,0 +1,3 @@
+2008-07-18 Alexander Tsamutali <astsmtl@gmail.com>
+	* PREPARE, DETAILS, CONFIGURE, DEPENDS, PROVIDES, BUILD, INSTALL,
+	  HISTORY, xulrunner.gpg: Created this spell

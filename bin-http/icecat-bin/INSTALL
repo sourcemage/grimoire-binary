@@ -1,0 +1,31 @@
+# Tarball has been extracted, just copy to the correct directory.
+INSTALL_DIR=${INSTALL_ROOT}/opt/icecat
+
+mkdir -pv $INSTALL_DIR &&
+cp -Rv $SOURCE_DIRECTORY/* $INSTALL_DIR &&
+cp -v $SPELL_DIRECTORY/icecat-bin ${INSTALL_ROOT}/usr/bin/ &&
+
+#
+# Create symlink to mozilla, firefox or icecat if selected.
+# Only create if file does not exist or is already a symlink.
+#
+if [ "$ICECAT_LINK" == "y" ]; then
+   if ! test -f ${INSTALL_ROOT}/usr/bin/icecat ||
+        test -h ${INSTALL_ROOT}/usr/bin/icecat ; then
+     ln -sfv $TRACK_ROOT/usr/bin/icecat-bin ${INSTALL_ROOT}/usr/bin/icecat
+   fi
+fi &&
+
+if [ "$FIREFOX_LINK" == "y" ]; then
+   if ! test -f ${INSTALL_ROOT}/usr/bin/firefox ||
+        test -h ${INSTALL_ROOT}/usr/bin/firefox ; then
+     ln -sfv $TRACK_ROOT/usr/bin/icecat-bin ${INSTALL_ROOT}/usr/bin/firefox
+   fi
+fi &&
+
+if [ "$MOZILLA_LINK" == "y" ]; then
+   if ! test -f ${INSTALL_ROOT}/usr/bin/mozilla ||
+        test -h ${INSTALL_ROOT}/usr/bin/mozilla ; then
+     ln -sfv $TRACK_ROOT/usr/bin/icecat-bin ${INSTALL_ROOT}/usr/bin/mozilla
+   fi
+fi

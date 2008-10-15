@@ -1,0 +1,6 @@
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG   &&
+
+config_query FIREBIN_MOZLINK  "Create a symlink to mozilla?" n  &&
+config_query FIREBIN_FIREFOX  "Create a symlink to firefox?" n

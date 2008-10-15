@@ -1,13 +1,20 @@
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
-	* bin-editors/openoffice2-bin-lang-es
-	* bin-editors/openoffice2-bin-lang-fr
-	* bin-editors/openoffice2-bin-lang-nl	
-	* bin-editors/openoffice2-bin-lang-pl
-	* bin-editors/openoffice2-bin-lang-ru
-	* bin-editors/openoffice2-bin-lang-sv
-	* bin-editors/openoffice2-bin
-	* bin-editors/openoffice3-bin
-	* bin-editors/openoffice-bin
+	* bin-editors/openoffice2-bin-lang-es: moved spell from z-rejected
+	* bin-editors/openoffice2-bin-lang-fr: moved spell from z-rejected
+	* bin-editors/openoffice2-bin-lang-nl: moved spell from z-rejected	
+	* bin-editors/openoffice2-bin-lang-pl: moved spell from z-rejected
+	* bin-editors/openoffice2-bin-lang-ru: moved spell from z-rejected
+	* bin-editors/openoffice2-bin-lang-sv: moved spell from z-rejected
+	* bin-editors/openoffice2-bin: moved spell from z-rejected
+	* bin-editors/openoffice3-bin: moved spell from z-rejected
+	* bin-editors/openoffice-bin: moved spell from z-rejected
+	* bin-http/firefox-bin: moved spell from z-rejected
+	* bin-http/icecat-bin: moved spell from z-rejected
+	* bin-http/netscape4: moved spell from z-rejected
+	* bin-http/nspluginwrapper: moved spell from z-rejected
+	* bin-http/seamonkey-bin: moved spell from z-rejected
+	* bin-http/tomcat-4-bin: moved spell from z-rejected
+	* bin-http/xulrunner-bin: moved spell from z-rejected
 
 2008-10-15  Arwed von Merkatz <v.merkatz@gmx.net>
 	* created grimoire

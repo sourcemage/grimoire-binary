@@ -1,0 +1,2 @@
+config_query SYMLINK_XULRUNNER "Create a symlink to xulrunner?" n &&
+config_query REGISTER_GLOBAL "Register this installation globally?" n

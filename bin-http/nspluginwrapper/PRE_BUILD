@@ -1,0 +1,7 @@
+mk_source_dir ${SOURCE_DIRECTORY} &&
+cd ${SOURCE_DIRECTORY} &&
+unpack_file &&
+unpack_file 2 
+if [[ ! -d ${INSTALL_ROOT}/usr/lib/nspluginwrapper/ ]] ; then
+	mkdir ${INSTALL_ROOT}/usr/lib/nspluginwrapper/ 
+fi

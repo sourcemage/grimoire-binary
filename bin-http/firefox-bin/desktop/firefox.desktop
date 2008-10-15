@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox
+Exec=firefox
+Icon=/opt/firefox/icons/mozicon16.xpm
+Terminal=false
+Type=Application
+Categories=Application;Network;Browsers
