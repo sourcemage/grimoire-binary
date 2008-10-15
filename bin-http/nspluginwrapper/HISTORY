@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	UNATTEND_SAFE: Removed, not needed.
+
 2007-11-25 David Kowis <dkowis@shlrm.org>
 	* DETAILS: version bump to the latest
 
