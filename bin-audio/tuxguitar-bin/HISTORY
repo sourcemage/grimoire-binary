@@ -1,0 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* PREPARE: Removed. Only for z-rejected.
+	* DETAILS: Removed REJECT
+
+2008-06-26 Alexander Tsamutali <astsmtl@gmail.com>
+	* PREPARE, DETAILS, DEPENDS, BUILD, INSTALL, HISTORY, tuxguitar: Created

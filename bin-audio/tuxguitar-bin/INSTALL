@@ -1,0 +1,4 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/opt/tuxguitar &&
+mkdir -v -p $INSTALL_DIRECTORY &&
+cp -v -r * $INSTALL_DIRECTORY &&
+install -v -m 755 $SPELL_DIRECTORY/tuxguitar /usr/bin/

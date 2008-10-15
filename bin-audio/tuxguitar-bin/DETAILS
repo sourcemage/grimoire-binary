@@ -1,0 +1,26 @@
+           SPELL=tuxguitar-bin
+         VERSION=1.0
+          SOURCE=tuxguitar-${VERSION}-linux-x86.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tuxguitar-${VERSION}-linux-x86
+   SOURCE_URL[0]=$SOURCEFORGE_URL/tuxguitar/$SOURCE
+     SOURCE_HASH=sha512:12e992cec4ab9f39148c4db71e62dfaa07ac97909cfc0867632c25c1249f2b91070c24b8cd2be646778a6e4883c14534b54ef19ad9e5f709c92426a8fad1e333
+      LICENSE[0]=GPL
+        WEB_SITE=http://www.tuxguitar.com.ar
+         ENTERED=20080626
+         ARCHIVE="off"
+           SHORT="multitrack tablature editor and player"
+cat << EOF
+With TuxGuitar, you will be able to compose music using the following features:
+
+    * Tablature editor
+    * Score Viewer
+    * Multitrack display
+    * Autoscroll while playing
+    * Note duration management
+    * Various effects (bend, slide, vibrato, hammer-on/pull-off)
+    * Support for triplets (5,6,7,9,10,11,12)
+    * Repeat open and close
+    * Time signature management
+    * Tempo management
+    * Imports and exports gp3,gp4 and gp5 files
+EOF
