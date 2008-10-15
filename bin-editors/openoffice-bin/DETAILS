@@ -1,0 +1,36 @@
+           SPELL=openoffice-bin
+         VERSION=1.1.5
+          SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_${VERSION}_LinuxIntel_install
+   SOURCE_URL[0]=http://borft.student.utwente.nl/openoffice/stable/$VERSION/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/openoffice/stable/$VERSION/$SOURCE
+     SOURCE_HASH=sha1:2939217880d0ea63e760c89bfc456d27106c91ba
+        WEB_SITE=http://www.openoffice.org
+         ENTERED=20020713
+         UPDATED=20050417
+      LICENSE[0]=LGPL
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="The binary version of OpenOffice"
+cat << EOF
+OpenOffice.org is the open source project through which Sun Microsystems has
+released the technology for the popular StarOffice[tm] Productivity Suite.
+All of the StarOffice code is available under the GNU Lesser General Public
+License (LGPL) as well as the Sun Industry Standards Source License (SISSL).
+
+Sun is participating as a member of the OpenOffice.org community.
+OpenOffice.org is being hosted by CollabNet. 
+
+The suite includes:
+scalc    -  A spreadsheet application
+sdraw    -  A vector drawing program
+simpress -  A presentation program
+smath    -  An equation editor
+sweb     -  A WYSIWIG web page editor
+swriter  -  A word processor
+
+Note:
+After installing, attempting to run any of the applications will run a
+graphical installation for a single user. Each user must do this, so
+select "net install" to minimise disk usage. 
+EOF

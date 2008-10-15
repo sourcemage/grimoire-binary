@@ -1,0 +1,17 @@
+           SPELL=openoffice2-bin-lang-sv
+         VERSION=2.4.0
+        OOO_LANG=sv
+       LANG_PATH="openoffice/localized/$OOO_LANG/$VERSION"
+          SOURCE="OOo_${VERSION}_LinuxIntel_langpack_${OOO_LANG}.tar.gz"
+   SOURCE_URL[0]="http://mirrors.isc.org/pub/${LANG_PATH}/$SOURCE"
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOH680_m12_native_packed-1_${OOO_LANG}.9286
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.openoffice.org
+         ENTERED=20080401
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="Swedish languagepack for OpenOffice 2"
+cat << EOF
+The Swedish languagepack for OpenOffice.org 2
+EOF

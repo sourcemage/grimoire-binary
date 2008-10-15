@@ -1,0 +1,10 @@
+cd  $SOURCE_DIRECTORY                      &&
+sedit  's:usr\/local:usr\/lib:g'  install  &&
+./install  &&
+
+# create bin links for executables.
+for LINK in "scalc" "sdraw" "simpress" "smath" "soffice" "spadmin" "sweb" "swriter"; do
+  message "${MESSAGE_COLOR}Creating link for $LINK ${DEFAUL_COLOR}"  &&
+  rm -f /usr/bin/$LINK &&
+  ln -s $TRACK_ROOT/usr/lib/OpenOffice.org${VERSION}/program/$LINK /usr/bin/$LINK
+done

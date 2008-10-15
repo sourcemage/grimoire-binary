@@ -1,0 +1,17 @@
+           SPELL=openoffice2-bin-lang-ru
+         VERSION=2.3.1
+        OOO_LANG=ru
+       LANG_PATH="openoffice/localized/$OOO_LANG/$VERSION"
+          SOURCE="OOo_${VERSION}_LinuxIntel_install_${OOO_LANG}.tar.gz"
+   SOURCE_URL[0]="http://mirrors.isc.org/pub/${LANG_PATH}/$SOURCE"
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOG680_m9_native_packed-1_${OOO_LANG}.9238
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.openoffice.org
+         ENTERED=20071229
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="Russian languagepack for OpenOffice 2"
+cat << EOF
+The Russian languagepack for OpenOffice.org 2
+EOF

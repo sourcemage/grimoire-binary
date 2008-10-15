@@ -1,3 +1,14 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* bin-editors/openoffice2-bin-lang-es
+	* bin-editors/openoffice2-bin-lang-fr
+	* bin-editors/openoffice2-bin-lang-nl	
+	* bin-editors/openoffice2-bin-lang-pl
+	* bin-editors/openoffice2-bin-lang-ru
+	* bin-editors/openoffice2-bin-lang-sv
+	* bin-editors/openoffice2-bin
+	* bin-editors/openoffice3-bin
+	* bin-editors/openoffice-bin
+
 2008-10-15  Arwed von Merkatz <v.merkatz@gmx.net>
 	* created grimoire
 

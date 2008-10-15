@@ -1,0 +1,4 @@
+2007-12-29 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL, PRE_BUILD,
+	  UNATTEND_SAFE, OOo_2.3.1_LinuxIntel_install_ru.tar.gz.sig:
+	  created spell

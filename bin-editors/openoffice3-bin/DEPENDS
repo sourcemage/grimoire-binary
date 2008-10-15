@@ -1,0 +1,6 @@
+depends  gmp           &&
+depends  rpmunpack     && 
+depends  freetype2     &&
+depends  zlib          &&
+depends  JAVA          &&
+depends  OPENGL         

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OpenOffice2 Writer
+Exec=swriter
+Icon=openofficeorg24-writer.png
+Terminal=false
+Type=Application
+Categories=Application;Office

@@ -1,0 +1,26 @@
+mk_source_dir  $SOURCE_DIRECTORY  &&
+cd  $SOURCE_DIRECTORY             &&
+unpack_file  ''                   &&
+
+#
+# Extracted root directories don't have the same names between localized
+# versions, so use * wildcard although I don't find that very elegant
+#
+cd  OO*/RPMS
+
+for  FILE  in  *.${OO_ARCH}.rpm
+do
+  FILE="${FILE%.$OO_ARCH.rpm}"
+  PART=$(sed 's/openoffice.org-\([^-]*\)-.*$/\1/;' <<< $FILE)
+  message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
+
+    rpmunpack  $FILE.${OO_ARCH}.rpm &&
+    gzip  -d   $FILE.cpio.gz  &&
+    cpio  -idm  <  $FILE.cpio
+done  &&
+
+message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
+FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9354" &&
+rpmunpack  desktop-integration/${FILENAME}.noarch.rpm  &&
+gzip  -d  ${FILENAME}.cpio.gz     &&
+cpio  -idm  <  ${FILENAME}.cpio

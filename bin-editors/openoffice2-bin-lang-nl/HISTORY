@@ -1,0 +1,6 @@
+2007-12-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.3.1
+
+2007-11-06 Arjan Bouter <abouter@sourcemage.org>
+	* BUILD,DEPENDS,DETAILS,HISTORY,INSTALL,PRE_BUILD,UNATTEND_SAFE
+	  created spell

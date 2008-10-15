@@ -1,0 +1,31 @@
+INSTALLDIR=$INSTALL_ROOT/opt/openoffice                                      &&
+mkdir  -pv  $INSTALLDIR/                                                     &&
+mkdir  -pv  ${INSTALL_ROOT}/usr/share/icons                                  &&
+
+#
+# Not all tarballs are created equal
+#
+if    [[ "$OO2_LOCALE"  ==  "nb"  ||
+         "$OO2_LOCALE"  ==  "nn"  ]];  then
+  cd   $SOURCE_DIRECTORY/RPMS
+elif  [[  "$OO2_LOCALE"  ==  "ru"  ||
+          "$OO2_LOCALE"  ==  "tr"  ]];  then
+  cd  $SOURCE_DIRECTORY/$OO2_LOCALE/RPMS
+else
+  #
+  # Extracted root directories don't have the same names between localized 
+  # versions, so use * wildcard although I don't find that very elegant
+  #
+  cd   $SOURCE_DIRECTORY/OO*/RPMS
+fi  &&
+
+cp  -Rv  opt/openoffice.org${VERSION%.*}/*  $INSTALLDIR              &&
+cp  -Rv  usr/share/icons/*  $INSTALL_ROOT/usr/share/icons  &&
+
+# create bin links for executables.
+for  LINK  in  "sbase"  "scalc"  "sdraw"  "simpress"  "smath"  "soffice"  "swriter"  "spadmin"
+do
+  message  "${MESSAGE_COLOR}Creating link for $LINK${DEFAULT_COLOR}"                            &&
+  rm  -f  $INSTALL_ROOT/usr/bin/$LINK                                                           &&
+  ln  -s  $TRACK_ROOT/opt/openoffice/program/$LINK  /usr/bin/$LINK
+done

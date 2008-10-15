@@ -1,0 +1,7 @@
+^/usr/lib/OpenOffice\.org1\.1\.4/program/libofficebean\.so$  
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/_tkinter\.so$  
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/bsddb\.so$  
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/dbm\.so$ 
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/gdbm\.so$  
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/mpz\.so$
+^/usr/lib/OpenOffice\.org1\.1\.4/program/python-core-2\.2\.2/lib/lib-dynload/_curses_panel\.so$

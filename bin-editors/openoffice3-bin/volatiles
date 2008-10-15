@@ -1,0 +1,6 @@
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/_bsddb\.so$
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/_tkinter\.so$
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/bz2\.so$
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/dbm\.so$
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/gdbm\.so$
+^/opt/openoffice.org/basis3.0/program/python-core-2\.3\.4/lib/lib-dynload/_ssl\.so$

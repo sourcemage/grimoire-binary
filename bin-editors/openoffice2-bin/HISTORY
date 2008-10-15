@@ -1,0 +1,173 @@
+2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* CONFLICTS: added openoffice3-bin
+	* INSTALL: fixed a typo when reverting message to DEFAULT_COLOR
+	  (T was missing), uses INSTALL_ROOT when removing script-made symlinks
+
+2008-06-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: PATCHLEVEL=1
+	* desktop/*.desktop: fixed icon names
+
+2008-06-29 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.4.1
+
+2008-04-24 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Removed dependency on mktemp (now provided by coreutils)
+
+2008-04-01 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DEPENDS: added Swedish languagepack
+
+2008-03-31 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: Swaped SOURCE_URL[3] with 4 since it is not updated yet
+	  updated spell to 2.4.0
+
+2008-03-12 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on gmp
+
+2007-12-29 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added Russian languagepack
+
+2007-12-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.3.1
+
+2007-11-22 Arjan Bouter <abouter@sourcemage.org>
+	* OOo_2.3.0_LinuxIntel_install_en-US.tar.gz.sig: re-added
+
+2007-11-05 Arjan Bouter <abouter@sourcemage.org>
+	* WIP: removed
+	* DETAILS: version bump to 2.3.0
+	* PRE_BUILD: commented out the core04 extraction
+	* FINAL: added message about languagepacks
+	* locales: removed
+	* removed language selection
+
+2007-08-04 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Addes second SOURCE for English version to fix broken core04u
+	* PRE_BUILD: Unpack the uncorrupted core04u instead of the corrupt core04u
+	  Use PART to compare instead of FILE, works better
+	* UNATTEND_SAFE: Safe for unattended updates
+
+2007-07-11 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version bumped to 2.2.1
+	* locales: added dutch
+
+2007-06-13 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD, INSTALL: Use ${VERSION%.*} instead of ${VERSION/.0/} to
+	  always remove the last digit for "branch" (e.g. 2.2)
+
+2007-03-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.2.0
+	* CONFIGURE: Renamed to PREPARE so we have OO2_LOCALES set in DETAILS
+	  Only set OO2_LOCALE if not configuring, defalt to en
+	* PRE_BUILD: RPM doesn't use .0 in VERSIONs
+	  Switch to Redhat menus as the freedesktop ones fail to gunzip
+	  Some languages (e.g. nb) do not have the OO* directory...
+	  And "ru" and "tr" use yet another subdir...
+	* INSTALL: Use VERSION (minus the .0) for directory to copy
+	  use SOURCE_DIRECTORY rather than BUILD_DIRECTORY
+	  Some languages (e.g. nb) do not have the OO* directory...
+	  And "ru" and "tr" use yet another subdir...
+	* locales: Added Italy (it)
+	  Added (nb)
+	  Added (nn)
+	  Added (pl)
+	  Added Russia (ru)
+	  Added (tr)
+	  Removed Netherlands (nl)
+
+2007-01-19 Pieter Lenaerts <e-type@sourcemage.org>
+	* INSTALL: creates /usr/share/icons
+
+2006-11-17 Arjan Bouter <abouter@sourcemage.org>
+	* locales: added nl
+	* OOo_2.0.4_LinuxIntel_install_nl.tar.gz.sig: added
+
+2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: use TRACK_ROOT when linking #9163
+
+2006-10-22 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: 2.0.4-5; switched two urls around to try to improve speed
+	* PRE_BUILD: generalised; now installs all packages
+
+2006-08-30 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated all versions to 2.0.3-7
+	* PRE_BUILD: Updated to work with new version
+
+2006-03-16 George Sherwood <george@beernabeer.com>
+	* locales: French version released.
+
+2006-03-09 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.0.2-5
+	  VERSION now has their -<release> included
+	* PRE_BUILD: Use $VERSION instead of hardcoding it
+	  NOTE: The freedesktop-menus archive is at release 3, not 5
+	* locales: French (fr) and Japanese (ja) locales have not been made for
+	  this version.
+
+2006-02-06 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated PATCHLEVEL
+
+2006-02-04 George Sherwood <george@beernabeer.com>
+	* desktop/*: Updated all desktop file to use correct icon
+
+2006-01-03 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated all versions to 2.0.1
+	* PRE_BUILD, INSTALL: Updated for verison 2.0.1
+
+2005-11-18 George Sherwood <george@beernabeer.com>
+	* volatiles: Added new excluded librabry
+
+2005-11-13 George Sherwood <george@beernabeer.com>
+	* DETAILS: Added code so OO2_LOCALE will never be uninitialized
+
+2005-10-30 George Sherwood <george@beernabeer.com>
+	* DETAILS, CONFIGURE, PRE_BUILD, INSTALL: Modified to install 
+	  localized versions
+	* locales: Added to contain locale choices
+
+2005-10-21 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 2.0.0 final
+
+2005-10-18 Jason Flatt <jflatt@sourcemage.org>
+	* DETAILS, INSTALL, PRE_BUILD: Version bump from 2.0.0rc2 to 2.0.0rc3.
+	  Added some more SOURCE_URLs.
+
+2005-10-13 Jason Flatt <jflatt@sourcemage.org>
+	* DETAILS, INSTALL, PRE_BUILD: Version bump to 2.0.0rc2.
+	* DETAILS, OOo_2.0.0rc2_051005_LinuxIntel_install.tar.gz.sig: Changed
+	  to GPG checking.
+
+2005-09-26 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Updated to build 130
+
+2005-08-25 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Updated to beta2 (version 125)
+	* DEPENDS: removed rpm, alien, added rpmunpack
+	* *.sig: removed, switched to SOURCE_HASH
+
+2005-08-08 George Sherwood <george@beernabeer.com>
+	* DEPENDS: Added rpm. (Bug 9409)
+
+2005-08-04 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Update to version 122
+	* DEPENDS: removed rpmunpack, added alien
+
+2005-07-29 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Added usage of GPG checking
+	* PRE_BUILD: Updated for GPG checking
+	  Use SOURCE_DIRECTORY and mk_source_dir
+
+2005-07-20 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Update to version 118
+
+2005-07-01 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Update to version 113
+
+2005-06-26 George Sherwood <george@beernabeer.com>
+	* INSTALL: added variable for INSTALLDIR
+	* PRE_BUILD: added a few more files to install
+	* volatiles: added file to pass cleanse
+	* *.desktop: Added desktop files for applications
+
+2005-06-26 George Sherwood <george@beernabeer.com>
+	* All files: Created Spell
+

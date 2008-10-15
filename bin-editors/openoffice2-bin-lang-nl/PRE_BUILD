@@ -1,0 +1,19 @@
+default_pre_build &&
+
+#
+# Extracted root directories don't have the same names between localized
+# versions, so use * wildcard although I don't find that very elegant
+#
+cd  OO*/RPMS
+
+for  FILE  in  *.rpm
+do
+  FILE="${FILE%.i586.rpm}"
+  PART=$(sed 's/openoffice.org-\([^-]*\)-.*$/\1/;' <<< $FILE)
+  message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
+
+  rpmunpack  $FILE.i586.rpm &&
+  gzip  -d   $FILE.cpio.gz  &&
+  cpio  -idm  <  $FILE.cpio
+
+done

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OpenOffice2 Printer Admin
+Exec=spadmin
+Icon=openofficeorg24-printeradmin.png
+Terminal=false
+Type=Application
+Categories=Application;Office

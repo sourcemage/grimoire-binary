@@ -1,0 +1,7 @@
+INSTALLDIR=$INSTALL_ROOT/opt/openoffice  &&
+if ! [[ -d $INSTALLDIR ]] ; then
+  mkdir -p $INSTALLDIR
+fi
+cd    $SOURCE_DIRECTORY/RPMS          &&
+cp -r $SOURCE_DIRECTORY/RPMS/opt/openoffice.org2.3/* \
+      $INSTALL_ROOT/opt/openoffice/

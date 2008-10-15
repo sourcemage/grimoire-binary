@@ -1,0 +1,11 @@
+2008-04-01 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.4.0
+	* INSTALL: now uses ${VERSION%.*} instead of hard-coded version to
+	  always remove the last digit for "branch" (e.g. 2.4)
+
+2007-12-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.3.1
+
+2007-11-06 Arjan Bouter <abouter@sourcemage.org>
+	* BUILD,DEPENDS,DETAILS,HISTORY,INSTALL,PRE_BUILD,UNATTEND_SAFE
+	  created spell
