@@ -1,0 +1,9 @@
+# tarball has been extracted, just copy to the correct directory.
+INSTALLDIR=/usr/lib/thunderbird
+
+#
+# Create generic symlink for plug-ins
+#
+mkdir -pv $INSTALLDIR                               &&
+cp -rv $SOURCE_DIRECTORY/* $INSTALLDIR              &&
+ln -s $INSTALLDIR/thunderbird /usr/bin/thunderbird

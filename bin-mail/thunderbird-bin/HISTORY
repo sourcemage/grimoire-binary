@@ -1,0 +1,59 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Removed REJECT
+	* CONFIGURE: Removed.  No z-rejected warnings.
+
+2008-09-26 George Sherwood <gsherwood@sorucemage.org>
+	* DETAILS: Updates spell to 2.0.0.17. SECURITY_PATCH++
+
+2008-07-23 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated spell to 2.0.0.16. SECURITY_PATCH++
+
+2008-05-03 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to verson 2.0.0.14. SECURITY_PATCH++
+
+2008-02-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 2.0.0.12, SECURITY_PATCH++
+
+2007-11-14 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.0.0.9. SECURITY_PATCH++
+
+2007-08-15 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.0.0.6. SECURITY_PATCH++
+
+2007-07-20 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.0.0.4. SECURITY_PATCH++
+
+2007-06-17 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.0.0.4. SECURITY_PATCH=1
+
+2007-04-29 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 2.0.0.0
+
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-07-12 Duane Malcolm <d.malcolm@auckland.ac.nz>
+	* DETAILS: Update to 1.0.2
+
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
+2005-03-12 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on gcc33
+
+2005-03-03 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflicts with thunderbird
+
+2005-03-01 Eric Sandall <sandalle@sourcemage.org>
+	* Added to z-rejected/z-http  (Bug #8334)
+	* Needs to setup gcc33 properly for test/devel grimoires
+
+2005-03-01 Eric Schabell <eric@schabell.com>
+	* ALL: added spell.
+

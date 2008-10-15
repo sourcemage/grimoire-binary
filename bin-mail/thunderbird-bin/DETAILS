@@ -1,0 +1,43 @@
+           SPELL=thunderbird-bin
+         VERSION=2.0.0.17
+          SOURCE=thunderbird-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
+     SOURCE_HASH=sha512:9dde19e09e8d7f6fe1f407edce094fca587cd34979e20de08bfb5dd0cda018166019a32fac7a6f109a66e767680b2ce6389198c9f6bbe1c68ccb6af362a5b5f7
+        WEB_SITE=http://www.mozilla.org/projects/thunderbird
+         ENTERED=20050301
+  SECURITY_PATCH=8
+      LICENSE[0]=MOZILLA
+           SHORT="The pre-compiled i686 version of thunderbird mailer"
+cat << EOF
+Mozilla Thunderbird is a redesign of the Mozilla mail component. Our goal is
+to produce a cross platform stand alone mail application using the XUL user
+interface language. Our intended customer is someone who uses  Mozilla Firefox
+(or another stand alone browser) as their primary browser and wants a mail
+client based on mozilla that "plays nice" with the browser. In addition, by
+focusing solely on stand alone mail, we believe we can make some dents in the
+overall footprint and performance of the mail client by removing components
+and chrome we don't need. On top of that, the UI becomes much cleaner as a
+stand alone application as opposed to being part of the mozilla suite.
+
+In addition to the feature set found in Mozilla Mail, Mozilla Thunderbird has
+several new features and improvements to make your mail and new experience
+better. Highlights include:
+
+    * The ability to customize your toolbars the way you want them. Choose
+    * View / Toolbars / Customize inside any window.
+    * UI extensions can be added to Mozilla Thunderbird to customize your
+    * experience with specific features and enhancements that you need.
+    * Support for extensions. A full list of available extensions can be found
+    * here.
+    * A new look and feel. Thunderbird also supports a large number of
+    * downloadable themes which alter the appearance of the client.
+    * An addressing sidebar for mail compose which makes it easy and
+    * convenient to add address book contacts to emails.
+    * Online help includes a FAQ, tips and tricks and other useful
+    * information.
+    * Simplified preferences UI and menus.
+    * Footprint and performance improvements. 
+
+This spell installs a pre-compiled i686 setup of thunderbird.
+EOF
