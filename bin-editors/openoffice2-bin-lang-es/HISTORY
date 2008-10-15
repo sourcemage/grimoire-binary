@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* UNATTEND_SAFE: Removed.            
+
 2008-04-01 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 2.4.0
 	* INSTALL: now uses ${VERSION%.*} instead of hard-coded version to
