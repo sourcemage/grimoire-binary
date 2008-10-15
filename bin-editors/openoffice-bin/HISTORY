@@ -1,3 +1,6 @@
+2008-10-15 George Sherwood <gsherwood@sourcemage.org>
+	* CONFIGURE: Removed rejected message
+
 2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* CONFLICTS: removed OpenOffice, added openoffice3-bin
 
