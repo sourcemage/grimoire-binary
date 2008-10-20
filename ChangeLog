@@ -1,3 +1,6 @@
+2008-10-19 George Sherwood <gsherwood@sourcemage.org>
+	* bin-http/firefox-obstcp: Added new spell
+
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
 	* bin-editors/openoffice2-bin-lang-es: moved spell from z-rejected
 	* bin-editors/openoffice2-bin-lang-fr: moved spell from z-rejected

@@ -1,0 +1,26 @@
+# tarball has been extracted, just copy to the correct directory.
+INSTALLDIR=/opt/firefox-obstcp
+
+mkdir -pv $INSTALLDIR                            &&
+cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR           &&
+
+cp -v $SCRIPT_DIRECTORY/firefox-obstcp /usr/bin/       &&
+
+#
+# Create symlink to mozilla or firefox if selected
+# Only create if /usr/bin/mozilla or firefox does not exist or is
+# already a symlink
+#
+if [ "$FIREBIN_MOZLINK" == "y" ]; then
+   if ! test -f $INSTALL_ROOT/usr/bin/mozilla ||
+        test -h $INSTALL_ROOT/usr/bin/mozilla ; then
+     ln -sv $TRACK_ROOT/usr/bin/firefox-bin /usr/bin/mozilla 
+   fi
+fi  &&
+
+if [ "$FIREBIN_FIREFOX" == "y" ]; then
+   if ! test -f $INSTALL_ROOT/usr/bin/firefox ||
+        test -h $INSTALL_ROOT/usr/bin/firefox ; then
+     ln -sv $TRACK_ROOT/usr/bin/firefox-bin /usr/bin/firefox
+   fi
+fi

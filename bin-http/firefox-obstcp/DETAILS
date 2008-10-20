@@ -1,0 +1,20 @@
+           SPELL=firefox-obstcp
+         VERSION=3.0.3
+          SOURCE=firefox-${VERSION}-obstcp-ia32.tar.bz2
+     SOURCE_HASH=sha512:5c14bbc71036ede0bbe586d98feafc156cefc10f70b721fe48b5fae67d6adb2b54f9b2b6c909df2631692186b8a17bbd1bc3f56ab4599219ee5780872711d406
+   SOURCE_URL[0]=http://obstcp.googlecode.com/svn/trunk/distrib/$SOURCE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox-$VERSION-obstcp
+        WEB_SITE=http://code.google.com/p/obstcp/
+         ENTERED=20081019
+      LICENSE[0]=MOZILLA
+           SHORT="firefox for obfuscated TCP
+cat << EOF
+Obfuscated TCP is a transport layer protocol that adds opportunistic 
+encryption. It's designed to hamper and detect large-scale wiretapping 
+and corruption of TCP traffic on the Internet. 
+
+The Firefox patch is a patch to the core source tree. I haven't been 
+able to extract this as an extension yet because it's changing things 
+very deep in the networking code and the extension system wasn't 
+designed to support that level of modification.
+EOF
