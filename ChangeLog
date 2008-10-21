@@ -1,3 +1,7 @@
+2008-10-21 George Sherwood <gsherwood@sourcemage.org>
+	* API_VERSION, gurus.gpg, libcompat, libaccount, libggc:
+	  Added files from z-rejected.
+
 2008-10-19 George Sherwood <gsherwood@sourcemage.org>
 	* bin-http/firefox-obstcp: Added new spell
 
