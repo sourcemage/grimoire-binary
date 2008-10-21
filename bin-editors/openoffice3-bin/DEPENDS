@@ -2,5 +2,5 @@ depends  gmp           &&
 depends  rpmunpack     && 
 depends  freetype2     &&
 depends  zlib          &&
-depends  JAVA          &&
-depends  OPENGL         
+depends  OPENGL        &&
+optional_depends JAVA '' '' 'scripting support'

@@ -1,9 +1,11 @@
+2008-10-19 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: JAVA is optional
+
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated to version release 3.0.0. Updated SOURCE_URL
 	  VERSION_DATE not include now.
 	* PRE_BUILD: Adjusted desktop integraton files.  They are using
 	  the files from last build.
-	* PREPARE: Removed rejected message
 
 2008-10-07 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 3.0.0rc4
