@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/icecat-$VERSION-i386
          ENTERED=20071216
       LICENSE[0]=MOZILLA
          ARCHIVE="off"
-          REJECT="is non-source"
            SHORT="the GNU version of the Firefox browser"
 cat << EOF
 Gnuzilla is the GNU version of the Mozilla suite, and IceWeasel is the GNU
