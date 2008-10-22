@@ -9,8 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOG680_m9_native_packed-1_${OOO_LANG}.9238
       LICENSE[0]=LGPL
         WEB_SITE=http://www.openoffice.org
          ENTERED=20071229
-         ARCHIVE="off"
-          REJECT="This spell is non-source"
            SHORT="Russian languagepack for OpenOffice 2"
 cat << EOF
 The Russian languagepack for OpenOffice.org 2
