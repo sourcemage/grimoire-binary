@@ -2,7 +2,7 @@
         * DETAILS: removed REJECT
 
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
-	CONFIGURE: Removed z-rejected warnings
+	* CONFIGURE: Removed z-rejected warnings
 
 2008-04-13 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: updated spell to 2.0.0.13-g1

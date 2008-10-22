@@ -2,7 +2,7 @@
         * DETAILS: removed REJECT
 
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
-	CONFIGURE: Removed z-rejected warnings
+	* CONFIGURE: Removed z-rejected warnings
 
 2008-09-24 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.1.12, SECURITY_PATCH=6

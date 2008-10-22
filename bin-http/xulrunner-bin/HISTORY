@@ -2,7 +2,7 @@
         * DETAILS: removed REJECT
 
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
-	PREPARE: Removed. No z-rejected warnings needed
+	* PREPARE: Removed. No z-rejected warnings needed
 
 2008-07-18 Alexander Tsamutali <astsmtl@gmail.com>
 	* PREPARE, DETAILS, CONFIGURE, DEPENDS, PROVIDES, BUILD, INSTALL,
