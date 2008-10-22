@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/xulrunner
         WEB_SITE=http://developer.mozilla.org/en/docs/XULRunner
          ENTERED=20080718
       LICENSE[0]=MOZILLA
-          REJECT="is non-source"
            SHORT="Mozilla runtime package that can be used to bootstrap XUL+XPCOM applications"
 cat << EOF
 XULRunner is a Mozilla runtime package that can be used to bootstrap XUL+XPCOM
