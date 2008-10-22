@@ -19,7 +19,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
          ENTERED=20040902
   SECURITY_PATCH=12
       LICENSE[0]=MOZILLA
-          REJECT="is non-source"
            SHORT="The binary version of firefox."
 cat << EOF
 Mozilla firefox, formerly known as Mozilla Firebird, formerly known 
