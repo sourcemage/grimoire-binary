@@ -11,7 +11,6 @@ SOURCE2_DIRECTORY=$SOURCE_DIRECTORY
          WEB_SITE=http://www.gibix.net/dokuwiki/en:projects:nspluginwrapper
           ENTERED=20060729
        LICENSE[0]=GPL
-           REJECT="is binary only"
             SHORT="Netscape Plugin Wrapper - Load 32bit plugins on 64bit browser."
 cat << EOF
 Netscape Plugin Wrapper - Load 32bit plugins on 64bit browser.
