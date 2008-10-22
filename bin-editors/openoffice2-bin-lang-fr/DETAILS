@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOH680_m17_native_packed-1_${OOO_LANG}.9310
         WEB_SITE=http://www.openoffice.org
          ENTERED=20050625
          ARCHIVE="off"
-          REJECT="This spell is non-source"
            SHORT="French languagepack for OpenOffice 2"
 cat << EOF
 The French languagepack for OpenOffice.org 2
