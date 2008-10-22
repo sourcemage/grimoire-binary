@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-tomcat-${VERSION}
         WEB_SITE=http://jakarta.apache.org/tomcat/index.html
          ENTERED=20030920
          UPDATED=20040208
-          REJECT="binary source"
            SHORT="Binary distribution of Apache's Tomcat Servlet Container"
 cat << EOF
 Tomcat is the servlet container that is used in the official Reference 
