@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/seamonkey
          ENTERED=20070722
   SECURITY_PATCH=6
       LICENSE[0]=MOZILLA
-          REJECT="is non-source"
            SHORT="The binary version of seamonkey."
 cat << EOF
 The SeaMonkey project is a community effort to deliver 
