@@ -22,7 +22,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice3
         WEB_SITE=http://www.openoffice.org
          ENTERED=20080909
          ARCHIVE="off"
-          REJECT="This spell is non-source"
            SHORT="The binary version of OpenOffice 3"
 cat << EOF
 OpenOffice.org is the open source project through which Sun Microsystems has
