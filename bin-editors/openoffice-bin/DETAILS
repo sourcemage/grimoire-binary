@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_${VERSION}_LinuxIntel_install
          UPDATED=20050417
       LICENSE[0]=LGPL
          ARCHIVE="off"
-          REJECT="This spell is non-source"
            SHORT="The binary version of OpenOffice"
 cat << EOF
 OpenOffice.org is the open source project through which Sun Microsystems has
