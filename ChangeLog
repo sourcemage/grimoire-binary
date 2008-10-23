@@ -1,3 +1,6 @@
+2008-10-23 Julien "_kaze_" ROZO <julien@rozo.org>
+	* bin-devel/eclipse-bin: moved spell from z-rejected
+
 2008-10-21 George Sherwood <gsherwood@sourcemage.org>
 	* API_VERSION, gurus.gpg, libcompat, libaccount, libggc:
 	  Added files from z-rejected.

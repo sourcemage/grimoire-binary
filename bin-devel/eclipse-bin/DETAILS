@@ -1,0 +1,40 @@
+           SPELL=eclipse-bin
+          SPELLX=eclipse
+          PREFIX=R
+         VERSION=3.4.1
+          TSTAMP=200809111700
+case "${SMGL_COMPAT_ARCHS[1]}" in
+        x86_64)
+          SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk-x86_64.tar.gz
+     SOURCE_HASH=sha512:f64a3be6484abd85f24b7d3ae381dd94fba7ac173f341b3cc06703deeafb73b5de9d993844b6918a80a7940d082a9f15493de9cc2ddd14b948d423bfc5877de3
+          ;;
+        ia32)
+          SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk.tar.gz
+     SOURCE_HASH=sha512:0702887cdc8b2f5a5e4f69c394a250dc288179a9fe08bb69cbfa25d30fab0278795717a6ddc5ae144032c84f4add41210179b3993a8f285f0a2634510e17c8ce
+          ;;
+        *)
+          SOURCE=
+     SOURCE_HASH=
+          ;;
+esac
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELLX
+      SOURCE_URI=$PREFIX-$VERSION-$TSTAMP/$SOURCE
+   SOURCE_URL[0]=http://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops/${SOURCE_URI}
+   SOURCE_URL[1]=http://ftp.ussg.iu.edu/eclipse/eclipse/downloads/drops/${SOURCE_URI}
+        WEB_SITE=http://www.eclipse.org/
+      LICENSE[0]=CPL
+         ENTERED=20041110
+         ARCHIVE="off"
+           SHORT="Java-based open platform IDE application development tools"
+cat << EOF
+The eclipse project for the development of software design tools was originally
+formed by Borland, IBM, MERANT, QNX Software Systems, Rational Software3, Red
+Hat, SuSE, TogetherSoft3 and Webgain2, and was later joined by other major
+companies.  The licensing scheme is intended to encourage the development of
+integrated third party software which may or may not be open source and/or free.
+The program actually exists as a core (they call it a microkernel) with
+functionality added by pluggins.  It has support for several languages,
+including java and c++ and has extensions that allow UML round trip engineering.
+It also is supposed to be able to use system development tools, like debuggers,
+compilers, tracers, etc.
+EOF

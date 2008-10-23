@@ -1,0 +1,6 @@
+# zip file has been extracted, just copy to the correct directory
+INSTALL_DIR=${INSTALL_ROOT}/opt/${SPELLX}        &&
+mkdir -pv ${INSTALL_DIR}                         &&
+cp -rv $SOURCE_DIRECTORY/* ${INSTALL_DIR}        &&
+cp $SCRIPT_DIRECTORY/eclipse.sh /etc/profile.d/  &&
+chmod 755 /etc/profile.d/eclipse.sh
