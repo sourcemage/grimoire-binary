@@ -5,6 +5,7 @@
 	* CONFLICTS: removed, eclipse does not conflict with eclipse-bin
 	* DEPENDS: removed ant
 	* INSTALL: made some cleanups
+	* desktop/eclipse-bin.desktop: renamed from eclipse.desktop
 	
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
