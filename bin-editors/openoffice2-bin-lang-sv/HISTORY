@@ -1,5 +1,5 @@
 2008-10-22 Julien "_kaze_" ROZO <julien@rozo.org>
-        * DETAILS: removed REJECT
+	* DETAILS: removed REJECT
 
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
 	* UNATTEND_SAFE: Removed.            
