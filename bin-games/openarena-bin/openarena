@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd /opt/openarena &&
+
+# we pick the right executable for the current arch
+arch=`uname -m | sed -e s/i.86/i386/`
+executable="`basename \"${0}\"`.$arch"
+
+if [ ! -e "$executable" ]; then
+        echo "Error: $executable not found"
+        exit 1
+fi
+
+./$executable

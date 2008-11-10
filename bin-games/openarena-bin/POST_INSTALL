@@ -1,0 +1,13 @@
+#
+# The default_post_install in this section tries to remove a lot of stuff in
+# /usr/share/games/
+# This spell installed nothing in /usr/share/games/
+# so there is nothing to remove
+#
+
+function default_post_install() {
+  games_make_proper_binary &&
+  real_default_post_install
+}
+
+default_post_install
