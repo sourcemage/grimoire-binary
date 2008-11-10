@@ -6,3 +6,4 @@ fi
 cp -r ${SOURCE_DIRECTORY}/usr/lib/nspluginwrapper/* ${INSTALL_ROOT}/usr/lib/${SPELL}/
 install --directory ${INSTALL_ROOT}/usr/share/doc/${SPELL}/
 install --mode=644 ${SOURCE_DIRECTORY}/usr/share/doc/${SPELL}*/* ${INSTALL_ROOT}/usr/share/doc/${SPELL}/
+install --mode=755 ${SOURCE_DIRECTORY}/usr/bin/nspluginwrapper  ${INSTALL_ROOT}/usr/bin
