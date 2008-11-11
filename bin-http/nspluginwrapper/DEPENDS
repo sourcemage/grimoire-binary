@@ -3,4 +3,5 @@ depends  linux32      &&
 suggest_depends  "smgl-emul32"                                            \
                  ""                                                       \
                  ""                                                       \
-                 "for 32-bit libraries (if you don't already have them)"
+                 "for 32-bit libraries (if you don't already have them)"  \
+                 "z-rejected"

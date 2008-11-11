@@ -3,6 +3,7 @@
 	* INSTALL: Install nspluginwrapper script
 	* DEPENDS: smgl-emul32 is optional (though suggested) since some may have
 	  their own 32-bit libraries installed
+	  smgl-emul32 is from the z-rejected grimoire, depend on it
 
 2008-10-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: removed REJECT
