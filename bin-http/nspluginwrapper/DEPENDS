@@ -1,3 +1,6 @@
 depends  linux32      &&
-depends  smgl-emul32 
 
+suggest_depends  "smgl-emul32"                                            \
+                 ""                                                       \
+                 ""                                                       \
+                 "for 32-bit libraries (if you don't already have them)"
