@@ -1,10 +1,10 @@
            SPELL=icecat-bin
-         VERSION=2.0.0.13-g1
+         VERSION=3.0.3-g1
   SECURITY_PATCH=1
           SOURCE=icecat-${VERSION}-i386.tar.bz2
-     SOURCE_HASH=sha512:e4788391c038ab32bec8f80e65698f8c75f9cddad69930174dc019110f39f522d16d2d5cdaf7a2c9729bed4565378ecb93b7c87d33d620b6357c056fa3662d3c
-   SOURCE_URL[0]=http://gnuzilla.gnu.org/download/${SOURCE}
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/icecat-$VERSION-i386
+     SOURCE_HASH=sha512:1b863d31fd1e1433c31c8b6ac314f6984a81004053c8b9226f8a1e685bbac76dca9dc7db488809a5e723093904b2e077eb79bc193b4e8483ff68f86071a62a50
+   SOURCE_URL[0]=ftp://ftp.gnu.org/gnu/gnuzilla/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/icecat-$VERSION
         WEB_SITE=http://www.gnu.org/software/gnuzilla/
          ENTERED=20071216
       LICENSE[0]=MOZILLA
