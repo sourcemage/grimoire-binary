@@ -1,0 +1,15 @@
+# the remaining details of this spell are provided by CONFIGURE
+           SPELL=openoffice3-bin-lang
+         VERSION=3.0.0
+         OO_ARCH=i586
+            SITE=http://mirrors.isc.org/pub/openoffice/localized
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+source $SPELL_CONFIG
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.openoffice.org/
+         ENTERED=20081124
+         ARCHIVE="off"
+           SHORT="languagepacks for OpenOffice.org 3"
+cat << EOF
+Various languagepacks for OpenOffice.org 3
+EOF

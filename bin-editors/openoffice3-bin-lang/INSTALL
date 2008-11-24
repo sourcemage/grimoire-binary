@@ -1,0 +1,7 @@
+INSTALLDIR=$INSTALL_ROOT/opt  &&
+mkdir  -pv  $INSTALLDIR/      &&
+local  SS                     &&
+for SS in $OOO3_LANG; do
+  cd   $SOURCE_DIRECTORY/OO*$SS*/RPMS  &&
+  cp  -Rv  opt/*  $INSTALLDIR
+done

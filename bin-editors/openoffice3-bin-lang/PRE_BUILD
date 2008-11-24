@@ -1,0 +1,26 @@
+. $SPELL_CONFIG  &&
+
+mk_source_dir        $SOURCE_DIRECTORY  &&
+cd                   $SOURCE_DIRECTORY  &&
+
+# unpack all source files
+local i SS &&
+i=1 &&
+for SS in $OOO3_LANG; do
+  if [[ $i == 1 ]];then
+    unpack_file
+  else
+    unpack_file $i
+  fi   &&
+  # silently unpack RPMS for each language
+  cd OO*$SS*/RPMS  &&
+  for  FILE  in  *.${OO_ARCH}.rpm
+  do
+    FILE="${FILE%.$OO_ARCH.rpm}"  &&
+    rpmunpack  $FILE.${OO_ARCH}.rpm &&
+    gzip  -d   $FILE.cpio.gz  &&
+    cpio  -idm  <  $FILE.cpio 2> ${INSTALL_ROOT}/dev/null
+  done  &&
+  cd $SOURCE_DIRECTORY  &&
+  i=$[$i+1]
+done
