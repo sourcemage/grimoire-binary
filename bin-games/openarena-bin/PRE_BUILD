@@ -4,4 +4,9 @@ message  "${SPELL_COLOR}This will take some considerable time due to the"       
          "either${DEFAULT_COLOR}."                                                      &&
 mk_source_dir                                                                           &&
 cd $BUILD_DIRECTORY                                                                     &&
-unpack_file  ''                                                                         
+unpack_file  ''                                                                         &&
+
+## Remove files for Windows and Mac OS X platforms
+find . -name '*.exe' -type f -delete  &&
+find . -name '*.dll' -type f -delete  &&
+find . -name '*.app' -type d -print0 | xargs -0 rm -rf

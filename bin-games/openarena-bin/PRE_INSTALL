@@ -1,6 +1,0 @@
-## Remove files for Windows and Mac OS X platforms
-find . -name '*.exe' -type f -delete  &&
-find . -name '*.dll' -type f -delete  &&
-find . -name '*.app' -type d -print0 | xargs -0 rm -rf  &&
-
-default_sorcery_pre_install

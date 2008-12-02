@@ -1,3 +1,7 @@
+2008-11-18 Julien "_kaze_" ROZO <julien@rozo.org>
+	* PRE_INSTALL: removed, unnecessary files are now deleted in PRE_BUILD
+	* PRE_BUILD: deletes Windows and OS X files
+
 2008-11-10 Julien "_kaze_" ROZO <julien@rozo.org>
 	* PRE_INSTALL: added, removes Windows and Mac OS X files
 
