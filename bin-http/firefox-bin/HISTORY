@@ -1,5 +1,6 @@
 2008-12-09 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated devel to 3.1b2
+	* DEPENDS: Devel version doesn't need gcc33
 
 2008-11-12 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated stable to version 3.0.4
