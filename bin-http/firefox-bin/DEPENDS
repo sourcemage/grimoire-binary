@@ -1,6 +1,3 @@
-if [[ "$FIREFOX_DEVEL" == "n" ]]; then
-   depends  gcc33
-fi &&
 depends  zlib       &&
 depends  jpeg       &&
 depends  libpng     &&
