@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox-$VERSION-obstcp
         WEB_SITE=http://code.google.com/p/obstcp/
          ENTERED=20081019
       LICENSE[0]=MOZILLA
-           SHORT="firefox for obfuscated TCP
+           SHORT="firefox for obfuscated TCP"
 cat << EOF
 Obfuscated TCP is a transport layer protocol that adds opportunistic 
 encryption. It's designed to hamper and detect large-scale wiretapping 
