@@ -5,10 +5,10 @@ if [[ "$THUNDER_BIN_DEVEL" == "y" ]]; then
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
      SOURCE_HASH=sha512:e52bc3451c6418fd7d11bbd8f64dd454faa7e9fc06c821a9bd81c2fd2251c0b3e06c8e23a0ebeb35ade6a2e30c9a0786a246a9ac207c08adf4d29d6e58dc64d2          
 else
-         VERSION=2.0.0.18
+         VERSION=2.0.0.19
           SOURCE=thunderbird-${VERSION}.tar.gz
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:d8cdc37b00851a8b14ecb386f7683ef470754c5a1d33479348bc23df1e5e3411b408fde46e1d71d050e72e8cd07d936310ef952d31a4332543afd62f967c3fde
+     SOURCE_HASH=sha512:1fb4a80c6d8fa7328f6a6ed6c2ee04750ad2b1fa0de38af3fcf5a7d82dab3b2cae1d8d29be8eda10aff157ed729a8906e59e30bcd06a927e559c4052e8ea5844
           SOURCE=thunderbird-${VERSION}.tar.gz
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
