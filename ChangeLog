@@ -1,3 +1,6 @@
+2009-01-16 George Sherwood <gsherwood@sourcemage.org>
+	* bin-http/netscape4: deleted.  Security risk. No updated.
+
 2008-11-24 Julien "_kaze_" ROZO <julien@rozo.org>
 	* config_query_multi.function: added from test grimoire
 	* bin-editors/openoffice3-bin-lang: new spell, languagepacks for
