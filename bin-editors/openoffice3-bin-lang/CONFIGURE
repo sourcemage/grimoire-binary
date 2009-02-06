@@ -7,8 +7,10 @@ get_ooo3languages()  {
   rm -f  $CFG                    &&
   touch  $CFG                    &&
 
+list_remove OOO3_LANG vi  ||  true  &&
+
 config_query_multi OOO3_LANG "please specify the desired languages" \
-fr nl vi  &&
+fr nl &&
 
 # should perhaps use SOURCE_IGNORE=unversioned instead of MD5[0]="IGNORE" 
       local  i=1                        &&

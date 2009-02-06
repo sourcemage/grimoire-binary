@@ -1,3 +1,7 @@
+2009-02-05 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 3.0.1
+	* CONFIGURE: vi language has not been updated to 3.0.1
+
 2008-11-24 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS, BUILD, CONFIGURE, INSTALL, PRE_BUILD, HISTORY:
 	  created this spell

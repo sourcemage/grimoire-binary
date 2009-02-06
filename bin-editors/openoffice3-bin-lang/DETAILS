@@ -1,6 +1,6 @@
 # the remaining details of this spell are provided by CONFIGURE
            SPELL=openoffice3-bin-lang
-         VERSION=3.0.0
+         VERSION=3.0.1
          OO_ARCH=i586
             SITE=http://mirrors.isc.org/pub/openoffice/localized
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
