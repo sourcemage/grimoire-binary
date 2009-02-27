@@ -1,16 +1,16 @@
            SPELL=eclipse-bin
           SPELLX=eclipse
           PREFIX=R
-         VERSION=3.4.1
-          TSTAMP=200809111700
+         VERSION=3.4.2
+          TSTAMP=200902111700
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
           SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk-x86_64.tar.gz
-     SOURCE_HASH=sha512:f64a3be6484abd85f24b7d3ae381dd94fba7ac173f341b3cc06703deeafb73b5de9d993844b6918a80a7940d082a9f15493de9cc2ddd14b948d423bfc5877de3
+     SOURCE_HASH=sha512:1808a5e93247126ee549a36ef4eff1758752a158ef419c85f7bfcda0f46952ca6551f52b310329f9e880aab377c482bb20510faa7305ce5c4b85cb8f2a89a37f
           ;;
         ia32)
           SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk.tar.gz
-     SOURCE_HASH=sha512:0702887cdc8b2f5a5e4f69c394a250dc288179a9fe08bb69cbfa25d30fab0278795717a6ddc5ae144032c84f4add41210179b3993a8f285f0a2634510e17c8ce
+     SOURCE_HASH=sha512:0c143acda3cb33a4fdeba234141294699da15e0123f3d2f52b8440d8e9bb0107e86df9dd9566e926f45ead7d2ca8e5833c62e17eef183fd2b03eb6a0dd70ac8d
           ;;
         *)
           SOURCE=
