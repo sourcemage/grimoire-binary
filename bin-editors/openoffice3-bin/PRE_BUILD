@@ -21,9 +21,9 @@ done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9354"
+  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9393"
 else
-  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9376"
+  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9393"
 fi  &&
 rpmunpack  desktop-integration/${FILENAME}.noarch.rpm  &&
 gzip  -d  ${FILENAME}.cpio.gz     &&
