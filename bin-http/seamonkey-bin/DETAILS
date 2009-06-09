@@ -5,15 +5,15 @@ if [ "$SEAMONKBIN_DEVEL" == "y" ]; then
      SOURCE_HASH=sha512:57fd901a70762d50d52a19ca748310508b094cba293036d80c1f089475258439cb2e6dfb7fa0d601e050694fe6c27b85330d711a3287e30aa622b62e71379ddc
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/${SOURCE}
 else
-         VERSION=1.1.14
+         VERSION=1.1.16
           SOURCE=seamonkey-${VERSION}.en-US.linux-i686.tar.gz
-     SOURCE_HASH=sha512:9422c56e31cc402dbe9bc92188ace79827d19208e446372c9623dc63976f7cde273d3951c082bb33dc2d3ac82ae7a872d71be9615679e392d98977031f7e6704
+     SOURCE_HASH=sha512:7d82a66cafb5ca38da83a0af38e6f12541ea1bbbc25a4811f39f40826cf235e058c3f18759811cf22601ec89531cca1e96d945b97bcc45467b25a4b6b4d96dcc
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/${SOURCE}
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/seamonkey
         WEB_SITE=http://www.mozilla.org/seamonkey
          ENTERED=20070722
-  SECURITY_PATCH=7
+  SECURITY_PATCH=8
       LICENSE[0]=MOZILLA
            SHORT="The binary version of seamonkey."
 cat << EOF
