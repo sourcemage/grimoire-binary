@@ -1,0 +1,3 @@
+# FORMAT: <account>:<UID>:<Primary GID>:<GID>:<GID>:... etc.
+
+tomcat6:38:35

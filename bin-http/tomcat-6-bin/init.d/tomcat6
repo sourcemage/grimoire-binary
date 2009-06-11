@@ -1,0 +1,54 @@
+#! /bin/sh
+#
+# tomcat Start the tomcat server.
+#
+
+PROGRAM=/bin/false
+PIDFILE="/var/run/tomcat6.pid"
+RUNLEVEL=3
+
+. /etc/init.d/smgl_init
+. /etc/sysconfig/tomcat6
+
+NAME="Jakarta Tomcat 6.0"
+
+start() 
+{
+	echo -ne "Starting $NAME.\n"
+	if [ -e $PIDFILE ] ; then
+	        echo "$NAME already running";
+	else
+		/bin/su -s /bin/sh $TOMCAT_USER -c $TOMCAT_HOME/bin/startup.sh
+		echo `ps -U tomcat6 -o pid=` > $PIDFILE
+	fi
+	evaluate_retval
+}
+
+stop()
+{
+	echo -ne "Stopping $NAME.\n"
+	if [ -e $PIDFILE ] ; then
+		/bin/su -s /bin/sh $TOMCAT_USER -c $TOMCAT_HOME/bin/shutdown.sh
+		rm -f $PIDFILE
+	else
+	        echo "$NAME not running";
+	fi
+	evaluate_retval
+}
+
+restart()
+{
+	echo -ne "Restarting $NAME.\n"
+	stop &&
+	sleep 5 &&
+	start 
+}
+
+status()
+{
+	if [ -e $PIDFILE ] ; then
+	        echo "$NAME is running with Process ID(s) `cat $PIDFILE`";
+	else
+	        echo "$NAME is not running";
+	fi
+}

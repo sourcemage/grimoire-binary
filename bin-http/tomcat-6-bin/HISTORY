@@ -1,0 +1,4 @@
+2009-06-11 Julien "_kaze_" ROZO <julien@rozo.org>
+	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL, PRE_BUILD, init.d/tomcat6,
+	  init.d/tomcat6.conf: created this spell
+
