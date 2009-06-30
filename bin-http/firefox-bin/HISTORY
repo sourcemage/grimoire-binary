@@ -1,3 +1,6 @@
+2009-06-30 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel and stable to 3.5
+
 2009-06-09 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated stable to version 3.0.10. SECURITY_PATCH++
 	  Updated devel to version 3.5b99
