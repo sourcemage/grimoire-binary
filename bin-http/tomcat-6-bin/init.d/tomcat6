@@ -19,7 +19,7 @@ start()
 	        echo "$NAME already running";
 	else
 		/bin/su -s /bin/sh $TOMCAT_USER -c $TOMCAT_HOME/bin/startup.sh
-		echo `ps -U tomcat6 -o pid=` > $PIDFILE
+		echo `ps -U ${TOMCAT_USER} -o pid=` > $PIDFILE
 	fi
 	evaluate_retval
 }
