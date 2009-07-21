@@ -1,0 +1,15 @@
+           SPELL=tomcat-5.5-bin
+         VERSION=5.5.27
+          SOURCE="apache-tomcat-${VERSION}.tar.gz"
+    SOURCE_URL[0]=$APACHE_URL/tomcat/tomcat-5/v${VERSION}/bin/${SOURCE}
+     SOURCE_HASH=sha512:0945080a3d0cd022167538654d71dc041df20695ce448b0181caa2ea10ece57467731124eeb918f8f69680ae3736fb68ef0a9659ec5e6880f40c078df7f21141
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/apache-tomcat-${VERSION}"
+        WEB_SITE="http://tomcat.apache.org"
+      LICENSE[0]=ASF
+         ENTERED=20090721
+           SHORT="an implementation of the Servlet and JSP technologies"
+cat << EOF
+Apache Tomcat is an implementation of the Java Servlet and JavaServer Pages
+technologies. The Java Servlet and JavaServer Pages specifications are
+developed under the Java Community Process.
+EOF

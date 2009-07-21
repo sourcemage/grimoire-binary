@@ -1,4 +1,5 @@
 # FORMAT: <account>:<UID>:<Primary GID>:<GID>:<GID>:... etc.
 
 tomcat5:36:35
+tomcat55:37:35
 tomcat6:38:35

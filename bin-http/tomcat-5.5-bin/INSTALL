@@ -1,0 +1,4 @@
+INSTALL_DIR=${INSTALL_ROOT}/opt/tomcat5.5 &&
+mkdir -pv ${INSTALL_DIR} &&
+cp -rv ${SOURCE_DIRECTORY}/* ${INSTALL_DIR} &&
+find ${INSTALL_DIR}/ -print0 | xargs -r -0 -n 1 chown tomcat55:tomcat

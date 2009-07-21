@@ -1,6 +1,8 @@
 2009-07-21 Julien "_kaze_" ROZO <julien@rozo.org>
-	* accounts: added tomcat5 user
+	* accounts: added tomcat5 and tomcat55 users
 	* bin-http/tomcat-5-bin: new spell, an implementation of the Servlet and
+	  JSP technologies
+	* bin-http/tomcat-5.5-bin: new spell, an implementation of the Servlet and
 	  JSP technologies
 
 2009-06-11 Julien "_kaze_" ROZO <julien@rozo.org>
