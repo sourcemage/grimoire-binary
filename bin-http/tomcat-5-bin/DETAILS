@@ -1,0 +1,15 @@
+           SPELL=tomcat-5-bin
+         VERSION=5.0.30
+          SOURCE="jakarta-tomcat-${VERSION}.tar.gz"
+    SOURCE_URL[0]=http://archive.apache.org/dist/tomcat/tomcat-5/v${VERSION}/bin/${SOURCE}
+     SOURCE_HASH=sha512:e0f32cdaca9cd51c6be3a4c4d24bf819a0304cea0d20d8329396d57df3af20bb9d8ef5eeb3ea6c97bbdbd6bdbaa2b0daa1b1f73e2dd47e6535f2e0a0599f55b7
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/jakarta-tomcat-${VERSION}"
+        WEB_SITE="http://tomcat.apache.org"
+      LICENSE[0]=ASF
+         ENTERED=20090721
+           SHORT="an implementation of the Servlet and JSP technologies"
+cat << EOF
+Apache Tomcat is an implementation of the Java Servlet and JavaServer Pages
+technologies. The Java Servlet and JavaServer Pages specifications are
+developed under the Java Community Process.
+EOF
