@@ -1,9 +1,9 @@
            SPELL=seamonkey-bin
 if [ "$SEAMONKBIN_DEVEL" == "y" ]; then
-         VERSION=2.0a3
-          SOURCE=seamonkey-${VERSION}.en-US.linux-i686.tar.bz2
-     SOURCE_HASH=sha512:57fd901a70762d50d52a19ca748310508b094cba293036d80c1f089475258439cb2e6dfb7fa0d601e050694fe6c27b85330d711a3287e30aa622b62e71379ddc
-   SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/${SOURCE}
+         VERSION=2.0b1
+          SOURCE=seamonkey-${VERSION}.tar.bz2
+     SOURCE_HASH=sha512:6a9c0288b87cd2001a197b9b278ce9af63aaa01f8820e5aedf032ee028bee1873cbc45f9069159c9c95a4aa40e71c7138fca6741db5d0ab6eed51d3d4e2e7daf
+   SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/linux-i686/en-US/${SOURCE}
 else
          VERSION=1.1.17
           SOURCE=seamonkey-${VERSION}.en-US.linux-i686.tar.gz
