@@ -1,3 +1,7 @@
 create_account  tomcat5  &&
 create_group    tomcat   &&
-default_pre_build
+default_pre_build        &&
+# patch to fix the admin webui
+cd $SOURCE_DIRECTORY     &&
+verify_source $SOURCE2   &&
+cp ${SOURCE_CACHE}/$SOURCE2 $SOURCE_DIRECTORY/server/webapps/admin/WEB-INF/
