@@ -1,0 +1,5 @@
+install  -m  755  blender  /usr/bin                                   &&
+install  -m  755  blenderplayer  /usr/bin                             &&
+install  -m  755  -d  /usr/share/doc/$SPELL                           &&
+install  -m  644  blender.html  Blender-Linux-FAQ.*  release_236.txt  \
+          /usr/share/doc/$SPELL

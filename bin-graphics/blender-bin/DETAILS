@@ -1,0 +1,15 @@
+           SPELL=blender-bin
+         VERSION=2.36
+          SOURCE=${SPELL/-bin/}-${VERSION}-linux-glibc2.2.5-i386-1.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SOURCE/.tar.gz/}
+   SOURCE_URL[0]=http://download.blender.org/release/Blender2.36/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.cs.umn.edu/pub/blender.org/release/Blender2.36/$SOURCE
+   SOURCE_URL[2]=http://planetmirror.com/pub/blender/release/Blender2.36/$SOURCE
+     SOURCE_HASH=sha512:15050583ae7889ed8631709b4f2b1ec01e2c718f10a05ec87f295d133c475df1a4ab6e6c625438809e108e7655504cdc187b9b6659e35f9570f30742e62abd46
+        WEB_SITE=http://www.blender.org/
+         ENTERED=20050309
+      LICENSE[0]=GPL
+           SHORT="Opensource 3d modelling/animation tool"
+cat << EOF
+Blender is an opensource 3d modelling/animation tool.
+EOF
