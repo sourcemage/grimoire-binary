@@ -1,3 +1,6 @@
+2009-08-18 Donald Johnson <ltdonny@gmail.com>
+	* Moved spell from z-rejected, added CONFLICTS for deprecation
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 

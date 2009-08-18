@@ -1,3 +1,6 @@
+2009-08-18 Donald Johnson <ltdonny@gmail.com>
+	* bin-graphics/blender-bin: moved spell from z-rejected
+
 2009-07-21 Julien "_kaze_" ROZO <julien@rozo.org>
 	* accounts: added tomcat5 and tomcat55 users
 	* bin-http/tomcat-5-bin: new spell, an implementation of the Servlet and
