@@ -1,3 +1,7 @@
+2009-09-04 Ladislav Hagara <hgr@vabo.cz>
+	* bin-http/ontopia: new spell
+	  a set of tools for building applications driven by Topic Maps
+
 2009-08-18 Donald Johnson <ltdonny@gmail.com>
 	* bin-graphics/blender-bin: moved spell from z-rejected
 

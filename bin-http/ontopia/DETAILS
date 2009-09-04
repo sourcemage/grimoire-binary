@@ -1,0 +1,16 @@
+           SPELL=ontopia
+         VERSION=5.0.1b1-20090903
+          SOURCE=$SPELL-$VERSION.zip
+   SOURCE_URL[0]=http://ontopia.googlecode.com/files/$SOURCE
+     SOURCE_HASH=sha512:67b43cd5ca2de95f23a008e419e62f0a960f03150d2f0955f4a667287e58b217e6ca0bca2d58b84ed27c0abfca79836a37cc68197f2b9981a734408cf8d13fbf
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION%-*}"
+        WEB_SITE=http://code.google.com/p/ontopia/
+      LICENSE[0]=APACHE
+         ENTERED=20090904
+           SHORT="a set of tools for building applications driven by Topic Maps"
+cat << EOF
+Ontopia is a set of tools for building applications driven by Topic Maps, such
+as Web portals. The main benefit of Topic Maps is that they provide a flexible
+and expressive data model supporting much better findability than traditional
+solutions, as well as advanced features like automated merging of datasets.
+EOF
