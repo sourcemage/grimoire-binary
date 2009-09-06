@@ -1,0 +1,22 @@
+#!/bin/bash
+
+RUNLEVEL=3
+PROGRAM=/bin/false
+
+export JAVA_HOME=/usr/lib/j2sdk
+
+. /etc/init.d/smgl_init
+
+start()
+{
+  echo "Starting Ontopia application server ..."
+  su ontopia -s /bin/bash -c /opt/ontopia/apache-tomcat/bin/startup.sh
+  evaluate_retval
+}
+
+stop()
+{
+  echo "Stopping Ontopia application server ..."
+  su ontopia -s /bin/bash -c /opt/ontopia/apache-tomcat/bin/shutdown.sh
+  evaluate_retval
+}
