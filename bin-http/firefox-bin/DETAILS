@@ -1,13 +1,13 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=3.5.2
+         VERSION=3.5.3
           SOURCE=firefox-$VERSION.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE2
 else
-         VERSION=3.5.2
+         VERSION=3.5.3
           SOURCE=firefox-${VERSION}.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
@@ -17,7 +17,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
-  SECURITY_PATCH=17
+  SECURITY_PATCH=18
       LICENSE[0]=MOZILLA
            SHORT="The binary version of firefox."
 cat << EOF
