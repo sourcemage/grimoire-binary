@@ -1,9 +1,9 @@
            SPELL=thunderbird-bin
 if [[ "$THUNDER_BIN_DEVEL" == "y" ]]; then
-         VERSION=3.0b1
+         VERSION=3.0b4
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:e52bc3451c6418fd7d11bbd8f64dd454faa7e9fc06c821a9bd81c2fd2251c0b3e06c8e23a0ebeb35ade6a2e30c9a0786a246a9ac207c08adf4d29d6e58dc64d2          
+     SOURCE_HASH=sha512:f3881a2b10246f2c68abcfe2830d219e3f08b17ed8efdf61f0cecb74d246b79d57b3bec3f938c88eb8085911b41d9edc19218f706b9bcfde2f0725edf5b5803e          
 else
          VERSION=2.0.0.23
           SOURCE=thunderbird-${VERSION}.tar.gz
