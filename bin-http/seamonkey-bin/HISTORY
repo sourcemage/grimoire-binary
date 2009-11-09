@@ -1,3 +1,8 @@
+2009-11-08 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated devel and stable to 2.0. Updated stable SOURCE_URL
+	  Updated stable SOURCE
+	* DEPENDS: Removed stable depends gcc33
+
 2009-10-10 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated devel to 2.0rc1
 
