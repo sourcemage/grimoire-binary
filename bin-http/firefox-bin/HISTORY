@@ -1,5 +1,6 @@
 2009-11-08 George Sherwood <gsherwood@sourcemage.org>
-	* DETAILS: Updated devel and stable to 3.5.5. SECURITY_PATCH++
+	* DETAILS: Updated stable to 3.5.5 and devel to 3.6b1. SECURITY_PATCH++
+	* PREPARE: Updated wording to 3.6 series
 
 2009-09-11 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated devel and stable to 3.5.3. SECUIRTY_PATCH++
