@@ -1,3 +1,8 @@
+2009-11-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 3.1.1 Build 9420
+	  SOURCE for x86_64 is now only available wJRE
+	* PRE_BUILD: Freedesktop menus updated to Build 9420
+
 2009-05-07 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 3.1.0 (build 9399)
 	* PRE_BUILD: icons are at build 9393
