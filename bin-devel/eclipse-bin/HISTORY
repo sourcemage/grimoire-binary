@@ -15,7 +15,7 @@
 	* DEPENDS: removed ant
 	* INSTALL: made some cleanups
 	* desktop/eclipse-bin.desktop: renamed from eclipse.desktop
-	
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 
@@ -26,7 +26,7 @@
 	* DETAILS: MD5 -> SHA512
 
 2005-07-20 George Sherwood <george@beernabeer.com>
-	* DETAILS: Updated to version 3.1. Shortened SHORT. 
+	* DETAILS: Updated to version 3.1. Shortened SHORT.
 	  Update SOURCE_URL. Updated SOURCE.
 
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
@@ -34,3 +34,4 @@
 
 2004-11-10 Rafael George <rgeorge@yatusabes.com>
 	* Created spell
+
