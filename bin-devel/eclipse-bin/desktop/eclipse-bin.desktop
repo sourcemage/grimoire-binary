@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=Eclipse Integrated Development Environment
 Exec=eclipse
-Icon=
+Icon=/opt/eclipse/icon.xpm
 Terminal=false
 Type=Application
 Categories=Application;Development
