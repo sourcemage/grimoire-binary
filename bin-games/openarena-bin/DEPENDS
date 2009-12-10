@@ -1,5 +1,5 @@
 depends  OPENGL  &&
-depends  openal  &&
+depends  OPENAL  &&
 depends  sdl     &&
 depends  curl    &&
 depends  libvorbis
