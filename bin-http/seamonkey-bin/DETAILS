@@ -1,19 +1,19 @@
            SPELL=seamonkey-bin
 if [ "$SEAMONKBIN_DEVEL" == "y" ]; then
-         VERSION=2.0
+         VERSION=2.0.1
           SOURCE=seamonkey-${VERSION}.tar.bz2
-     SOURCE_HASH=sha512:85df01a8804f87f887ce7409fea798e1b2d39a79c8ee755ab238947ea576f4ce976b4e0ec37ad4ff9349250911d905ccb4ebfa39accb51f96ad3993fb2c31c32
+     SOURCE_HASH=sha512:f996b9d581b5f698fbc201373f25599f7f3ddd62d587cb0e67fc4521e09918bf8cffe7598849e474bd6dd51ad5a1738ed20b85b6771f2ee74528e914f35472d3
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/linux-i686/en-US/${SOURCE}
 else
-         VERSION=2.0
+         VERSION=2.0.1
           SOURCE=seamonkey-${VERSION}.tar.bz2
-     SOURCE_HASH=sha512:85df01a8804f87f887ce7409fea798e1b2d39a79c8ee755ab238947ea576f4ce976b4e0ec37ad4ff9349250911d905ccb4ebfa39accb51f96ad3993fb2c31c32
+     SOURCE_HASH=sha512:f996b9d581b5f698fbc201373f25599f7f3ddd62d587cb0e67fc4521e09918bf8cffe7598849e474bd6dd51ad5a1738ed20b85b6771f2ee74528e914f35472d3
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/linux-i686/en-US/${SOURCE}
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/seamonkey
         WEB_SITE=http://www.mozilla.org/seamonkey
          ENTERED=20070722
-  SECURITY_PATCH=10
+  SECURITY_PATCH=11
       LICENSE[0]=MOZILLA
            SHORT="The binary version of seamonkey."
 cat << EOF
