@@ -1,5 +1,8 @@
+2009-12-23 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Removed extra SOURCE line
+
 2009-12-12 George Sherwood <gsherwood@sourcemage.org>
-	* DETAILS: Updated devel and stabel to version 3.0
+	* DETAILS: Updated devel and stable to version 3.0
 	* DEPENDS: Removed gcc33
 
 2009-11-08 George Sherwood <gsherwood@sourcemage.org>
