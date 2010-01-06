@@ -2,9 +2,9 @@
          VERSION=beta_current
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]
 then
-          SOURCE=${SPELL/-bin}-${VERSION}_x86_64.rpm
+          SOURCE=${SPELL/-bin/}-${VERSION}_x86_64.rpm
 else
-          SOURCE=$SPELL/-bin/}-${VERSION}_i386.rpm
+          SOURCE=${SPELL/-bin/}-${VERSION}_i386.rpm
 fi
    SOURCE_IGNORE=unversioned
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION

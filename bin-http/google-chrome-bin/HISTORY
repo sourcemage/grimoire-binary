@@ -1,6 +1,7 @@
 2010-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Apparently these RPMs change daily, switching to unversioned SOURCE_IGNORE
 	  and setting VERSION to "beta_current"
+	  Fix typos in x86_64 and x86 SOURCE
 
 2010-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL: Created
