@@ -1,5 +1,6 @@
 2010-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* bin-http/google-chrome: Added Google Chrome web browser
+	* bin-http/google-chrome: Renamed to google-chrome-bin
 
 2009-09-04 Ladislav Hagara <hgr@vabo.cz>
 	* bin-http/ontopia: new spell
