@@ -1,14 +1,14 @@
            SPELL=thunderbird-bin
 if [[ "$THUNDER_BIN_DEVEL" == "y" ]]; then
-         VERSION=3.0
+         VERSION=3.0.1
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:85ff840361b5450c6b11296d87f6651a331470b3673da11be63c1c340c2583403511de50a94be9db8352ef77a31ff776d1a57200c55058214e86b0f7bd314195          
+     SOURCE_HASH=sha512:4bc22f771d23159bb72496d0d892a001f6ecbe4fe4f8bff874b26be94630aad0742789fe4193c14a328be8bac4aff8e73657c3fac01f2deb0b6a9439b09f7438          
 else
-         VERSION=3.0
+         VERSION=3.0.1
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:85ff840361b5450c6b11296d87f6651a331470b3673da11be63c1c340c2583403511de50a94be9db8352ef77a31ff776d1a57200c55058214e86b0f7bd314195
+     SOURCE_HASH=sha512:4bc22f771d23159bb72496d0d892a001f6ecbe4fe4f8bff874b26be94630aad0742789fe4193c14a328be8bac4aff8e73657c3fac01f2deb0b6a9439b09f7438
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
 
