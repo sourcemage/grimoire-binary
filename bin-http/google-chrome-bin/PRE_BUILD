@@ -1,5 +1,7 @@
 mk_source_dir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
 
+verify_file &&
+
 rpm2tar $SOURCE_CACHE/$SOURCE &&
 tar xf google-chrome-beta_current_i386.tar
