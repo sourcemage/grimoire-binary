@@ -1,5 +1,9 @@
 2010-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Tar is named based on $SOURCE, works on x86_64 now
+	  Verify and unpack jpeg 7
+	* DETAILS: Add jpeg 7 source
+	* BUILD: Build jpeg 7
+	* INSTALL: Copy libjpeg.so to chrome/libjpeg.so.62
 
 2010-03-28 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: rpmunpack -> rpm2targz #15582

@@ -27,3 +27,9 @@ do
   ln -s $TRACK_ROOT/usr/lib/lib$lib.so \
         $INSTALL_ROOT/opt/google/chrome/lib$lib.so.0d
 done
+
+#
+# Copy custom-build libjpeg.so, stupid binaries
+#
+cp -v $SOURCE_DIRECTORY/jpeg-7/.libs/libjpeg.so \
+  $INSTALL_ROOT/opt/google/chrome/libjpeg.so.62
