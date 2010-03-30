@@ -1,6 +1,7 @@
 2010-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Tar is named based on $SOURCE, works on x86_64 now
 	  Verify and unpack jpeg 7
+	  After extracting tar SOURCE, remove
 	* DETAILS: Add jpeg 7 source
 	* BUILD: Build jpeg 7
 	* INSTALL: Copy libjpeg.so to chrome/libjpeg.so.62

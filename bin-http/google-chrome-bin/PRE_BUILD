@@ -3,6 +3,7 @@ cd $SOURCE_DIRECTORY &&
 verify_file &&
 rpm2tar $SOURCE_CACHE/$SOURCE &&
 tar xf ${SOURCE/rpm/tar} &&
+rm -f ${SOURCE/rpm/tar} &&
 verify_file '2' &&
 unpack_file '2' &&
 
