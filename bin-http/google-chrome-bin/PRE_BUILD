@@ -1,7 +1,9 @@
 mk_source_dir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
-
 verify_file &&
-
 rpm2tar $SOURCE_CACHE/$SOURCE &&
-tar xf google-chrome-beta_current_i386.tar
+tar xf google-chrome-beta_current_i386.tar &&
+
+mv $SOURCE_DIRECTORY/usr/bin/google-chrome{,-bin} &&
+sed -i "s:Icon=.*:Icon=$INSTALL_ROOT/opt/google/chrome/product_logo_256.png:" \
+  $SOURCE_DIRECTORY/opt/google/chrome/google-chrome.desktop

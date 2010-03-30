@@ -4,9 +4,7 @@ rm -f $SOURCE_DIRECTORY/opt/google/chrome/google-chrome.desktop &&
 
 install -d -m 0755 $INSTALL_ROOT/opt/google &&
 cp -arv $SOURCE_DIRECTORY/opt/google/* $INSTALL_ROOT/opt/google &&
-
-ln -s $TRACK_ROOT/opt/google/chrome/google-chrome \
-      $INSTALL_ROOT/usr/bin/google-chrome &&
+cp -arv $SOURCE_DIRECTORY/usr $INSTALL_ROOT/
 
 if [[ -d $INSTALL_ROOT/usr/lib/xulrunner/plugins ]]
 then
@@ -15,7 +13,7 @@ then
 fi &&
 
 #
-# Google Chrome RPM links to weird .so.1d and .so.0d
+# Google Chrome links to weird .so.1d and .so.0d
 # http://code.google.com/p/chromium/issues/detail?id=13425
 #
 for lib in nss3 nssutil3 smime3 ssl3

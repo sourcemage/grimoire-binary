@@ -3,6 +3,11 @@
 	* PRE_BUILD: updated for rpm2targz
 	* PRE_BUILD: added verify_file
 
+2010-02-24 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on xdg-utils
+	* PRE_BUILD: Rename google-chrome symlink to google-chrome-bin
+	* INSTALL: Copy usr directory (contains a google-chrome symlink as well)
+
 2010-01-06 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Query for daily updates
 	* DETAILS: Apparently these RPMs change daily, switching to unversioned
