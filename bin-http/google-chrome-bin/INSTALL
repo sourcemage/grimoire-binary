@@ -31,5 +31,5 @@ done
 #
 # Copy custom-build libjpeg.so, stupid binaries
 #
-cp -v $SOURCE_DIRECTORY/jpeg-7/.libs/libjpeg.so \
+cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
   $INSTALL_ROOT/opt/google/chrome/libjpeg.so.62

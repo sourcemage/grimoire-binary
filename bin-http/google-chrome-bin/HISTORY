@@ -1,10 +1,15 @@
 2010-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Tar is named based on $SOURCE, works on x86_64 now
-	  Verify and unpack jpeg 7
+	  Verify and unpack jpeg
 	  After extracting tar SOURCE, remove
 	* DETAILS: Add jpeg 7 source
-	* BUILD: Build jpeg 7
+	  Use 6b, not 7
+	* BUILD: Build jpeg
+	  Use 6b, not 7
+	  Enable building shared library
+	  Build local libtool for jpeg 6b's ./configure
 	* INSTALL: Copy libjpeg.so to chrome/libjpeg.so.62
+	  Use 6b, not 7
 
 2010-03-28 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: rpmunpack -> rpm2targz #15582

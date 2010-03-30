@@ -11,7 +11,7 @@ then
 else
           SOURCE=${SPELL/-bin/}-beta_current_i386.rpm
 fi
-         SOURCE2=jpegsrc.v7.tar.gz
+         SOURCE2=jpegsrc.v6b.tar.gz
    SOURCE_IGNORE=unversioned
      SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
