@@ -1,3 +1,7 @@
+2010-04-12 Mark Bainter <mbainter@sourcemage.org>
+	* FUNCTIONS: Removed duplicated code and improved get_*_kernel_config(),
+	  applied Ismael Luceno's improvements
+
 2010-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* bin-http/google-chrome: Added Google Chrome web browser
 	* bin-http/google-chrome: Renamed to google-chrome-bin

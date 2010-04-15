@@ -263,6 +263,31 @@ function mozilla_remove_nspr_nss() {
   done
 }
 
+#-------------------------------------------------------------------------
+## Returns the kernel version checks linux then linux-new (for now) and
+## then uname for the kernel version
+#-------------------------------------------------------------------------
+function get_kernel_version()
+{
+  local KVER=$(installed_version linux)
+  if [[ $KVER ]] ; then
+    echo $KVER
+  else
+    KVER=$(installed_version linux-new)
+    if [[ $KVER ]] ; then
+      echo $KVER
+    else
+      KVER=$(grep version /usr/src/linux/.config | cut -d: -f2 | cut -d ' ' -f2)
+      if [ $KVER ] && [ -d "/lib/modules/${KVER}/build" ] ; then
+         echo $KVER
+      else
+        KVER=$(uname -r)
+        echo $KVER
+      fi
+    fi
+  fi
+}
+
 #---------------------------------------------------------------------------
 ## Invokes the unamechange spell any spell that uses this should depend on
 ## unamechange otherwise this function does nothing.
@@ -271,16 +296,16 @@ function mozilla_remove_nspr_nss() {
 #--------------------------------------------------------------------------
 function invoke_uname_change()
 {
-	if [[ $(installed_version unamechange) ]] ; then
-		export UNAME_CHANGE_SYSNAME=$(uname -s)
-		export UNAME_CHANGE_NODENAME=$(uname -n)
-		export UNAME_CHANGE_RELEASE=$(uname -r)
-		export UNAME_CHANGE_VERSION=$(uname -v)
-		export UNAME_CHANGE_MACHINE=$(uname -m)
-		export UNAME_CHANGE_DOMAINNAME=$(uname -o)
-	
-		export LD_PRELOAD="${LD_PRELOAD} /usr/lib/unamechange.so"
-	fi
+  if [[ $(installed_version unamechange) ]] ; then
+    export UNAME_CHANGE_SYSNAME=$(uname -s)
+    export UNAME_CHANGE_NODENAME=$(uname -n)
+    export UNAME_CHANGE_RELEASE=$(uname -r)
+    export UNAME_CHANGE_VERSION=$(uname -v)
+    export UNAME_CHANGE_MACHINE=$(uname -m)
+    export UNAME_CHANGE_DOMAINNAME=$(uname -o)
+
+    export LD_PRELOAD="${LD_PRELOAD} /usr/lib/unamechange.so"
+  fi
 }
 
 #-------------------------------------------------------------------------
@@ -290,17 +315,66 @@ function invoke_uname_change()
 #-------------------------------------------------------------------------
 function devoke_uname_change()
 {
-	if [[ $(installed_version unamechange) ]] ; then
-		unset UNAME_CHANGE_SYSNAME
-		unset UNAME_CHANGE_NODENAME
-		unset UNAME_CHANGE_RELEASE
-		unset UNAME_CHANGE_VERSION
-		unset UNAME_CHANGE_MACHINE
-		unset UNAME_CHANGE_DOMAINNAME
-	
-		export LD_PRELOAD="${LD_PRELOAD/\/usr\/lib\/unamechange.so/}"
-	fi
+  if [[ $(installed_version unamechange) ]] ; then
+    unset UNAME_CHANGE_SYSNAME
+    unset UNAME_CHANGE_NODENAME
+    unset UNAME_CHANGE_RELEASE
+    unset UNAME_CHANGE_VERSION
+    unset UNAME_CHANGE_MACHINE
+    unset UNAME_CHANGE_DOMAINNAME
+
+    export LD_PRELOAD="${LD_PRELOAD/\/usr\/lib\/unamechange.so/}"
+  fi
 }
+
+#-----------------------------------------------------------------------
+## Get the kernel config status of the kernel option specified by $2.
+## Kernel version is given by $1.
+## 
+## If a configure file is found print the requested config status (if
+## any) and return 0, otherwise return 1.
+##-----------------------------------------------------------------------
+function get_kernel_config_ver()
+{
+  local i
+  for i in /proc/config /boot/config-"$1" /lib/modules/"$1"/build/.config
+  do
+    if [ -f "$i" ]; then
+      cat "$i" && break
+    elif [ -f "$i.gz" ]; then
+      zcat "$i.gz" && break
+    elif [ -f "$i.bz2" ]; then
+      bzcat "$i.bz2" && break
+    elif [ -f "$i.xz" ]; then
+      xzcat "$i.xz" && break
+    elif [ -f "$i.lzma" ]; then
+      xzcat "$i.lzma" && break
+    fi
+  done | grep "^$2=" | awk -F= '{ if ($2) { print $2 }; exit (!$2) }'
+}
+
+#-----------------------------------------------------------------------
+## Get the running kernel config status of the running kernel option
+## given by $1.
+##
+## See also: get_specified_kernel_config
+#-----------------------------------------------------------------------
+function get_running_kernel_config()
+{
+  get_kernel_config_ver $(get_running_kernel_version) "$1"
+}
+
+#-------------------------------------------------------------------------
+## Get the config status of some part of the kernel sorcery says is 
+## installed. Used by spells that have linux triggers.
+##
+## $1 string Config var to look for
+#-------------------------------------------------------------------------
+function get_sorcery_kernel_config()
+{
+  get_kernel_config_ver $(get_kernel_version) || echo "-1"
+}
+
 
 #-------------------------------------------------------------------------
 ## Compatibility code for gracefully failing if the user uses an older
@@ -525,46 +599,6 @@ function get_sorcery_kernel_version()
   installed_version linux || echo "-1"
 }
 
-#-------------------------------------------------------------------------
-## Print the version of the kernel defined in USE_KERNEL_VERSION or, 
-## lacking that, the version of either the installed linux spell or the 
-## running kernel.
-#-------------------------------------------------------------------------
-function get_kernel_version()
-{
-  if [[ $USE_KERNEL_VERSION ]]
-  then
-    echo "$USE_KERNEL_VERSION"
-  else
-    installed_version linux || get_running_kernel_version
-  fi
-}
-
-#-----------------------------------------------------------------------
-## Print the kernel config status of the running kernel for the option 
-## defined in $1.
-## If a configure file is found print the requested config status (if
-## any) and return 0, otherwise return 1.
-#-----------------------------------------------------------------------
-function get_running_kernel_config()
-{
-  if [[ -f /proc/config.gz ]]
-  then
-    zgrep "^$1=" /proc/config.gz | cut -d= -f2
-  else
-    local KVER="$(get_running_kernel_version)"
-    if [[ -f "/boot/config-$KVER" ]]
-    then
-      grep "^$1=" "/boot/config-$KVER" | cut -d= -f2
-    elif [[ -f "/usr/src/linux-$KVER/.config" ]]
-    then
-      grep "^$1=" "/usr/src/linux-$KVER/.config" | cut -d= -f2
-    else
-      return 1
-    fi
-  fi
-}
-
 #-----------------------------------------------------------------------
 ## Print the kernel config status of the installed linux spell for the 
 ## option defined in $1.
@@ -577,15 +611,7 @@ function get_sorcery_kernel_config()
   local KVER="$(installed_version linux)"
   if [[ $KVER ]]
   then
-    if [[ -f "/boot/config-$KVER" ]]
-    then
-      grep "^$1=" "/boot/config-$KVER" | cut -d= -f2
-    elif [[ -f "/usr/src/linux-$KVER/.config" ]]
-    then
-      grep "^$1=" "/usr/src/linux-$KVER/.config" | cut -d= -f2
-    else
-      return 1
-    fi
+    get_kernel_config_ver "$KVER" "$1"
   else
     return 1
   fi
@@ -602,15 +628,7 @@ function get_kernel_config()
 {
   if [[ $USE_KERNEL_VERSION ]]
   then
-    if [[ -f "/boot/config-$USE_KERNEL_VERSION" ]]
-    then
-      grep "^$1=" "/boot/config-$USE_KERNEL_VERSION" | cut -d= -f2
-    elif [[ -f "/usr/src/linux-$USE_KERNEL_VERSION/.config" ]]
-    then
-      grep "^$1=" "/usr/src/linux-$USE_KERNEL_VERSION/.config" | cut -d= -f2
-    else
-      return 1
-    fi
+    get_kernel_config_ver "$USE_KERNEL_VERSION" "$1"
   else
     get_sorcery_kernel_config "$1" || get_running_kernel_config "$1"
   fi
