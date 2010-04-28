@@ -9,7 +9,6 @@ cat << EOF > "$INSTALL_ROOT/usr/games/$SPELL"
 
 cd "$INSTALL_ROOT/usr/share/games/$SPELL" &&
 java -jar gametable.jar
-cd -
 EOF
 
 chgrp games "$INSTALL_ROOT/usr/games/$SPELL" &&
