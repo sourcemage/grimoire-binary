@@ -1,0 +1,25 @@
+           SPELL=gametable
+         VERSION=2.0.RC7
+          SOURCE=Gametable%20${VERSION}.zip
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/Gametable ${VERSION}"
+   SOURCE_URL[0]=https://sourceforge.net/projects/gametable/files/Gametable%20${VERSION:0:3}/Gametable%20${VERSION}/$SOURCE/download
+      LICENSE[0]=http://gametable.sourceforge.net/Gametable/Legal.html
+        WEB_SITE=http://gametable.sourceforge.net/
+         ENTERED=20100426
+           SHORT="Shared whiteboard client"
+            DOCS=""
+cat << EOF
+Gametable is a shared whiteboard client optimized for the tabletop gaming
+experience. It is written in Java to offer broad cross-platform support and
+holds simplicity and ease of use as its highest ideals, while still
+supporting the needs of the game. The learning curve with Gametable is
+virtually non-existent. Gametable comes with pre-installed image sets,
+enabling the immediate creation of custom content.
+
+Among the included features are Dice-rolling, Dice macros, Rulers, Tiles and
+Avatars-called Underlays and Pogs, Simple drawing tools, and Simple card and
+deck support.
+
+Best of all, Gametable is Open Source, and is free for all to download, use, and enjoy!
+EOF

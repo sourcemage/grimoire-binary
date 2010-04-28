@@ -1,3 +1,6 @@
+2010-04-26 Eric Sandall <sandalle@sourcemage.org>
+	* bin-games/gametable: Added a shared whiteboard client
+
 2010-04-12 Mark Bainter <mbainter@sourcemage.org>
 	* FUNCTIONS: Removed duplicated code and improved get_*_kernel_config(),
 	  applied Ismael Luceno's improvements

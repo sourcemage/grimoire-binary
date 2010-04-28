@@ -1,0 +1,16 @@
+create_group games &&
+mkdir -p "$INSTALL_ROOT/usr/share/games/$SPELL" &&
+chgrp games "$INSTALL_ROOT/usr/share/games/$SPELL" &&
+chgrp -R games . &&
+cp -arv * "$INSTALL_ROOT/usr/share/games/$SPELL/" &&
+
+cat << EOF > "$INSTALL_ROOT/usr/games/$SPELL"
+#!/bin/sh
+
+cd "$INSTALL_ROOT/usr/share/games/$SPELL" &&
+java -jar gametable.jar
+cd -
+EOF
+
+chgrp games "$INSTALL_ROOT/usr/games/$SPELL" &&
+chmod 0750 "$INSTALL_ROOT/usr/games/$SPELL"
