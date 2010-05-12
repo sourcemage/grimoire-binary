@@ -19,6 +19,7 @@ cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
 Name=Gametable
 Comment=Shared whiteboard client
 Exec=gametable
+Icon=$INSTALL_ROOT/usr/share/games/gametable/pogs/tarasque.png
 Type=Application
 Categories=Game;StrategyGame;
 EOF
