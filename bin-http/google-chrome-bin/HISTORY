@@ -1,3 +1,6 @@
+2010-05-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: beta_current -> stable_current
+
 2010-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Tar is named based on $SOURCE, works on x86_64 now
 	  Verify and unpack jpeg
