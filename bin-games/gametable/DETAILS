@@ -6,6 +6,7 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/Gametable ${VERSION}"
    SOURCE_URL[0]=https://sourceforge.net/projects/gametable/files/Gametable%20${VERSION:0:3}/Gametable%20${VERSION}/$SOURCE/download
       LICENSE[0]=http://gametable.sourceforge.net/Gametable/Legal.html
       PATCHLEVEL=1
+    SOURCE_HINTS=no-check-certificate
         WEB_SITE=http://gametable.sourceforge.net/
          ENTERED=20100426
            SHORT="Shared whiteboard client"

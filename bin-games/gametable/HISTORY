@@ -1,3 +1,6 @@
+2010-06-09 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: added SOURCE_HINTS=no-check-certificate (bug #15705)
+
 2010-05-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: PATCHLEVEL++
 	* INSTALL: Add an Icon to the desktop file
