@@ -1,3 +1,4 @@
+config_query_list GOOGLE_CHROME_BIN_VERSION 'Which version?' stable beta unstable &&
+
 config_query GOOGLE_CHROME_BIN_DAILY \
              "Automatically update on every system update?" n
-
