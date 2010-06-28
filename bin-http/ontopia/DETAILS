@@ -1,8 +1,8 @@
            SPELL=ontopia
-         VERSION=5.0.2-20090914
+         VERSION=5.1.0-20100628
           SOURCE=$SPELL-$VERSION.zip
    SOURCE_URL[0]=http://ontopia.googlecode.com/files/$SOURCE
-     SOURCE_HASH=sha512:0c994bff7c6854f9ac8b88b6854904bfd4572ab5940b12e15a6fdfabaedc004df7f540870b5b76adb7c78ea3d28b1cddf666b22f374cda68313abdc86860212b
+     SOURCE_HASH=sha512:f7cc3d1b208b755dceb1714c1dffc1e0364e837dcc94baa69227a7b6db078bd214148fde0f9af5b4d090a32ad74a9a8fd2f78bda4dbc51bea21223649031020e
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION%-*}"
         WEB_SITE=http://code.google.com/p/ontopia/
       LICENSE[0]=APACHE
