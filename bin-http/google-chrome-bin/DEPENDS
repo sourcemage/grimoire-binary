@@ -5,5 +5,6 @@ depends  nspr       &&
 depends  nss        &&
 depends  rpm2targz  &&
 depends  xdg-utils  &&
+depends  libxscrnsaver &&
 
 suggest_depends  xulrunner  ''  ''  'for Mozilla plugins'
