@@ -1,5 +1,8 @@
+2010-07-23 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 3.6.8. SECURITY_PATCH++
+
 2010-04-02 George Sherwood <gsherwood@sourcemage.org>
-	* DETAILS: Updated to verson 3.6.3. SECURITY_PATCH++
+	* DETAILS: Updated to version 3.6.3. SECURITY_PATCH++
 
 2010-01-23 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updates stable and devel to version 3.6
