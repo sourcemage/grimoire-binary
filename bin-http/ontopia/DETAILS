@@ -1,11 +1,13 @@
            SPELL=ontopia
          VERSION=5.1.0-20100628
+      PATCHLEVEL=1
           SOURCE=$SPELL-$VERSION.zip
    SOURCE_URL[0]=http://ontopia.googlecode.com/files/$SOURCE
      SOURCE_HASH=sha512:f7cc3d1b208b755dceb1714c1dffc1e0364e837dcc94baa69227a7b6db078bd214148fde0f9af5b4d090a32ad74a9a8fd2f78bda4dbc51bea21223649031020e
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION%-*}"
         WEB_SITE=http://code.google.com/p/ontopia/
       LICENSE[0]=APACHE
+         ARCHIVE="off"
          ENTERED=20090904
            SHORT="a set of tools for building applications driven by Topic Maps"
 cat << EOF

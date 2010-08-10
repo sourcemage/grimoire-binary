@@ -1,3 +1,8 @@
+2010-08-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: PATCHLEVEL=1, ARCHIVE="off"
+	* INSTALL: removed problematic antlr-2.7.7.jar library
+	  http://code.google.com/p/ontopia/issues/detail?id=275#c2
+
 2010-06-28 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 5.1.0-20100628
 
