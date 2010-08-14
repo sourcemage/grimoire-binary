@@ -1,3 +1,7 @@
+2010-08-14 George Sherwood <gsherwood@sourcemage.org>
+	* DEPENDS: depends rpm2targz. See Bug #15715
+	* PRE_BUILD: use rpm2tar and tar uncompress
+
 2010-03-06 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: 3.2.0 Build 9483
 	* PRE_BUILD: Freedesktop menus updated to Build 9483

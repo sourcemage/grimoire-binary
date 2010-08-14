@@ -14,9 +14,8 @@ do
   PART=$(sed 's/openoffice.org-\([^-]*\)-.*$/\1/;' <<< $FILE)
   message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
 
-    rpmunpack  $FILE.${OO_ARCH}.rpm &&
-    gzip  -d   $FILE.cpio.gz  &&
-    cpio  -idm  <  $FILE.cpio
+    rpm2tar  $FILE.${OO_ARCH}.rpm &&
+    tar xvf   $FILE.${OO_ARCH}.tar
 done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
@@ -25,6 +24,5 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
 else
   FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9472"
 fi  &&
-rpmunpack  desktop-integration/${FILENAME}.noarch.rpm  &&
-gzip  -d  ${FILENAME}.cpio.gz     &&
-cpio  -idm  <  ${FILENAME}.cpio
+rpm2tar  desktop-integration/${FILENAME}.noarch.rpm  &&
+tar xvf  ${FILENAME}.noarch.tar

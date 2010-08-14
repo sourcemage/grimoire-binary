@@ -1,5 +1,5 @@
 depends  gmp           &&
-depends  rpmunpack     && 
+depends  rpm2targz     && 
 depends  freetype2     &&
 depends  zlib          &&
 depends  OPENGL        &&
