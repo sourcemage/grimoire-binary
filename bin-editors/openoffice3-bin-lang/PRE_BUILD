@@ -17,9 +17,8 @@ for SS in $OOO3_LANG; do
   for  FILE  in  *.${OO_ARCH}.rpm
   do
     FILE="${FILE%.$OO_ARCH.rpm}"  &&
-    rpmunpack  $FILE.${OO_ARCH}.rpm &&
-    gzip  -d   $FILE.cpio.gz  &&
-    cpio  -idm  <  $FILE.cpio 2> ${INSTALL_ROOT}/dev/null
+    rpm2tar  $FILE.${OO_ARCH}.rpm &&
+    tar xvf   $FILE.${OO_ARCH}.tar
   done  &&
   cd $SOURCE_DIRECTORY  &&
   i=$[$i+1]

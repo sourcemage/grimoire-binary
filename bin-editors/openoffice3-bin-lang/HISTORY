@@ -1,3 +1,8 @@
+2010-08-15 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 3.2.1
+	* PRE_BUILD: changed to use rpm2tar just like openoffice3-bin
+	* CONFIGURE: fixed source and added sl language
+
 2009-02-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 3.0.1
 	* CONFIGURE: vi language has not been updated to 3.0.1

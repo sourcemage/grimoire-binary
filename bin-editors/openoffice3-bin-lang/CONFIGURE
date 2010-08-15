@@ -10,16 +10,16 @@ get_ooo3languages()  {
 list_remove OOO3_LANG vi  ||  true  &&
 
 config_query_multi OOO3_LANG "please specify the desired languages" \
-fr nl &&
+fr nl sl &&
 
 # should perhaps use SOURCE_IGNORE=unversioned instead of MD5[0]="IGNORE" 
       local  i=1                        &&
       for  LANGUAGE  in  $OOO3_LANG;  do
         if  [[  $i  ==  1  ]]; then
-          echo  SOURCE=OOo_\${VERSION}_LinuxIntel_langpack_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE=OOo_\${VERSION}_Linux_x86_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
           echo  SOURCE_URL[0]=\$SITE/$LANGUAGE/\${VERSION}/\$SOURCE          >>  $CFG
         else
-          echo  SOURCE$i=OOo_\${VERSION}_LinuxIntel_langpack_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE$i=OOo_\${VERSION}_Linux_x86_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
           echo  SOURCE${i}_URL[0]=\$SITE/$LANGUAGE/\${VERSION}/\$SOURCE$i      >>  $CFG
         fi  &&
         echo  MD5[$[$i-1]]="IGNORE"  >>  $CFG  &&
