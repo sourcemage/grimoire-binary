@@ -1,3 +1,6 @@
+2010-08-25 Ladislav Hagara <hgr@vabo.cz>
+	* init.d/{ontopia,ontopia.conf}: added conf file
+
 2010-08-10 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: PATCHLEVEL=1, ARCHIVE="off"
 	* INSTALL: removed problematic antlr-2.7.7.jar library

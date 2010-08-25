@@ -6,6 +6,7 @@ PROGRAM=/bin/false
 export JAVA_HOME=/usr/lib/j2sdk
 
 . /etc/init.d/smgl_init
+. /etc/sysconfig/ontopia
 
 start()
 {
