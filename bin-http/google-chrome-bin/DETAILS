@@ -23,8 +23,9 @@ then
 else
           SOURCE=${SPELL/-bin/}-${VERSION/-*}_i386.rpm
 fi
-         SOURCE2=jpegsrc.v6b.tar.gz
+FORCE_DOWNLOAD[1]=on
    SOURCE_IGNORE=unversioned
+         SOURCE2=jpegsrc.v6b.tar.gz
      SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://dl.google.com/linux/direct/$SOURCE

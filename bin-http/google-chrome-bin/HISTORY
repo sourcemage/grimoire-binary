@@ -1,3 +1,6 @@
+2010-08-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: added FORCE_DOWNLOAD[1]=on
+
 2010-07-04 Vlad Glagolev <stealth@sourcemage.org>
 	* DEPENDS: added missing dep libxscrnsaver
 
