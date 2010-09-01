@@ -1,23 +1,22 @@
            SPELL=eclipse-bin
           SPELLX=eclipse
           PREFIX=R
-         VERSION=3.5.1
-          TSTAMP=200909170800
+         VERSION=3.6
+          TSTAMP=201006080911
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
           SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk-x86_64.tar.gz
-#     SOURCE_HASH=sha512:630bc68402c7fdd10317e3f362301750501042494958cb703d9f2c7e1038f33528d1b3bf2baa66166fe98295d694c929595b516feb749337fda4062f6f409caf
+     SOURCE_HASH=sha512:5657dad77beda958198fdd6842fca6bf2c92c4a9745e1b820292b67550cf99081315b66469b1f2976c4bb4643271c5b472f0a8244a49bfacb8dff363cc37911f
           ;;
         ia32)
           SOURCE=${SPELLX}-SDK-${VERSION}-linux-gtk.tar.gz
-#     SOURCE_HASH=sha512:243e0e902186fbb15a9be92ecff2067b79afc2c59d42311012418ea8bfe0666c395f29cb9910f7287366c99805f17f2993cb33bcf8c2ef4bbde369572bd16905
+     SOURCE_HASH=sha512:e2e1c5f534cb273747df8186f9f6af5c1a08f2f5cad47476eb1217f58dc6cd0acf1017cd0d239b333b2179a538d8ebc2ddda4346764736fe20afd340cddc1d46
           ;;
         *)
           SOURCE=
      SOURCE_HASH=
           ;;
 esac
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:UPSTREAM_HASH"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELLX
       SOURCE_URI=$PREFIX-$VERSION-$TSTAMP/$SOURCE
    SOURCE_URL[0]=http://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops/${SOURCE_URI}
