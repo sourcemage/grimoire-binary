@@ -1,5 +1,4 @@
 INSTALL_DIR=${INSTALL_ROOT}/opt/ontopia &&
 mkdir -pv ${INSTALL_DIR} &&
-rm ${SOURCE_DIRECTORY}/apache-tomcat/webapps/tmrap/WEB-INF/lib/antlr-2.7.7.jar &&
 cp -rv ${SOURCE_DIRECTORY}/* ${INSTALL_DIR} &&
 find ${INSTALL_DIR}/ -print0 | xargs -r -0 -n 1 chown ontopia:ontopia
