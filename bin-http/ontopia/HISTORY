@@ -1,3 +1,6 @@
+2010-10-31 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 5.1.2-20101030
+
 2010-10-26 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 5.1.1-20101026
 	* INSTALL: removed rm antlr-2.7.7.jar, problem fixed upstream
