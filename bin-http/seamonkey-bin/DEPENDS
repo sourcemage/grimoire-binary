@@ -1,5 +1,5 @@
 depends  zlib       &&
-depends  jpeg       &&
+depends  JPEG       &&
 depends  libpng     &&
 depends  zip        &&
 depends  perl       &&
