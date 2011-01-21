@@ -1,5 +1,11 @@
+2011-01-21 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated devel version to 4.0b9
+
 2011-01-17 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated stable version to 3.6.13
+
+2010-11-03 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: jpeg -> JPEG
 
 2010-11-03 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: jpeg -> JPEG
