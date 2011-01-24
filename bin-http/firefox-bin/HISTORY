@@ -7,9 +7,6 @@
 2010-11-03 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: jpeg -> JPEG
 
-2010-11-03 Ladislav Hagara <hgr@vabo.cz>
-	* DEPENDS: jpeg -> JPEG
-
 2010-09-10 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated stable to 3.6.9 and devel to 4.0b5
 	  SECURITY_PATCH++
