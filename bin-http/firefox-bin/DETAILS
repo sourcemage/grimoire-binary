@@ -1,6 +1,6 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=4.0b9
+         VERSION=4.0b10
           SOURCE=firefox-$VERSION.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
