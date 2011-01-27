@@ -1,5 +1,6 @@
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
 	* bin-editors/libreoffice-bin: added binary version of LibreOffice
+	* bin-editors/libreoffice-bin-lang: added, language support for libreoffice-bin
 
 2010-04-26 Eric Sandall <sandalle@sourcemage.org>
 	* bin-games/gametable: Added a shared whiteboard client

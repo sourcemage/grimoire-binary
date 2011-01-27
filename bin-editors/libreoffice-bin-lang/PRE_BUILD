@@ -1,0 +1,25 @@
+. $SPELL_CONFIG  &&
+
+mk_source_dir        $SOURCE_DIRECTORY  &&
+cd                   $SOURCE_DIRECTORY  &&
+
+# unpack all source files
+local i SS &&
+i=1 &&
+for SS in $LIBO_LANG; do
+  if [[ $i == 1 ]];then
+    unpack_file
+  else
+    unpack_file $i
+  fi   &&
+  # silently unpack RPMS for each language
+  cd LibO*$SS*/RPMS  &&
+  for  FILE  in  *.${LIBO_ARCH}.rpm
+  do
+    FILE="${FILE%.$LIBO_ARCH.rpm}"  &&
+    rpm2tar  $FILE.${LIBO_ARCH}.rpm &&
+    tar xvf   $FILE.${LIBO_ARCH}.tar
+  done  &&
+  cd $SOURCE_DIRECTORY  &&
+  i=$[$i+1]
+done

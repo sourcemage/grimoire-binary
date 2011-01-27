@@ -1,0 +1,37 @@
+source  $GRIMOIRE/config_query_multi.function  &&
+
+local CFG=$SPELL_CONFIG
+
+get_libolanguages()  {
+  local  i  LANGUAGE  LANGUAGES  &&
+  rm -f  $CFG                    &&
+  touch  $CFG                    &&
+
+list_remove LIBO_LANG vi  ||  true  &&
+
+config_query_multi LIBO_LANG "please specify the desired languages" \
+fr nl sl &&
+
+# should perhaps use SOURCE_IGNORE=unversioned instead of MD5[0]="IGNORE" 
+      local  i=1                        &&
+      for  LANGUAGE  in  $LIBO_LANG;  do
+        if  [[  $i  ==  1  ]]; then
+          echo  SOURCE=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE          >>  $CFG
+        else
+          echo  SOURCE$i=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE${i}_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE$i      >>  $CFG
+        fi  &&
+        echo  MD5[$[$i-1]]="IGNORE"  >>  $CFG  &&
+        i=$[$i+1]
+      done
+}
+
+if  [[ -z $LIBO_LANG ]]  || query "Reconfigure?"  n
+then
+  get_libolanguages
+else
+  message  "${MESSAGE_COLOR}Using existing config${DEFAULT_COLOR}"
+fi &&
+
+.  $CFG
