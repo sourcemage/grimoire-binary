@@ -1,2 +1,3 @@
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
+	* CONFIGURE, PRE_BUILD: modified to use upstream signature checking
 	* all: spell created

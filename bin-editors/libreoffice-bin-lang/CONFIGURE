@@ -10,20 +10,26 @@ get_libolanguages()  {
 list_remove LIBO_LANG vi  ||  true  &&
 
 config_query_multi LIBO_LANG "please specify the desired languages" \
-fr nl sl &&
+de fi fr nl pl sl &&
 
-# should perhaps use SOURCE_IGNORE=unversioned instead of MD5[0]="IGNORE" 
       local  i=1                        &&
       for  LANGUAGE  in  $LIBO_LANG;  do
         if  [[  $i  ==  1  ]]; then
           echo  SOURCE=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
-          echo  SOURCE_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE          >>  $CFG
+          echo  SOURCE_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE    >>  $CFG  &&
+          echo  SOURCE$(($i+1))=\$SOURCE.asc                              >>  $CFG  &&
+          echo  SOURCE$(($i+1))_URL[0]=\${SOURCE_URL[0]}.asc              >>  $CFG  &&
+          echo  SOURCE_GPG=libreoffice.gpg:\$SOURCE$(($i+1)):UPSTREAM_KEY >>  $CFG  &&
+          echo  SOURCE$(($i+1))_IGNORE=signature                         >>  $CFG 
         else
           echo  SOURCE$i=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
-          echo  SOURCE${i}_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE$i      >>  $CFG
+          echo  SOURCE${i}_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE$i  >>  $CFG
+          echo  SOURCE$(($i+1))=\$SOURCE${i}.asc                              >>  $CFG  &&
+          echo  SOURCE$(($i+1))_URL[0]=\${SOURCE${i}_URL[0]}.asc                >>  $CFG  &&
+          echo  SOURCE${i}_GPG=libreoffice.gpg:\$SOURCE$(($i+1)):UPSTREAM_KEY   >>  $CFG  &&
+          echo  SOURCE$(($i+1))_IGNORE=signature                             >>  $CFG 
         fi  &&
-        echo  MD5[$[$i-1]]="IGNORE"  >>  $CFG  &&
-        i=$[$i+1]
+        i=$[$i+2]
       done
 }
 
