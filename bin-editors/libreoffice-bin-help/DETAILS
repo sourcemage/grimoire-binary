@@ -1,0 +1,15 @@
+# the remaining details of this spell are provided by CONFIGURE
+           SPELL=libreoffice-bin-help
+         VERSION=3.3.0
+            SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+source $SPELL_CONFIG
+       LIBO_ARCH="${SMGL_COMPAT_ARCHS[1]}"
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.libreoffice.org/
+         ENTERED=20081124
+         ARCHIVE="off"
+           SHORT="helppacks for libreoffice"
+cat << EOF
+helppacks for libreoffice
+EOF

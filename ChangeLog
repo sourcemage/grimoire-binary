@@ -1,6 +1,7 @@
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
 	* bin-editors/libreoffice-bin: added binary version of LibreOffice
 	* bin-editors/libreoffice-bin-lang: added, language support for libreoffice-bin
+	* bin-editors/libreoffice-bin-help: added, help files for libreoffice-bin
 	* bin-editors/libreoffice.gpg: added keyring with AFEEAEA3, LibreOffice Build Team 
 	  (CODE SIGNING KEY) <build@documentfoundation.org>
 

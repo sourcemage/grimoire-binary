@@ -1,0 +1,43 @@
+source  $GRIMOIRE/config_query_multi.function  &&
+
+local CFG=$SPELL_CONFIG
+
+get_libohelplanguages()  {
+  local  i  LANGUAGE  LANGUAGES  &&
+  rm -f  $CFG                    &&
+  touch  $CFG                    &&
+
+list_remove LIBO_HELPLANG vi  ||  true  &&
+
+config_query_multi LIBO_HELPLANG "please specify the desired languages" \
+en-US de fi fr nl pl sl &&
+
+      local  i=1                        &&
+      for  LANGUAGE  in  $LIBO_HELPLANG;  do
+        if  [[  $i  ==  1  ]]; then
+          echo  SOURCE=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_helppack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE    >>  $CFG  &&
+          echo  SOURCE$(($i+1))=\$SOURCE.asc                              >>  $CFG  &&
+          echo  SOURCE$(($i+1))_URL[0]=\${SOURCE_URL[0]}.asc              >>  $CFG  &&
+          echo  SOURCE_GPG=libreoffice.gpg:\$SOURCE$(($i+1)):UPSTREAM_KEY >>  $CFG  &&
+          echo  SOURCE$(($i+1))_IGNORE=signature                         >>  $CFG 
+        else
+          echo  SOURCE$i=LibO_\${VERSION}_Linux_${SMGL_COMPAT_ARCHS[1]/_/-}_helppack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
+          echo  SOURCE${i}_URL[0]=\$SITE/${SMGL_COMPAT_ARCHS[1]}/\$SOURCE$i  >>  $CFG
+          echo  SOURCE$(($i+1))=\$SOURCE${i}.asc                              >>  $CFG  &&
+          echo  SOURCE$(($i+1))_URL[0]=\${SOURCE${i}_URL[0]}.asc                >>  $CFG  &&
+          echo  SOURCE${i}_GPG=libreoffice.gpg:\$SOURCE$(($i+1)):UPSTREAM_KEY   >>  $CFG  &&
+          echo  SOURCE$(($i+1))_IGNORE=signature                             >>  $CFG 
+        fi  &&
+        i=$[$i+2]
+      done
+}
+
+if  [[ -z $LIBO_HELPLANG ]]  || query "Reconfigure?"  n
+then
+  get_libohelplanguages
+else
+  message  "${MESSAGE_COLOR}Using existing config${DEFAULT_COLOR}"
+fi &&
+
+.  $CFG
