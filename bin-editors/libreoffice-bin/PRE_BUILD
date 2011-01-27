@@ -1,0 +1,30 @@
+mk_source_dir  $SOURCE_DIRECTORY  &&
+cd  $SOURCE_DIRECTORY             &&
+unpack_file  ''                   &&
+
+#
+# Extracted root directories don't have the same names between localized
+# versions, so use * wildcard although I don't find that very elegant
+#
+cd  LibO*/RPMS
+
+for  FILE  in  *.${LIBO_ARCH}.rpm
+do
+  FILE="${FILE%.$LIBO_ARCH.rpm}"
+  PART=$(sed 's/LibO-\([^-]*\)-.*$/\1/;' <<< $FILE)
+  message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
+
+    rpm2tar  $FILE.${LIBO_ARCH}.rpm &&
+    tar xvf   $FILE.${LIBO_ARCH}.tar
+done  &&
+
+message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+  
+FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION%.*}-6"
+else
+  
+FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION%.*}-6"
+fi  &&
+rpm2tar  desktop-integration/${FILENAME}.noarch.rpm  &&
+tar xvf  ${FILENAME}.noarch.tar

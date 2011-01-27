@@ -1,0 +1,30 @@
+           SPELL=libreoffice-bin
+          SPELLX=libreoffice
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+         VERSION=3.3.0
+   BUILD_VERSION=6
+          SOURCE=LibO_${VERSION}_Linux_x86-64_install-rpm_en-US.tar.gz
+     SOURCE_HASH=sha512:ecae8a02893d0cb7580ee281c456e104e702abcf9a75212b8fa65dc7a5bd4c237a6e817c40c27827ada915d628c4d5497c28fdb52e09e017150980b2c45f0fa9
+       LIBO_ARCH="x86_64"
+else
+         VERSION=3.3.0
+   BUILD_VERSION=6
+          SOURCE=LibO_${VERSION}_Linux_x86_install-rpm_en-US.tar.gz
+     SOURCE_HASH=sha512:6f9e8d017d80d31cf4c4d61354068a043f513d7395286902df2ee1660bcf7c1290086626ba07da28b566b58c002da80400a072d38cfb7af69fb8b5970f394d8c
+       LIBO_ARCH="x86"
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://download.documentfoundation.org/${SPELLX}/stable/${VERSION}/rpm/${SMGL_COMPAT_ARCHS[1]}/$SOURCE
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.libreoffice.org/
+         ENTERED=20110127
+         ARCHIVE="off"
+           TMPFS="off"
+           SHORT="The binary version of libreoffice"
+cat << EOF
+LibreOffice is the free power-packed Open Source personal productivity suite
+for Windows, Macintosh and Linux, that gives you six feature-rich applications
+for all your document production and data processing needs: Writer, Calc,
+Impress, Draw, Math and Base. Support and documentation is free from our large,
+dedicated community of users, contributors and developers. 
+EOF
