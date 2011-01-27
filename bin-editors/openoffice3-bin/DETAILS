@@ -1,18 +1,16 @@
            SPELL=openoffice3-bin
 #    VERSION_DATE=20080930
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-         VERSION=3.2.1
-   BUILD_VERSION=9502
+         VERSION=3.3.0
+   BUILD_VERSION=9567
           SOURCE=OOo_${VERSION}_Linux_x86-64_install-rpm-wJRE_en-US.tar.gz
-#     SOURCE_HASH=sha512:28fd589d0d4b2d3837d37cbfd0bff725933990588ccf919ce2955ea6097431e1fbe783e23c310dcd2a4a5cd870686e26271c6cc0e48352244ace46e9dabb25fa
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=sha512:c731f4f11c7d974a1928c768066c1a446e072091bb7a49da5c12e1c4e4fd88964dee633f4739f0d2201bc44f29063429e5767552a1a166190bfe9d8b3e6cc08d
          OO_ARCH=x86_64
 else
-         VERSION=3.2.1
-   BUILD_VERSION=9502
+         VERSION=3.3.0
+   BUILD_VERSION=9567
           SOURCE=OOo_${VERSION}_Linux_x86_install-rpm-wJRE_en-US.tar.gz
-#     SOURCE_HASH=sha512:dd3bcb247e09328fe19a6ce173818f80b83f3f9e6a96b453ab7e0cfff94e784bc413b0ee91946dbf6989c37329a2679bea8997aaf404f9d991eb6363d513db64
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=sha512:2577d3a77d44be15efdb25628695842b48f2cde5923214ff983858aa4596cbb01163109f9a36e5399060ae11a73ca9cce34f757f8bdf6f830f3234da1ff3bc09
          OO_ARCH=i586
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice3
@@ -26,6 +24,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice3
         WEB_SITE=http://www.openoffice.org
          ENTERED=20080909
          ARCHIVE="off"
+           TMPFS="off"
            SHORT="The binary version of OpenOffice 3"
 cat << EOF
 OpenOffice.org is the open source project through which Sun Microsystems has

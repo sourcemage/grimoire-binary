@@ -1,3 +1,8 @@
+2011-01-27 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 3.3.0. Build 9567
+	  disable use of TMPFS
+	* PRE_BUILD: Freedesktop menus updated to Build 9556
+
 2010-08-14 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated to version 3.2.1. Build 9502
 	  Updated SOURCE
