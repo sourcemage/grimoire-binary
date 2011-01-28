@@ -1,2 +1,6 @@
+2011-01-28 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: added more languages, fixed ENTERED
+	* CONFIGURE: moved list of available languages to DETAILS
+
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
 	* all: spell created
