@@ -10,7 +10,7 @@ get_libolanguages()  {
 list_remove LIBO_LANG vi  ||  true  &&
 
 config_query_multi LIBO_LANG "please specify the desired languages" \
-de fi fr nl pl sl &&
+$LANG_LIST &&
 
       local  i=1                        &&
       for  LANGUAGE  in  $LIBO_LANG;  do

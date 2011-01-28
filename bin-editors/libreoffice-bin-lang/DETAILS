@@ -3,11 +3,12 @@
          VERSION=3.3.0
             SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+       LANG_LIST="cs de es fi fr hr it ja nl pl pt ru sl tr"
 source $SPELL_CONFIG
        LIBO_ARCH="${SMGL_COMPAT_ARCHS[1]}"
       LICENSE[0]=LGPL
         WEB_SITE=http://www.libreoffice.org/
-         ENTERED=20081124
+         ENTERED=20110127
          ARCHIVE="off"
            SHORT="languagepacks for libreoffice"
 cat << EOF
