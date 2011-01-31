@@ -23,7 +23,7 @@ $LANG_LIST &&
           echo  SOURCE$(($i+1))_IGNORE=signature                         >>  $CFG 
         else
           echo  SOURCE$i=LibO_\${VERSION}_Linux_\${URL_ARCH/_/-}_langpack-rpm_$LANGUAGE.tar.gz  >>  $CFG  &&
-          echo  SOURCE${i}_URL[0]=\$SITE/\${URL_ARCH}/\$SOURCE$i  >>  $CFG
+          echo  SOURCE${i}_URL[0]=\$SITE/\${URL_ARCH}/\$SOURCE$i  >>  $CFG &&
           echo  SOURCE$(($i+1))=\$SOURCE${i}.asc                              >>  $CFG  &&
           echo  SOURCE$(($i+1))_URL[0]=\${SOURCE${i}_URL[0]}.asc                >>  $CFG  &&
           echo  SOURCE${i}_GPG=libreoffice.gpg:\$SOURCE$(($i+1)):UPSTREAM_KEY   >>  $CFG  &&
