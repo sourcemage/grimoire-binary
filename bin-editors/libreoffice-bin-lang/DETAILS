@@ -5,7 +5,11 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
        LANG_LIST="cs de es fi fr hr it ja nl pl pt ru sl tr"
 source $SPELL_CONFIG
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
        LIBO_ARCH="${SMGL_COMPAT_ARCHS[1]}"
+else
+       LIBO_ARCH="i586"
+fi
       LICENSE[0]=LGPL
         WEB_SITE=http://www.libreoffice.org/
          ENTERED=20110127
