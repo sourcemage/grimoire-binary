@@ -1,3 +1,6 @@
+2011-01-31 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: fixed LIBO_ARCH for ia32 arch (x86 -> i586)
+
 2011-01-28 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: added more languages, fixed ENTERED
 	* CONFIGURE: moved list of available languages to DETAILS
