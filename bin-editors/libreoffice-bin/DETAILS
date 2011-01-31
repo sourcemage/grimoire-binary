@@ -15,7 +15,7 @@ else
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
-       LIBO_ARCH="x86"
+       LIBO_ARCH="i586"
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://download.documentfoundation.org/${SPELLX}/stable/${VERSION}/rpm/${SMGL_COMPAT_ARCHS[1]}/$SOURCE

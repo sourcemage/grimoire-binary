@@ -1,3 +1,6 @@
+2011-01-31 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: fixed LIBO_ARCH for ia32 arch (x86 -> i586)
+
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: converted to upstream signature checking
 	* all: spell created
