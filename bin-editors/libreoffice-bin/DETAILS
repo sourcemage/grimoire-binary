@@ -7,6 +7,7 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
+        URL_ARCH="x86_64"
        LIBO_ARCH="x86_64"
 else
          VERSION=3.3.0
@@ -15,10 +16,11 @@ else
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
+        URL_ARCH="x86"
        LIBO_ARCH="i586"
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-   SOURCE_URL[0]=http://download.documentfoundation.org/${SPELLX}/stable/${VERSION}/rpm/${SMGL_COMPAT_ARCHS[1]}/$SOURCE
+   SOURCE_URL[0]=http://download.documentfoundation.org/${SPELLX}/stable/${VERSION}/rpm/$URL_ARCH/$SOURCE
   SOURCE2_URL[0]=${SOURCE_URL[0]}.asc
       LICENSE[0]=LGPL
         WEB_SITE=http://www.libreoffice.org/
