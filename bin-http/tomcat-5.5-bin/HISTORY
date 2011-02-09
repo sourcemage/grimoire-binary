@@ -1,3 +1,6 @@
+2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 5.5.32
+
 2009-07-21 Julien "_kaze_" ROZO <julien@rozo.org>
 	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL, PRE_BUILD, init.d/tomcat5.5,
 	  init.d/tomcat5.5.conf: created this spell
