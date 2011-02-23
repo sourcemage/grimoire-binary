@@ -1,3 +1,7 @@
+2011-02-23 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: updated spell to 3.3.1 (BUILD_VERSION=8)
+	* PRE_BUILD: use BUILD_VERSION when extracting freedesktop-menus rpm
+
 2011-02-02 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: fixed arch in SOURCE_URL
 
