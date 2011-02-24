@@ -1,3 +1,8 @@
+2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* accounts: added tomcat7 user
+	* bin-http/tomcat-7-bin: new spell, an implementation of the Servlet
+	  and JSP technologies
+
 2011-01-27 Bor Kraljič <pyrobor@ver.si>
 	* bin-editors/libreoffice-bin: added binary version of LibreOffice
 	* bin-editors/libreoffice-bin-lang: added, language support for libreoffice-bin
