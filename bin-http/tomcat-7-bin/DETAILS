@@ -1,8 +1,8 @@
            SPELL=tomcat-7-bin
-         VERSION=7.0.8
+         VERSION=7.0.10
           SOURCE="apache-tomcat-${VERSION}.tar.gz"
     SOURCE_URL[0]=$APACHE_URL/tomcat/tomcat-7/v${VERSION}/bin/${SOURCE}
-     SOURCE_HASH=sha512:9c7fbdfb1b119e0df210667d2c8d0edce6dcecbb16b74c04496c13abf89ab0edb58aad4a2f3ed99546c5131af10b5bdef848b31328426e60d97f296d0504ab75
+     SOURCE_HASH=sha512:54d8ec5bcff26e7ef0c17630e3581ede5cc319d9c09510b66908488371038ee5dc5ba1799cfde738e703db930570a253213809f643f0c7ed2bbdfe6bbe8ecf48
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/apache-tomcat-${VERSION}"
         WEB_SITE="http://tomcat.apache.org"
       LICENSE[0]=ASF

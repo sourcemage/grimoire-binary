@@ -1,3 +1,6 @@
+2011-03-08 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 7.0.10
+
 2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* BUILD, DEPENDS, DETAILS, HISTORY, INSTALL, PRE_BUILD, init.d/tomcat7,
 	  init.d/tomcat7.conf: created this spell
