@@ -1,20 +1,20 @@
            SPELL=thunderbird-bin
 if [[ "$THUNDER_BIN_DEVEL" == "y" ]]; then
-         VERSION=3.1.3
+         VERSION=3.1.9
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:2e2f3a868f8a6a183bbbbfad1f9b58c622d6fc54cfb0b73e712b3f14407152b5bc516606476ff0601b0c1dd6a99480809fe51e1429f497ebd39690fd9e1e1b1a
+     SOURCE_HASH=sha512:c899406daab93825543f55986da503ff5006907a22a6dc7870b3423c166e2fd9f2ff820bb61a8a39d02dd772117e0bf52556bf4210feab7c771cadfc47040c99
 else
-         VERSION=3.1.3
+         VERSION=3.1.9
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:2e2f3a868f8a6a183bbbbfad1f9b58c622d6fc54cfb0b73e712b3f14407152b5bc516606476ff0601b0c1dd6a99480809fe51e1429f497ebd39690fd9e1e1b1a
+     SOURCE_HASH=sha512:c899406daab93825543f55986da503ff5006907a22a6dc7870b3423c166e2fd9f2ff820bb61a8a39d02dd772117e0bf52556bf4210feab7c771cadfc47040c99
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
 
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20050301
-  SECURITY_PATCH=12
+  SECURITY_PATCH=13
       LICENSE[0]=MOZILLA
            SHORT="The pre-compiled i686 version of thunderbird mailer"
 cat << EOF
