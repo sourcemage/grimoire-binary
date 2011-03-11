@@ -1,9 +1,10 @@
            SPELL=tomcat-5.5-bin
-         VERSION=5.5.32
+         VERSION=5.5.33
           SOURCE="apache-tomcat-${VERSION}.tar.gz"
     SOURCE_URL[0]=$APACHE_URL/tomcat/tomcat-5/v${VERSION}/bin/${SOURCE}
-     SOURCE_HASH=sha512:fd850e7096e3fbf63ca9dccb2672cbfd02143443895112b9f0bb8f053021e71ed9fd251ef032d35b6bbd1659409df0f73259abc42a44c0e76e895e342873258a
+     SOURCE_HASH=sha512:636e35157b85f4cc3c29a4bd16cb940c33104f026b3be4a5e75ecb6f534c113d64dca0d2f9a4f90cb4f7bab8cd77064bc66e15466b5cb396040a729d87cf454c
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/apache-tomcat-${VERSION}"
+  SECURITY_PATCH=1
         WEB_SITE="http://tomcat.apache.org"
       LICENSE[0]=ASF
          ENTERED=20090721
