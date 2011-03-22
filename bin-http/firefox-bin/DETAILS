@@ -1,13 +1,13 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=4.0rc2
+         VERSION=4.0
           SOURCE=firefox-$VERSION.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE2
 else
-         VERSION=3.6.15
+         VERSION=4.0
           SOURCE=firefox-${VERSION}.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
