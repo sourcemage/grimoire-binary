@@ -1,6 +1,7 @@
 2011-03-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated stable and devel versions to 4.0
-	* PREPARE: switched to 4.0 stable for devel version
+	* PREPARE: switched to 4.0 stable for devel version,
+	  default answer is 'y' as both stable and devel versions are the same
 
 2011-03-21 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated devel version to 4.0rc2
