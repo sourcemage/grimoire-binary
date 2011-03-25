@@ -1,3 +1,6 @@
+2011-03-25 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Added 64-bit version
+
 2011-03-23 Julien "_kaze_" ROZO <julien@rozo.org>
 	* PREPARE: renamed "4.0 version" to "devel version" and switched default
 	  answer to 'n' in order not to get people wrong

@@ -1,18 +1,28 @@
            SPELL=firefox-bin
-if [ "$FIREFOX_DEVEL" == "y" ]; then
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+         VERSION=4.0
+          SOURCE=firefox-$VERSION.tar.bz2
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+else
+ if [ "$FIREFOX_DEVEL" == "y" ]; then
          VERSION=4.0
           SOURCE=firefox-$VERSION.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/$SOURCE2
-else
+ else
          VERSION=4.0
           SOURCE=firefox-${VERSION}.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
   SOURCE2_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+ fi
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
