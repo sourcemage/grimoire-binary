@@ -27,7 +27,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
-  SECURITY_PATCH=24
+  SECURITY_PATCH=25
       LICENSE[0]=MOZILLA
            SHORT="The binary version of firefox."
 cat << EOF
