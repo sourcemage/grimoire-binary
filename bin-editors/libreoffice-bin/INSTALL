@@ -30,5 +30,5 @@ for  LINK  in  "sbase"  "scalc"  "sdraw"  "simpress"  "smath"  "soffice"  "swrit
 do
   message  "${MESSAGE_COLOR}Creating link for $LINK${DEFAULT_COLOR}"        &&
   rm  -f  ${INSTALL_ROOT}/usr/bin/$LINK                                     &&
-  ln  -s  $TRACK_ROOT/opt/libreoffice/program/$LINK  /usr/bin/$LINK
+  ln  -s  $TRACK_ROOT/opt/libreoffice${VERSION%.*}/program/$LINK  /usr/bin/$LINK
 done
