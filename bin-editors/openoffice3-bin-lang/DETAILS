@@ -4,7 +4,7 @@
          OO_ARCH=i586
             SITE=http://mirrors.isc.org/pub/openoffice/localized
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-source $SPELL_CONFIG
+[[ -f $SPELL_CONFIG ]] && source $SPELL_CONFIG
       LICENSE[0]=LGPL
         WEB_SITE=http://www.openoffice.org/
          ENTERED=20081124
