@@ -11,7 +11,7 @@ else
        LIBO_ARCH="i586"
         URL_ARCH="x86"
 fi
-source $SPELL_CONFIG
+[[ -f $SPELL_CONFIG ]] && source $SPELL_CONFIG
       LICENSE[0]=LGPL
         WEB_SITE=http://www.libreoffice.org/
          ENTERED=20110127
