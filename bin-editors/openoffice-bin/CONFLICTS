@@ -1,3 +1,4 @@
+conflicts  libreoffice-bin &&
 conflicts  openoffice  &&
 conflicts  openoffice2-bin &&
 conflicts  openoffice3-bin
