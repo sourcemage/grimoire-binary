@@ -1,0 +1,23 @@
+           SPELL=openni-bin
+if [[ "$OPENNI_BIN_DEVEL" == "y" ]]; then
+         VERSION=1.3.2.3
+          SOURCE="OpenNI-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://openni.org/downloadfiles/opennimodules/openni-binaries/latest-unstable/160-openni-unstable-build-for-ubuntu-10-10-x86-32-bit-v1-3-2/download
+     SOURCE_HASH=sha512:447697909eff15297ad1ac005ede25fad80a66542e74f67069c8648c03b2e3a271739cb11f6de434740dae3176ae044461a6bc49cd00fb49cce4978fb5affc0f
+else
+         VERSION=1.3.2.1
+          SOURCE="OpenNI-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://openni.org/downloadfiles/opennimodules/openni-binaries/stable/129-openni-stable-build-for-ubuntu-10-10-x86-32-bit-v1-3-2/download
+     SOURCE_HASH=sha512:1f2d2aa7e8a377f2016b0fa33880dad5fb915c7fc85957a19e997ba5591fae61cc5c055547572a43f74379a2035a1f12544c2cdd0adc06411faf5b78cf893f0e
+fi
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}"
+        WEB_SITE=http://www.openni.org/
+      LICENSE[0]=GPL
+         ENTERED=20110824
+           SHORT="framework for writing applications utilizing natural interaction"
+cat << EOF
+OpenNI framework provides an application programming interface (API) for writing
+applications utilizing natural interaction. This API covers communication with
+both low level devices (e.g. vision and audio sensors), as well as high-level
+middleware solutions (e.g. for visual tracking using computer vision).
+EOF

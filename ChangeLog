@@ -1,3 +1,7 @@
+2011-08-24 Ladislav Hagara <hgr@vabo.cz>
+	* bin-libs/openni-bin: new spell
+	  framework for writing applications utilizing natural interaction
+
 2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* accounts: added tomcat7 user
 	* bin-http/tomcat-7-bin: new spell, an implementation of the Servlet
