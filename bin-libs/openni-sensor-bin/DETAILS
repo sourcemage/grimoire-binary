@@ -1,0 +1,20 @@
+           SPELL=openni-sensor-bin
+if [[ "$OPENNI_SENSOR_BIN_DEVEL" == "y" ]]; then
+         VERSION=5.0.3.4
+          SOURCE="Sensor-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://www.openni.org/downloadfiles/opennimodules/openni-compliant-hardware-binaries/latest-unstable/167-primesensor-module-unstable-build-for-ubuntu-10-10-x86-32-bit-v5-0-3/download
+     SOURCE_HASH=sha512:532f888ac48a2412a07f3c1b926b10d7a8542f96b58958f450ae85951f339eedefd1c7193ed74392d76f2ac1bbbea09def37b09140303066178d0496512c089b
+else
+         VERSION=5.0.3.3
+          SOURCE="Sensor-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://www.openni.org/downloadfiles/opennimodules/openni-compliant-hardware-binaries/stable/155-primesensor-module-stable-build-for-ubuntu-10-10-x86-32-bit-v5-0-3/download
+     SOURCE_HASH=sha512:65f990a2981d050a1b7e8a8a1f0ab91f6edab001759711c2ecb3a90d4d267a15aebcf52c2300f524b350a3a031a1e09a92ffab276b32a28f3545d34365fb7c57
+fi
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}"
+        WEB_SITE=http://www.openni.org/
+      LICENSE[0]=GPL
+         ENTERED=20110824
+           SHORT="PrimeSense Sensor Module for OpenNI"
+cat << EOF
+PrimeSense Sensor Module for OpenNI.
+EOF

@@ -1,6 +1,8 @@
 2011-08-24 Ladislav Hagara <hgr@vabo.cz>
 	* bin-libs/openni-bin: new spell
 	  framework for writing applications utilizing natural interaction
+	* bin-libs/openni-sensor-bin: new spell
+	  PrimeSense Sensor Module for OpenNI
 
 2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* accounts: added tomcat7 user
