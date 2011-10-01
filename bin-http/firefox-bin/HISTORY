@@ -1,3 +1,7 @@
+2011-10-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 7.0.1, SECURITY_PATCH=27
+	* firefox.gpg: copy from test grimoire
+
 2011-07-16 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated to version 5.0.1
 
