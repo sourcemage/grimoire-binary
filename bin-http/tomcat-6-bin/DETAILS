@@ -1,10 +1,11 @@
            SPELL=tomcat-6-bin
-         VERSION=6.0.32
+         VERSION=6.0.35
           SOURCE="apache-tomcat-${VERSION}.tar.gz"
     SOURCE_URL[0]=$APACHE_URL/tomcat/tomcat-6/v${VERSION}/bin/${SOURCE}
-     SOURCE_HASH=sha512:2eb2104e60e87e9a3c40f600b3249943ec6c76de58f7de382a53d4e85d0c208fe3df5c173c57e1b29a1123b601048ca16d0c39f86f0fe459e49c4b4761dfcbd2
+     SOURCE_HASH=sha512:17d4e107c33f7463d12214483ba202a415de1652a243e87642293daf91900296fd6571abba2139a8cdda56bae07e100ddfbad2e07c2414717f8db0c5b210d514
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/apache-tomcat-${VERSION}"
         WEB_SITE="http://tomcat.apache.org"
+  SECURITY_PATCH=1
       LICENSE[0]=ASF
          ENTERED=20090611
            SHORT="an implementation of the Servlet and JSP technologies"
