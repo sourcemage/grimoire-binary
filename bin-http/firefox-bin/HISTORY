@@ -1,3 +1,8 @@
+2011-12-28 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: 9.0.1
+	* INSTALL: use install for firefox-bin (ensuring world-readable script
+	  also from git grimoire when git user has some umask)
+
 2011-10-01 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 7.0.1, SECURITY_PATCH=27
 	* firefox.gpg: copy from test grimoire

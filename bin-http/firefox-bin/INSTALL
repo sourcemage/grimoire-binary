@@ -9,7 +9,8 @@ INSTALLDIR=/opt/firefox
 mkdir -pv $INSTALLDIR                            &&
 cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR           &&
 # cp $SCRIPT_DIRECTORY/firefox.sh /etc/profile.d/  &&
-cp -v $SCRIPT_DIRECTORY/firefox-bin /usr/bin/       &&
+# use install to ensure user permission
+install -v $SCRIPT_DIRECTORY/firefox-bin /usr/bin/       &&
 
 #
 # Create symlink to mozilla or firefox if selected
