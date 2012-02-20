@@ -20,11 +20,9 @@ done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-  
-FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9502"
+  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9556"
 else
-  
-FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9502"
+  FILENAME="openoffice.org${VERSION%.*}-freedesktop-menus-${VERSION%.*}-9556"
 fi  &&
 rpm2tar  desktop-integration/${FILENAME}.noarch.rpm  &&
 tar xvf  ${FILENAME}.noarch.tar
