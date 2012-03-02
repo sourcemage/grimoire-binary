@@ -1,3 +1,6 @@
+2012-03-02 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: 10.0.2
+
 2011-12-28 Thomas Orgis <sobukus@sourcemage.org>
 	* DETAILS: 9.0.1
 	* INSTALL: use install for firefox-bin (ensuring world-readable script
