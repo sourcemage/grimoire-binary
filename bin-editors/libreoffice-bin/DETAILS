@@ -1,8 +1,8 @@
            SPELL=libreoffice-bin
           SPELLX=libreoffice
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-         VERSION=3.5.0
-   BUILD_VERSION=13
+         VERSION=3.5.1
+   BUILD_VERSION=102
           SOURCE=LibO_${VERSION}_Linux_x86-64_install-rpm_en-US.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
@@ -10,8 +10,8 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
         URL_ARCH="x86_64"
        LIBO_ARCH="x86_64"
 else
-         VERSION=3.5.0
-   BUILD_VERSION=13
+         VERSION=3.5.1
+   BUILD_VERSION=102
           SOURCE=LibO_${VERSION}_Linux_x86_install-rpm_en-US.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
