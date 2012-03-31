@@ -1,9 +1,9 @@
            SPELL=ontopia
-         VERSION=5.1.3-20110221
+         VERSION=5.2.1-20120330
       PATCHLEVEL=0
           SOURCE=$SPELL-$VERSION.zip
    SOURCE_URL[0]=http://ontopia.googlecode.com/files/$SOURCE
-     SOURCE_HASH=sha512:0fbccc4d66d53239437b708263ca32841754aee07ada1b298db9b4a2928fe89cda3fbbd55b2cce7d9646129c88ea5e7d406cea65ab3a10cf06a708c5a85b3fac
+     SOURCE_HASH=sha512:03381577b7b02e64b7aac0ef96d0d7668772b176d37544a0ab2651410004fef62295a7fa362bf0b1899945b379389c7ff5e49acaf41e17ed0eec91ab4ccd0198
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-${VERSION%-*}"
         WEB_SITE=http://code.google.com/p/ontopia/
       LICENSE[0]=APACHE
