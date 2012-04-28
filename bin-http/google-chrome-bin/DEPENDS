@@ -1,3 +1,4 @@
+depends  cups       &&
 depends  dbus-glib  &&
 depends  gconf2     &&
 depends  gtk+2      &&

@@ -1,3 +1,6 @@
+2012-04-28 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: depends on cups
+
 2010-08-27 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: added FORCE_DOWNLOAD[1]=on
 
