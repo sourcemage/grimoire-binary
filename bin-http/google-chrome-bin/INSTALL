@@ -33,3 +33,8 @@ done
 #
 cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
   $INSTALL_ROOT/opt/google/chrome/libjpeg.so.62
+
+#
+# Create lib64 symlink
+#
+[ -e /lib64 ] || ln -s lib $INSTALL_ROOT/lib64
