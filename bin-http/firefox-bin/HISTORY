@@ -1,5 +1,6 @@
 2012-04-30 Thomas Orgis <sobukus@sourcemage.org>
-	* DETAILS: remove outdated passage
+	* DETAILS: remove outdated passage, update to 12.0
+	* PREPARE: gone, there is no devel version in the spell
 
 2012-03-02 Thomas Orgis <sobukus@sourcemage.org>
 	* DETAILS: 10.0.2
