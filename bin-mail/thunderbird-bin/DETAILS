@@ -1,26 +1,26 @@
            SPELL=thunderbird-bin
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=12.0.1
+         VERSION=14.0
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-x86_64/en-US/$SOURCE
-     SOURCE_HASH=sha512:5d3e89298fd3518ad558def81d6a7d2597c4f84e604006e6af1dbfc7e12cc0fa1a28f0a0465ad86a474dd8e062ae2ce7e4eaaeae132877000a1f5c8a1b537363
+     SOURCE_HASH=sha512:74f7d38e1ebd7511abd441606bf3dcc962213233bb114f97ef7c62a694ade0ca9c0f9742c5eae354982536f81286b0b68850f1ac32ff7811a118c37f92d518fa
 else
  if [[ "$THUNDER_BIN_DEVEL" == "y" ]]; then
-         VERSION=12.0.1
+         VERSION=14.0
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:9e89ee76679d0a7f588293624dd438733718d3151e46a2b7e0dca7cd6dde00905d5be15b88f96f2754fe78db2cc879773b09ea20ad87c1b053d901ec755c14a4
+     SOURCE_HASH=sha512:8d3ad86422cf94d8fbf9b3a6c3333fc307f8acd6921ab22fbf0e24a532531643146b5ecfec572cc851c7df62b230d1dc5fe7ea23aaf3d4277bbd1e4bd7089521
  else
-         VERSION=12.0.1
+         VERSION=14.0
           SOURCE=thunderbird-${VERSION}.tar.bz2
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:9e89ee76679d0a7f588293624dd438733718d3151e46a2b7e0dca7cd6dde00905d5be15b88f96f2754fe78db2cc879773b09ea20ad87c1b053d901ec755c14a4
+     SOURCE_HASH=sha512:8d3ad86422cf94d8fbf9b3a6c3333fc307f8acd6921ab22fbf0e24a532531643146b5ecfec572cc851c7df62b230d1dc5fe7ea23aaf3d4277bbd1e4bd7089521
  fi
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20050301
-  SECURITY_PATCH=15
+  SECURITY_PATCH=16
       LICENSE[0]=MOZILLA
            SHORT="The pre-compiled i686 version of thunderbird mailer"
 cat << EOF
