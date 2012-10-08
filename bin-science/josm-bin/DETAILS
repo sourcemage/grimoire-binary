@@ -1,0 +1,17 @@
+           SPELL=josm-bin
+         VERSION=5485
+          SOURCE="josm-tested.jar"
+   SOURCE_URL[0]=http://josm.openstreetmap.de/josm-tested.jar
+     SOURCE_HASH=sha512:cf9c3c21ccad0b2bcb240ffd0b3de4e4e77ab24494af30789b1194a6fc5f5ad64eb19ff0551e283c0ad71d2796d6a5af3fda30f0d17cc06295bf8e8200793893
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://josm.openstreetmap.de"
+      LICENSE[0]=GPL
+         ENTERED=20121008
+           SHORT="an extensible editor for OpenStreetMap"
+cat << EOF
+JOSM is an extensible editor for OpenStreetMap (OSM) written in Java.
+
+Currently it supports loading stand-alone GPX tracks and GPX track data
+from the OSM database as well as loading and editing existing nodes, ways,
+metadata tags and relations from the OSM database.
+EOF

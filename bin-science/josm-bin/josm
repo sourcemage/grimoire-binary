@@ -1,0 +1,3 @@
+#!/bin/bash
+
+AWT_TOOLKIT="MToolkit" java -Xmx1024M -jar /usr/share/josm/josm-tested.jar
