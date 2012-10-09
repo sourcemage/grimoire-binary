@@ -1,3 +1,6 @@
+2012-10-09 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 5531
+
 2012-10-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, DEPENDS, DETAILS, INSTALL, josm, PRE_BUILD: spell created
 
