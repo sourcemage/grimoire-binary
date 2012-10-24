@@ -1,3 +1,6 @@
+2012-10-24 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: http -> https for chrome rpm, chromium issue 152392
+
 2012-04-28 Ismael Luceno <ismael@sourcemage.org>
 	* DEPENDS: depends on cups
 	* INSTALL: create /lib64 symlink
