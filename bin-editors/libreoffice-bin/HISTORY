@@ -1,3 +1,7 @@
+2012-11-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.6.3 (BUILD_VERSION=2)
+	* PRE_BUILD: dropped useless "if" construction
+
 2012-08-09 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 3.6.0, BUILD_VERSION=104
 

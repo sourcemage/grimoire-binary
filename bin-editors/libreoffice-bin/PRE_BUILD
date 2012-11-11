@@ -19,12 +19,6 @@ do
 done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-  
-FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION}-${BUILD_VERSION}"
-else
-  
-FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION}-${BUILD_VERSION}"
-fi  &&
+FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION}-${BUILD_VERSION}" &&
 rpm2tar  desktop-integration/${FILENAME}.noarch.rpm  &&
 tar xvf  ${FILENAME}.noarch.tar
