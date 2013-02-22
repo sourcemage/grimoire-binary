@@ -6,7 +6,7 @@ unpack_file  ''                   &&
 # Extracted root directories don't have the same names between localized
 # versions, so use * wildcard although I don't find that very elegant
 #
-cd  LibO*/RPMS
+cd  LibreOffice*/RPMS
 
 for  FILE  in  *.${LIBO_ARCH}.rpm
 do

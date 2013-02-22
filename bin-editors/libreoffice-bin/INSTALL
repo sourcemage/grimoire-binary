@@ -16,7 +16,7 @@ mkdir  -pv  ${INSTALL_ROOT}/usr/share/icons    &&
   # Extracted root directories don't have the same names between localized 
   # versions, so use * wildcard although I don't find that very elegant
   #
-  cd   $SOURCE_DIRECTORY/LibO*/RPMS
+  cd   $SOURCE_DIRECTORY/LibreOffice*/RPMS
 #fi  &&
 
 cp  -Rv  opt/*                     $INSTALLDIR                           &&
