@@ -1,3 +1,7 @@
+2013-02-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.0.0
+	* CONFIGURE, PRE_BUILD, INSTALL: LibO -> LibreOffice
+
 2012-11-10 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.6.3
 

@@ -13,7 +13,7 @@ for SS in $LIBO_HELPLANG; do
     unpack_file $i
   fi   &&
   # silently unpack RPMS for each language
-  cd LibO*$SS*/RPMS  &&
+  cd LibreOffice*$SS*/RPMS  &&
   for  FILE  in  *.${LIBO_ARCH}.rpm
   do
     FILE="${FILE%.$LIBO_ARCH.rpm}"  &&

@@ -2,6 +2,6 @@ INSTALLDIR=$INSTALL_ROOT/opt  &&
 mkdir  -pv  $INSTALLDIR/      &&
 local  SS                     &&
 for SS in $LIBO_HELPLANG; do
-  cd   $SOURCE_DIRECTORY/LibO*$SS*/RPMS  &&
+  cd   $SOURCE_DIRECTORY/LibreOffice*$SS*/RPMS  &&
   cp  -Rv  opt/*  $INSTALLDIR
 done
