@@ -3,4 +3,5 @@ depends  rpm2targz     &&
 depends  freetype2     &&
 depends  zlib          &&
 depends  OPENGL        &&
+depends  CUPS          &&
 optional_depends JAVA '' '' 'scripting support'

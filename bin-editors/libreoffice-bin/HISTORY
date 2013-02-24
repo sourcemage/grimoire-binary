@@ -1,3 +1,6 @@
+2013-02-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: libcups.so is strictly required since 4.0
+
 2013-02-22 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 4.0.0, BUILD_VERSION=103, LibO -> LibreOffice
 	* PRE_BUILD, INSTALL: LibO -> LibreOffice
