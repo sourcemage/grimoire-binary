@@ -1,9 +1,9 @@
            SPELL=josm-bin
-         VERSION=5608
+         VERSION=5759
           SOURCE="josm-tested.jar"
    SOURCE_URL[0]=http://josm.openstreetmap.de/josm-tested.jar
 FORCE_DOWNLOAD[0]=on
-     SOURCE_HASH=sha512:f9dbc45008a0e15a3adedefc0518b2dcca151300a151981109d559de693983eb22b9438f7c7572e3e14a69f122efd9e5493fb088bddaed40343154bdace6f7a1
+     SOURCE_HASH=sha512:d8ee18298b97b644165c8664d276d0bb8a16d914d319d8510df83314df8dc52a8fd697187117e4601ebbb96711f2822d63633d177dc96e5474a2a6f212f4479d
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="http://josm.openstreetmap.de"
       LICENSE[0]=GPL
