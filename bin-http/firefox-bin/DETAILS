@@ -1,17 +1,17 @@
            SPELL=firefox-bin
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=19.0
+         VERSION=20.0
           SOURCE=firefox-$VERSION.tar.bz2
-     SOURCE_HASH=sha512:90b55d8991f7e2a2f13209ec9dacee14c340d6edfff617d61e2a2b7f9ef99b567cf66cf19ad3787f1fe7bded15ed8f66c8db3733e5ee799dc34d1fc8084c784d
+     SOURCE_HASH=sha512:8a8885a2e1de98b663fdc45eb4aba15ca1911d06de8bfb74bb72c85b21a864c22cdba3d05ad60db9231b6d11a27eee3834a5bbc5d01c8f2a91f4076db2cd4452
 #         SOURCE2=$SOURCE.asc
 #      SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE
 #  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
-         VERSION=19.0
+         VERSION=20.0
           SOURCE=firefox-${VERSION}.tar.bz2
-     SOURCE_HASH=sha512:f759cf683871ee05eb61562398b682120eeacb208f60a2fa899a51230ed9042b483e328c27e184169f185a600e6fba80f671a3801d9ce1e64c4af13d8373982a
+     SOURCE_HASH=sha512:1b3e29c5411fe4eb01d8e8ea811fe10d85c7bd4dceed30b3a33c15cbbe7dcd4837ed65690b5d513d65ee18a5e4d0f53f478af2c4ef13d2bd6b0021be17e2d976
 #         SOURCE2=$SOURCE.asc
 #      SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
@@ -20,7 +20,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
-  SECURITY_PATCH=30
+  SECURITY_PATCH=31
       LICENSE[0]=MOZILLA
            SHORT="The binary version of firefox."
 cat << EOF
