@@ -1,3 +1,6 @@
+2013-06-27 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 4.0.4 (build version 2)
+
 2013-02-24 Vlad Glagolev <stealth@sourcemage.org>
 	* DEPENDS: libcups.so is strictly required since 4.0
 
