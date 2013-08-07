@@ -1,3 +1,6 @@
 create_account ontopia &&
 create_group ontopia &&
-default_pre_build
+
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+unpack_file

@@ -1,4 +1,5 @@
 INSTALL_DIR=${INSTALL_ROOT}/opt/ontopia &&
 mkdir -pv ${INSTALL_DIR} &&
 cp -rv ${SOURCE_DIRECTORY}/* ${INSTALL_DIR} &&
-find ${INSTALL_DIR}/ -print0 | xargs -r -0 -n 1 chown ontopia:ontopia
+find ${INSTALL_DIR}/ -print0 | xargs -r -0 -n 1 chown ontopia:ontopia &&
+find ${INSTALL_DIR}/ -name "*.sh" -print0 | xargs -r -0 -n 1 chmod 755
