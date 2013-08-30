@@ -1,3 +1,7 @@
+2013-08-29 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 4.1.1
+	* PRE_BUILD: freedesktop-menus are no longer under desktop-integration
+
 2013-06-27 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.0.4 (build version 2)
 

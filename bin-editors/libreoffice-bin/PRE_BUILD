@@ -20,5 +20,5 @@ done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
 FILENAME="libreoffice${VERSION%.*}-freedesktop-menus-${VERSION}-${BUILD_VERSION}" &&
-rpm2tar  desktop-integration/${FILENAME}.noarch.rpm  &&
+rpm2tar  ${FILENAME}.noarch.rpm  &&
 tar xvf  ${FILENAME}.noarch.tar
