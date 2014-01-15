@@ -1,6 +1,7 @@
 2014-01-14 Ladislav Hagara <hgr@vabo.cz>
 	* PRE_BUILD, INSTALL: google-chrome.desktop path has been updated
 	* DETAILS, PRE_BUILD, BUILD, INSTALL: jpeg-6b is not needed
+	* PRE_BUILD: google-chrome-{stable,beta,unstable} not renamed, linked
 
 2013-12-06 Ladislav Hagara <hgr@vabo.cz>
 	* PRE_BUILD: rpms now contain google-chrome-{stable,beta,unstable}

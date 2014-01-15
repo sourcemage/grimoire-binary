@@ -5,6 +5,6 @@ rpm2tar $SOURCE_CACHE/$SOURCE &&
 tar xf ${SOURCE/rpm/tar} &&
 rm -f ${SOURCE/rpm/tar} &&
 
-mv $SOURCE_DIRECTORY/usr/bin/google-chrome{*,-bin} &&
+ln $SOURCE_DIRECTORY/usr/bin/google-chrome{*,-bin} &&
 sed -i "s:Icon=.*:Icon=$INSTALL_ROOT/opt/google/chrome/product_logo_256.png:" \
   $SOURCE_DIRECTORY/usr/share/applications/google-chrome.desktop
