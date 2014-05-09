@@ -1,3 +1,6 @@
+2014-05-09 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 4.1.6.2
+
 2013-08-29 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.1.1
 	* PRE_BUILD: freedesktop-menus are no longer under desktop-integration
