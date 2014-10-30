@@ -1,18 +1,18 @@
            SPELL=libreoffice-bin
           SPELLX=libreoffice
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-         VERSION=4.2.6
-   BUILD_VERSION=3
-          SOURCE=LibreOffice_${VERSION}-secfix_Linux_x86-64_rpm.tar.gz
+         VERSION=4.2.7
+   BUILD_VERSION=2
+          SOURCE=LibreOffice_${VERSION}_Linux_x86-64_rpm.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
         URL_ARCH="x86_64"
        LIBO_ARCH="x86_64"
 else
-         VERSION=4.2.6
-   BUILD_VERSION=3
-          SOURCE=LibreOffice_${VERSION}-secfix_Linux_x86_rpm.tar.gz
+         VERSION=4.2.7
+   BUILD_VERSION=2
+          SOURCE=LibreOffice_${VERSION}_Linux_x86_rpm.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
   SOURCE2_IGNORE=signature
