@@ -1,3 +1,6 @@
+2015-04-21 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: bump to 1.2 for x86 and x86_64
+
 2008-10-15 George Sherwood <gsherwood@sourcemage.org>
 	* PREPARE: Removed. Only for z-rejected.
 	* DETAILS: Removed REJECT

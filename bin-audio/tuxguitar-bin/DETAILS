@@ -1,9 +1,22 @@
            SPELL=tuxguitar-bin
-         VERSION=1.0
+         VERSION=1.2
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  ia32|32)
           SOURCE=tuxguitar-${VERSION}-linux-x86.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tuxguitar-${VERSION}-linux-x86
+     SOURCE_HASH=sha512:c6ccd1bf4236a1fde31fd40b2b2f3c52736ab10c0baf32d7b2161362325d17885f9a67320636274cdf8b03998f066b3f3c4c13d7386c896484ed0d28233803a5
+  ;;
+  x86-64|64)
+          SOURCE=tuxguitar-${VERSION}-linux-x86_64.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tuxguitar-${VERSION}-linux-x86_64
+     SOURCE_HASH=sha512:8f0cf0263978d5a4066b38e34be840f398ee4ef8e6f795f2ff4497e8432220d7ec218e645093fb3581a9e681a6ee5f6d0adaadcbf00559d59e2e7cb3a117803b
+  ;;
+  *)
+          SOURCE=
+         VERSION=Unsupported
+  ;;
+esac
    SOURCE_URL[0]=$SOURCEFORGE_URL/tuxguitar/$SOURCE
-     SOURCE_HASH=sha512:12e992cec4ab9f39148c4db71e62dfaa07ac97909cfc0867632c25c1249f2b91070c24b8cd2be646778a6e4883c14534b54ef19ad9e5f709c92426a8fad1e333
       LICENSE[0]=GPL
         WEB_SITE=http://www.tuxguitar.com.ar
          ENTERED=20080626
