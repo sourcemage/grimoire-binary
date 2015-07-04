@@ -26,7 +26,7 @@ cp  -Rv  usr/share/icons/*         $INSTALL_ROOT/usr/share/icons         &&
 cp  -Rv  usr/share/applications/*  $INSTALL_ROOT/usr/share/applications  &&
 
 # create bin links for executables.
-for  LINK  in  "sbase"  "scalc"  "sdraw"  "simpress"  "smath"  "soffice"  "swriter"  "spadmin"
+for  LINK  in  "sbase"  "scalc"  "sdraw"  "simpress"  "smath"  "soffice"  "swriter"
 do
   message  "${MESSAGE_COLOR}Creating link for $LINK${DEFAULT_COLOR}"        &&
   rm  -f  ${INSTALL_ROOT}/usr/bin/$LINK                                     &&
