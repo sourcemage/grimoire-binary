@@ -6,5 +6,11 @@ tar xf ${SOURCE/rpm/tar} &&
 rm -f ${SOURCE/rpm/tar} &&
 
 ln $SOURCE_DIRECTORY/usr/bin/google-chrome{*,-bin} &&
+
+deskfile="$SOURCE_DIRECTORY/usr/share/applications/google-chrome.desktop"
+if [[ $GOOGLE_CHROME_BIN_VERSION == unstable ]]; then
+  deskfile="${deskfile%.desktop}-unstable.desktop"
+fi
+
 sed -i "s:Icon=.*:Icon=$INSTALL_ROOT/opt/google/chrome/product_logo_256.png:" \
-  $SOURCE_DIRECTORY/usr/share/applications/google-chrome.desktop
+  "$deskfile"
