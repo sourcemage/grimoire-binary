@@ -1,0 +1,47 @@
+           SPELL=terraform-tool-bin
+          SPELLX=${SPELL/-tool-bin/}
+         VERSION=0.6.16
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha512:40fdfc999430c002dd5c88d6613aa91dab6c376cbf0b93e7ddb620aad292718bd85cdefd164470042f717b03764381361e855bddd346c50ca1b5a3a7b4a69a67
+else
+            ARCH=386
+     SOURCE_HASH=sha512:0fbb06e835c45c5e9cdc3d17a5add652d2afba8498cf58f02d37c6528f9e592b5ce3c49197daac4157f44e0affa5ac79cb15554a82d46c904bba64b9c15fed9e
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.terraform.io/
+         ENTERED=20160731
+      LICENSE[0]=MPL
+           SHORT="tool for building, changing, and versioning infrastructure"
+cat << EOF
+This is a binary version of Terraform.
+
+Terraform is a tool for building, changing, and versioning infrastructure safely
+and efficiently. Terraform can manage existing and popular service providers as
+well as custom in-house solutions.
+
+The key features of Terraform are:
+
+- Infrastructure as Code: Infrastructure is described using a high-level
+configuration syntax. This allows a blueprint of your datacenter to be versioned
+and treated as you would any other code. Additionally, infrastructure can be
+shared and re-used.
+
+- Execution Plans: Terraform has a "planning" step where it generates an
+execution plan. The execution plan shows what Terraform will do when you call
+apply. This lets you avoid any surprises when Terraform manipulates
+infrastructure.
+
+- Resource Graph: Terraform builds a graph of all your resources, and
+parallelizes the creation and modification of any non-dependent resources.
+Because of this, Terraform builds infrastructure as efficiently as possible, and
+operators get insight into dependencies in their infrastructure.
+
+- Change Automation: Complex changesets can be applied to your infrastructure
+with minimal human interaction. With the previously mentioned execution plan and
+resource graph, you know exactly what Terraform will change and in what order,
+avoiding many possible human errors.
+EOF

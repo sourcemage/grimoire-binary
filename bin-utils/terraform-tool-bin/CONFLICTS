@@ -1,0 +1,4 @@
+# TODO: add terraform-tool spell (requires go 1.6+)
+conflicts terraform-tool &&
+# TODO: rename one or the other binary
+conflicts terraform
