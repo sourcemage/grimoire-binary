@@ -1,4 +1,2 @@
 # /usr/bin is handled by smgl-fhs
-for tool in terraform*; do
-  install -vm 755 ${tool} "${INSTALL_ROOT}/usr/bin/${tool}"
-done
+install -vm 755 terraform "${INSTALL_ROOT}/usr/bin"

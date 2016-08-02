@@ -1,3 +1,7 @@
+2016-08-02 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.7.0
+	* INSTALL: corrected, now there's only one binary
+
 2016-07-31 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, CONFLICTS, FINAL: created
 	  spell, version 0.6.16
