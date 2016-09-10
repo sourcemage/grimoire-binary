@@ -1,0 +1,2 @@
+# /usr/bin is handled by smgl-fhs
+install -vm 755 lego "${INSTALL_ROOT}/usr/bin"
