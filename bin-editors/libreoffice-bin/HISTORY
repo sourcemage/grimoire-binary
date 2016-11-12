@@ -1,3 +1,6 @@
+2016-11-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing glu dependency
+
 2016-06-07 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: updated spell to 5.1.3
 

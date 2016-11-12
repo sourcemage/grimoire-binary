@@ -1,7 +1,8 @@
 depends  gmp           &&
-depends  rpm2targz     && 
+depends  rpm2targz     &&
 depends  freetype2     &&
 depends  zlib          &&
 depends  OPENGL        &&
+depends  glu           &&
 depends  CUPS          &&
 optional_depends JAVA '' '' 'scripting support'
