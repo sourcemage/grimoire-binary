@@ -1,12 +1,12 @@
            SPELL=terraform-tool-bin
           SPELLX=${SPELL/-tool-bin/}
-         VERSION=0.8.7
+         VERSION=0.8.8
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha512:9963c4a37ce3cdb42a49352ef9145ca3953f1ed8871c7428d93cf6cadaccdfee8dab3b05735f3a127aeb06426cd93bd1ef4b17925d64f90479150575911c3f98
+     SOURCE_HASH=sha512:f39f25f6e6566b89d6cd25856a96d70de3eeb6af193dafc065d46ac9dff5e3b683d776a899146ef0d82f7dd00263cb1e155b9ff4c61d1bd9670de7363d8de2e8
 else
             ARCH=386
-     SOURCE_HASH=sha512:1e6b58ea3e6ebbe60f1e46b49544334dc367516e6f79bd82ff89a5031d6e4a6b149c9f0b06f5f4265854b26fd550db45925489e34dab78072b03fcd46e282b87
+     SOURCE_HASH=sha512:910992e8d897bdfea9241c9278462cb0555374b0bf8f54a9855b432e01e31d38fa26fe555ae4c50461d2b9f348ab8be88a1adc06d5da23efcf21e08d1b1b84d8
 fi
           SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
    SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
