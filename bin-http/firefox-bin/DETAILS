@@ -1,8 +1,8 @@
            SPELL=firefox-bin
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=24.0
+         VERSION=52.0
           SOURCE=firefox-$VERSION.tar.bz2
-     SOURCE_HASH=sha512:d7d05af5c11bb2a3ae35034077f06ce87ea47b9c15b5a3805b1ed5b87e56762de1af1a2eb64d3e1263becf89f25f630e70479291513785799aa9cdedf9838127
+     SOURCE_HASH=sha512:55e553adbb74b246a3638f8fb2db5ed4dfe9342d3f2b8fa8924290a45697b68b8cf56ff8b1722326511d6da700f181d686b9e9234a0becded70298b85d41e305
 #         SOURCE2=$SOURCE.asc
 #      SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE

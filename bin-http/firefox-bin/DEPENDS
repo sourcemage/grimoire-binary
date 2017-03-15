@@ -3,6 +3,6 @@ depends  JPEG       &&
 depends  libpng     &&
 depends  zip        &&
 depends  perl       &&
-depends  gtk+2      &&
+depends  gtk+3      &&
 depends  freetype2  &&
 depends  libidl

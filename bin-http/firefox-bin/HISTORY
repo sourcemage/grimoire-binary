@@ -1,3 +1,7 @@
+2017-03-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 52.0
+	* DEPENDS: now uses gtk+3
+
 2013-10-24 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 24.0, SECURITY_PATCH=34
 
