@@ -1,6 +1,6 @@
 # the remaining details of this spell are provided by CONFIGURE
            SPELL=libreoffice-bin-help
-         VERSION=5.2.6
+         VERSION=5.2.7
             SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    HELPLANG_LIST="en-US cs de es fi fr hr it ja nl pl pt ru sl tr"
