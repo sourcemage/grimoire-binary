@@ -1,0 +1,3 @@
+2017-09-05 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, PROVIDES, CONFLICTS,
+	  trava90.gpg: created spell, version 27.4.2

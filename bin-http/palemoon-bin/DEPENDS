@@ -1,0 +1,27 @@
+runtime_depends -sub CXX gcc &&
+
+# main libraries
+runtime_depends glib2 &&
+runtime_depends gdk-pixbuf2 &&
+runtime_depends atk &&
+runtime_depends fontconfig &&
+runtime_depends freetype2 &&
+runtime_depends pango &&
+runtime_depends cairo &&
+runtime_depends gtk+2 &&
+
+# X libraries
+runtime_depends libx11 &&
+runtime_depends libxt &&
+runtime_depends libxext &&
+runtime_depends libxrender &&
+
+# D-Bus
+runtime_depends dbus &&
+runtime_depends dbus-glib &&
+
+# misc
+runtime_depends alsa-lib &&
+
+# installation
+depends desktop-file-utils
