@@ -2,7 +2,7 @@ cp -dRv palemoon "${INSTALL_ROOT}/opt" &&
 
 for size in 16 32 48; do
   mkdir -vp "${INSTALL_ROOT}/usr/share/icons/hicolor/${size}x${size}/apps" &&
-  ln -vsf "${TRACK_ROOT}/opt/palemoon/palemoon/browser/chrome/icons/default/default${size}.png" \
+  ln -vsf "${TRACK_ROOT}/opt/palemoon/browser/chrome/icons/default/default${size}.png" \
           "${INSTALL_ROOT}/usr/share/icons/hicolor/${size}x${size}/apps/palemoon.png"
 done &&
 
