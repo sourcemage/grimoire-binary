@@ -1,0 +1,27 @@
+           SPELL=wuzz-bin
+          SPELLX=${SPELL/-bin}
+         VERSION=0.4.0
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=amd64
+    SOURCE_HASH=sha512:26d7dba24e9f71c1215f5835d6820d061b7eb90277895e431ebaa75e295e78b0837a0b26bb59f2580c10e76d0f2a71fe65f50e5c2b18880e3e6b4e2c0e4ca29e
+else
+            ARCH=386
+    SOURCE_HASH=sha512:e69f08e8d2cb07c5d8a8e7e1592e543eac85081ae93b4efb36719c2a294f6a5cce7843f57eb9e56e706dec3ab448d71c41279a50f479f941f700c6da8ec819a8
+fi
+         SOURCEX=${SPELLX}_linux_${ARCH}
+          SOURCE=${SOURCEX}_${VERSION}
+   SOURCE_URL[0]=https://github.com/asciimoo/${SPELLX}/releases/download/v${VERSION}/${SOURCEX}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://github.com/asciimoo/wuzz
+         ENTERED=20170923
+      LICENSE[0]=GPL
+        KEYWORDS="http"
+           SHORT="interactive cli tool for HTTP inspection, binary version"
+cat << EOF
+wuzz is an interactive cli tool for HTTP inspection.
+
+Wuzz command line arguments are similar to cURL's arguments, so it can be used
+to inspect/modify requests copied from the browser's network inspector with the
+"copy as cURL" feature.
+EOF
