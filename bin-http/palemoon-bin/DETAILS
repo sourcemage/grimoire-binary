@@ -1,12 +1,10 @@
            SPELL=palemoon-bin
           SPELLX=${SPELL/-bin}
-         VERSION=27.4.2
+         VERSION=27.5.0
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:d192398b79875213d01b49ef1d40a746cd18b69ec4368918fbfa03eb1733947db7d8924a432e37ac08d1e503bea4c2adf63d99fd5449f45ff88b8b9726681395
 else
             ARCH=i686
-     SOURCE_HASH=sha512:3751cc3ea130547a6ca6f89c8053fdee9c3b9ef7339ec9ccf0868866a9852eb96ec70b4ef51f055ea9c71bc21349368878d57759c68f1d858db6f00fa96a212c
 fi
           SOURCE=${SPELLX}-${VERSION}.en-US.linux-${ARCH}.tar.bz2
          SOURCE2=${SOURCE}.sig
