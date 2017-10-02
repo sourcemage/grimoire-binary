@@ -1,0 +1,43 @@
+# essential
+runtime_depends -sub CXX gcc &&
+
+# crypto stack
+runtime_depends nspr &&
+runtime_depends nss &&
+
+# X11
+runtime_depends libxcb &&
+runtime_depends -sub XCB libx11 &&
+runtime_depends libxext &&
+runtime_depends libxscrnsaver &&
+runtime_depends libxi &&
+runtime_depends libxtst &&
+runtime_depends libxcomposite &&
+runtime_depends libxrender &&
+runtime_depends libxrandr &&
+runtime_depends libxfixes &&
+runtime_depends libxdamage &&
+runtime_depends libxcursor &&
+runtime_depends libxfixes &&
+
+# GTK+
+runtime_depends expat &&
+runtime_depends dbus &&
+runtime_depends glib2 &&
+runtime_depends freetype2 &&
+runtime_depends fontconfig &&
+runtime_depends atk &&
+runtime_depends pango &&
+runtime_depends cairo &&
+runtime_depends gdk-pixbuf2 &&
+runtime_depends gconf2 &&
+# required for gtk-update-icon-cache
+depends gtk+2 &&
+# required for update-desktop-database
+depends desktop-file-utils &&
+
+# audio
+runtime_depends alsa-lib &&
+
+# printing
+runtime_depends cups

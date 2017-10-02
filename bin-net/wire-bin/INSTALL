@@ -1,0 +1,15 @@
+cp -dRv opt/wire-desktop "${INSTALL_ROOT}/opt" &&
+
+install -vm 644 usr/share/applications/wire-desktop.desktop "${INSTALL_ROOT}/usr/share/applications/wire-desktop.desktop" &&
+
+for size in 32 256; do
+  local icon_dir="usr/share/icons/hicolor/${size}x${size}/apps" &&
+
+  if [ ! -d "${INSTALL_ROOT}/${icon_dir}" ]; then
+    mkdir -vp "${INSTALL_ROOT}/${icon_dir}"
+  fi &&
+
+  install -vm 644 "${icon_dir}/wire-desktop.png" "${INSTALL_ROOT}/${icon_dir}/wire-desktop.png"
+done &&
+
+ln -vsf "${TRACK_ROOT}/opt/wire-desktop/wire-desktop" "${INSTALL_ROOT}/usr/bin/wire-desktop"

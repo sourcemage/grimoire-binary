@@ -1,0 +1,8 @@
+# binaries require /lib64
+if [ ! -d "${INSTALL_ROOT}/lib64" ]; then
+  ln -vsf "${TRACK_ROOT}/lib" "${INSTALL_ROOT}/lib64"
+fi &&
+
+update-desktop-database &&
+
+gtk-update-icon-cache -q -t -f "${INSTALL_ROOT}/usr/share/icons/hicolor"

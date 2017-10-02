@@ -1,3 +1,7 @@
+2017-10-01 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-net/wire-bin: new spell, cross-platform, encrypted instant
+	  messaging client
+
 2017-09-23 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-http/wuzz-bin: new spell, interactive cli tool for HTTP
 	  inspection, binary version

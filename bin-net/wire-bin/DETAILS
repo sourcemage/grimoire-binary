@@ -1,0 +1,33 @@
+           SPELL=wire-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=2.17.2813
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha512:9d11160005fb24fe6187ed964515b5f36b2f65af4f6eb395e1c830a8a65e2aa9540763a50e6dd58444efed9578937d56df7a263c9f62cdd2b9a1873523c9467a
+else
+            ARCH=i386
+     SOURCE_HASH=sha512:1bc73f1a7cb2c0f0465cc0509ad4fc802615b32fdab3434caddc4fc9f2cb8cd1e2a890f6ff71d6bdf2fa40e644d380b6284a299b890b9819433f0219144127a2
+fi
+          SOURCE=${SPELLX}_${VERSION}_${ARCH}.deb
+   SOURCE_URL[0]=https://wire-app.wire.com/linux/debian/pool/main/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://wire.com/
+         ENTERED=20171001
+      LICENSE[0]=GPL
+      LICENSE[1]=ISC
+      LICENSE[2]=MIT
+      LICENSE[3]=BSD
+      LICENSE[4]=APACHE
+      LICENSE[5]=SIL
+      LICENSE[6]=ICU
+      LICENSE[7]=UA
+           SHORT="cross-platform, encrypted instant messaging client"
+cat << EOF
+Wire is a cross-platform, encrypted instant messaging client created by Wire
+Swiss. It uses the Internet to make voice and video calls; send text messages,
+files, images, videos, audio files and user drawings depending on the clients
+used. It can be used on any of the available clients, requiring a phone number
+or email for registration. It is hosted inside the European Union and protected
+by European Union laws.
+EOF
