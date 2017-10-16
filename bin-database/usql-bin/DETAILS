@@ -1,0 +1,18 @@
+           SPELL=usql-bin
+          SPELLX=${SPELL/-bin}
+         VERSION=0.5.0
+            ARCH=amd64
+          SOURCE=${SPELLX}-${VERSION}-linux-${ARCH}.tar.bz2
+   SOURCE_URL[0]=https://github.com/xo/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+    SOURCE_HASH=sha512:2179e43b8f9995519e67a6adbc4a4fad92b194fcacfbdfd087c407f04398347c98aaa79ca682c4a9f550cda3afff87a47fb91a840a668b4d3866c5352b41a42a
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://github.com/xo/usql
+         ENTERED=20171016
+      LICENSE[0]=MIT
+        KEYWORDS="sql"
+           SHORT="universal command-line interface for SQL databases, binary version"
+cat << EOF
+usql is a universal command-line interface for PostgreSQL, MySQL, Oracle,
+SQLite3, Microsoft SQL Server, and other databases.
+EOF

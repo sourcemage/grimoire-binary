@@ -1,3 +1,7 @@
+2017-10-16 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-database/usql-bin: new spell, universal command-line interface for
+	  SQL databases, binary version
+
 2017-10-01 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-net/wire-bin: new spell, cross-platform, encrypted instant
 	  messaging client

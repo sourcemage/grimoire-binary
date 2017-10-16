@@ -1,0 +1,5 @@
+if [ ${SMGL_COMPAT_ARCHS[1]} != "x86_64" ]; then
+  message "${PROBLEM_COLOR}ERROR: spell ${SPELL_COLOR}${SPELL}${PROBLEM_COLOR} is not available for you CPU arch.${DEFAULT_COLOR}" &&
+
+  return 1
+fi
