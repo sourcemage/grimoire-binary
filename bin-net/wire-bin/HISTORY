@@ -1,3 +1,7 @@
+2017-10-21 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.0.2816
+	* PRE_BUILD: do not include build artifacts
+
 2017-10-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, FINAL: created spell,
 	  version 2.17.2813
