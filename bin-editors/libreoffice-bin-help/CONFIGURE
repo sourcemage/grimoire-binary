@@ -1,5 +1,9 @@
 source  $GRIMOIRE/config_query_multi.function  &&
 
+config_query_list LIBREOFFICE_BRANCH "Which branch do you want to install?" \
+                                     fresh \
+                                     still &&
+
 local CFG=$SPELL_CONFIG
 
 get_libohelplanguages()  {
