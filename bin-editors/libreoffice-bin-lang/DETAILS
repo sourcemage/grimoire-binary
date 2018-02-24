@@ -1,6 +1,13 @@
+if [[ -z "${LIBREOFFICE_BRANCH}" ]]; then
+  LIBREOFFICE_BRANCH="fresh"
+fi
 # the remaining details of this spell are provided by CONFIGURE
            SPELL=libreoffice-bin-lang
-         VERSION=5.3.7
+if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
+         VERSION=6.0.1
+else
+         VERSION=5.4.5
+fi
             SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
        LANG_LIST="cs de es fi fr hr it ja nl pl pt ru sl tr"
