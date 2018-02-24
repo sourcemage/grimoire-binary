@@ -1,8 +1,16 @@
+if [[ -z "${LIBREOFFICE_BRANCH}" ]]; then
+  LIBREOFFICE_BRANCH="fresh"
+fi
            SPELL=libreoffice-bin
           SPELLX=libreoffice
+if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
+         VERSION=6.0.1
+   BUILD_VERSION=1
+else
+         VERSION=5.4.5
+   BUILD_VERSION=1
+fi
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-         VERSION=6.0.0
-   BUILD_VERSION=2
           SOURCE=LibreOffice_${VERSION}_Linux_x86-64_rpm.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
@@ -10,8 +18,6 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
         URL_ARCH="x86_64"
        LIBO_ARCH="x86_64"
 else
-         VERSION=6.0.0
-   BUILD_VERSION=2
           SOURCE=LibreOffice_${VERSION}_Linux_x86_rpm.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG=libreoffice.gpg:$SOURCE2:UPSTREAM_KEY
