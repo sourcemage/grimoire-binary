@@ -1,0 +1,23 @@
+           SPELL=kubectl-bin
+         VERSION=1.9.3
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha512:b31bc1cb11982eee04c190485bbac7285e84cfb621436438dd66598d9a9670da8cddcdbbc105127e7db5586ab31546a6e3c59a36ae1a7437192effb9154d663a
+else
+            ARCH=386
+     SOURCE_HASH=sha512:9924ee3e003d481d8457a8a003e57dcf94937a72102bb603522993ba51e68682535382f44d41fd8ad6bc13096dd45d78dcf730528dec996a886040a4b9cc2ecb
+fi
+          SOURCE=${SPELL}-${VERSION}
+   SOURCE_URL[0]=https://storage.googleapis.com/kubernetes-release/release/v${VERSION}/bin/linux/${ARCH}/kubectl
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://kubernetes.io/
+         ENTERED=20180310
+      LICENSE[0]=APACHE
+           SHORT="Kubernetes command-line tool"
+cat << EOF
+This is a binary version of kubectl.
+
+kubectl is a command line interface for running commands against Kubernetes
+clusters.
+EOF

@@ -1,3 +1,7 @@
+2018-03-10 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/kubectl-bin: new spell, Kubernetes command-line tool,
+	  binary version
+
 2017-10-16 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-database/usql-bin: new spell, universal command-line interface for
 	  SQL databases, binary version

@@ -1,0 +1,8 @@
+local strip="" &&
+
+if list_find "${LDFLAGS}" '-s'; then
+  strip="-s"
+fi &&
+
+# /usr/bin is handled by smgl-fhs
+install -vm 755 ${strip} "${SOURCE_CACHE}/${SOURCE}" "${INSTALL_ROOT}/usr/bin/kubectl"
