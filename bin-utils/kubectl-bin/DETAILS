@@ -1,11 +1,11 @@
            SPELL=kubectl-bin
-         VERSION=1.9.3
+         VERSION=1.9.4
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha512:b31bc1cb11982eee04c190485bbac7285e84cfb621436438dd66598d9a9670da8cddcdbbc105127e7db5586ab31546a6e3c59a36ae1a7437192effb9154d663a
+     SOURCE_HASH=sha512:517ab9aa508aad627330ab5664f0e284f82657dc1c1d7040b91c94b5ba59ab21ac15230121f68acaf330ddf8fe98c61f8ed001e22d3637b7b3fc8d0462bd172c
 else
             ARCH=386
-     SOURCE_HASH=sha512:9924ee3e003d481d8457a8a003e57dcf94937a72102bb603522993ba51e68682535382f44d41fd8ad6bc13096dd45d78dcf730528dec996a886040a4b9cc2ecb
+     SOURCE_HASH=sha512:259b17567da570d2424ae52e3f9dba0141aaf124d0536e58c55f63559479688761cfb237356b752cd0870a1b6161c3be25afdbe50b2b6d4eb86ee2a7082f6e98
 fi
           SOURCE=${SPELL}-${VERSION}
    SOURCE_URL[0]=https://storage.googleapis.com/kubernetes-release/release/v${VERSION}/bin/linux/${ARCH}/kubectl
