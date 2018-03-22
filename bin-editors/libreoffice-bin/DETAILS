@@ -7,8 +7,8 @@ if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
          VERSION=6.0.1
    BUILD_VERSION=1
 else
-         VERSION=5.4.5
-   BUILD_VERSION=1
+         VERSION=5.4.6
+   BUILD_VERSION=2
 fi
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
           SOURCE=LibreOffice_${VERSION}_Linux_x86-64_rpm.tar.gz
