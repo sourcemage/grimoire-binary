@@ -1,6 +1,6 @@
            SPELL=palemoon-bin
           SPELLX=${SPELL/-bin}
-         VERSION=27.9.0
+         VERSION=27.9.1
   SECURITY_PATCH=4
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
