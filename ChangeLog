@@ -1,3 +1,7 @@
+2018-05-11 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-graphics/pencil-bin: new spell, GUI prototyping tool, binary
+	  version
+
 2018-03-10 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/kubectl-bin: new spell, Kubernetes command-line tool,
 	  binary version

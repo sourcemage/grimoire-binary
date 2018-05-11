@@ -1,0 +1,15 @@
+cp -dRv opt/Pencil "${INSTALL_ROOT}/opt" &&
+
+install -vm 644 usr/share/applications/pencil.desktop "${INSTALL_ROOT}/usr/share/applications/pencil.desktop" &&
+
+for size in 16 24 32 48 64 96 128 256; do
+  local icon_dir="usr/share/icons/hicolor/${size}x${size}/apps" &&
+
+  if [ ! -d "${INSTALL_ROOT}/${icon_dir}" ]; then
+    mkdir -vp "${INSTALL_ROOT}/${icon_dir}"
+  fi &&
+
+  install -vm 644 "${icon_dir}/pencil.png" "${INSTALL_ROOT}/${icon_dir}/pencil.png"
+done &&
+
+ln -vsf "${TRACK_ROOT}/opt/Pencil/pencil" "${INSTALL_ROOT}/usr/bin/pencil"

@@ -1,0 +1,22 @@
+           SPELL=pencil-bin
+          SPELLX=Pencil
+         VERSION=3.0.4
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha512:ec136038602268a68bf4044f6d9ca4c64a1eaf6132f24b895e81e4fa72e4ed7c88ab84240f04d3e73ab3e4f7ed7eb68172752a9f7e3702bd53f6e663dbfe3019
+else
+            ARCH=i386
+     SOURCE_HASH=sha512:be290a14e664020e888e5bacb9bd4ed320e2ab8f3d9c9487376c543e20912e4a8f6655a59fa5db2813fe88d7407f1889e876fd41491a6d509099752cecb3cada
+fi
+          SOURCE=${SPELLX}_${VERSION}_${ARCH}.deb
+   SOURCE_URL[0]=https://pencil.evolus.vn/dl/V${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://pencil.evolus.vn/
+         ENTERED=20180511
+      LICENSE[0]=GPL
+           SHORT="GUI prototyping tool"
+cat << EOF
+The Pencil Project's unique mission is to build a free and opensource tool for
+making diagrams and GUI prototyping that everyone can use.
+EOF
