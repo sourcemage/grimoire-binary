@@ -18,7 +18,6 @@ runtime_depends libxrandr &&
 runtime_depends libxfixes &&
 runtime_depends libxdamage &&
 runtime_depends libxcursor &&
-runtime_depends libxfixes &&
 
 # GTK+
 runtime_depends expat &&
