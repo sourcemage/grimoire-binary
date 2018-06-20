@@ -1,12 +1,12 @@
            SPELL=wire-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=3.0.2816
+         VERSION=3.2.2840
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha512:6d986fa56a38de08bf761363b44629616a39353740a92680ea72b6f89f43c5f8daffa15f969f29cf7c6aed453955b4dfcbf4cbd3f987b73b3cbff7cb3ddfd8b4
+     SOURCE_HASH=sha512:9db6537d504d70b5ffebdcc6c463d64e135bf53e6b8a51202026e2346f0eec0d8a20d48ba2ac75c300781b9f1b02f9ccdba9ad4adf967f5f5b258af7cec61f7e
 else
             ARCH=i386
-     SOURCE_HASH=sha512:d931511643f0de805033da84243900cc098f0894e06f41d9f0629ad5f40cc8ab8f0281dd9924e32add82a64468f5e497bfca2582def2b4954a429d5407fd1e04
+     SOURCE_HASH=sha512:9e716b2f059a88595c451c90c336105a594a70a870581d2a2cb2158e2f0d5c254e0d8e9da335931c109e791adf1e67952470e6249651da6da91a7f30dd5f2a95
 fi
           SOURCE=${SPELLX}_${VERSION}_${ARCH}.deb
    SOURCE_URL[0]=https://wire-app.wire.com/linux/debian/pool/main/${SOURCE}
