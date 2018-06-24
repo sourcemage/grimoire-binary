@@ -6,7 +6,7 @@ fi
 if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
          VERSION=6.0.1
 else
-         VERSION=5.4.6
+         VERSION=5.4.7
 fi
             SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
