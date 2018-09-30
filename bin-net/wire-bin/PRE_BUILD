@@ -6,5 +6,5 @@ verify_file &&
 ar p "${SOURCE_CACHE}/${SOURCE}" data.tar.xz | tar -xJf - &&
 
 # delete build artifacts
-rm -rf opt/wire-desktop/resources/app/node_modules/spellchecker/build \
-       opt/wire-desktop/resources/app/node_modules/libsodium-neon/native/target
+rm -rf opt/Wire/resources/app/node_modules/spellchecker/build \
+       opt/Wire/resources/app/node_modules/libsodium-neon/native/target
