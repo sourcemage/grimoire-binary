@@ -1,13 +1,13 @@
            SPELL=palemoon-bin
           SPELLX=${SPELL/-bin}
-         VERSION=27.9.4
-  SECURITY_PATCH=7
+         VERSION=28.2.1
+  SECURITY_PATCH=8
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
 else
             ARCH=i686
 fi
-          SOURCE=${SPELLX}-${VERSION}.en-US.linux-${ARCH}.tar.bz2
+          SOURCE=${SPELLX}-${VERSION}.linux-${ARCH}.tar.bz2
          SOURCE2=${SOURCE}.sig
    SOURCE_URL[0]=http://linux.palemoon.org/datastore/release/${SOURCE}
   SOURCE2_URL[0]=${SOURCE_URL}.sig
