@@ -1,10 +1,10 @@
            SPELL=usql-bin
           SPELLX=${SPELL/-bin}
-         VERSION=0.7.0
+         VERSION=0.7.1
             ARCH=amd64
           SOURCE=${SPELLX}-${VERSION}-linux-${ARCH}.tar.bz2
    SOURCE_URL[0]=https://github.com/xo/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
-    SOURCE_HASH=sha512:38e33ddb2cd0686128d48e286dc72ad611df0e5846173045c025ff397896709673960e0670b839c236753076a77aef91eb733ee156ad6d07dcc04cc88b8a9081
+    SOURCE_HASH=sha512:1390abaa4fa24720403a3d8f087eb801858783b9ac24dd92266db7f92d6737904b2b20880934d3bb1ada224494e564cc34c0de94cb634e3a0ac381b9391542f8
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
      GATHER_DOCS=off
         WEB_SITE=https://github.com/xo/usql
