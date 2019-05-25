@@ -1,0 +1,24 @@
+           SPELL=openjdk12-bin
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  x86-64|64)
+         VERSION=12.0.1+12
+             VER=${VERSION%+*}
+          SOURCE=openjdk-${VER}_linux-x64_bin.tar.gz
+     SOURCE_HASH=sha512:606f2c7bb5ff704a467bbad30de87cf41da652af72014f49fa1b4c4c11fccbbc09710dc7aed90aef27c4967c723d12b0ef538697f5481174fa1a811219830e16
+  ;;
+  *)
+         VERSION=Unsupported
+          SOURCE=
+  ;;
+esac
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk-$VER
+        WEB_SITE=http://openjdk.java.net/
+   SOURCE_URL[0]=https://download.java.net/java/GA/jdk12.0.1/69cfe15208a647278a19ef0990eea691/12/GPL/$SOURCE
+  STAGED_INSTALL=off
+      LICENSE[0]=GPL
+         ENTERED=20190525
+        KEYWORDS="java"
+           SHORT="an opensource implementation of the Java Platform, Standard Edition"
+cat << EOF
+an opensource implementation of the Java Platform, Standard Edition
+EOF

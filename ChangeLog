@@ -1,3 +1,6 @@
+2019-05-25 Remko van der Vossen <wich@sourcemage.org>
+	* bin-java/openjdk12-bin: new spell, GPL version of JDK12
+
 2018-05-11 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-graphics/pencil-bin: new spell, GUI prototyping tool, binary
 	  version

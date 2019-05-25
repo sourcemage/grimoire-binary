@@ -1,0 +1,8 @@
+depends alsa-lib &&
+depends freetype2 &&
+depends gcc &&
+depends libx11 &&
+depends libxext &&
+depends libxi &&
+depends libxrender &&
+depends libxtst
