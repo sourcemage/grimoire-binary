@@ -1,0 +1,5 @@
+default_pre_install &&
+sedit 's,^DIR=.*,DIR="/usr/bin",' bin/kotlin &&
+sedit 's,^DIR=.*,DIR="/usr/bin",' bin/kotlinc-js &&
+sedit 's,^DIR=.*,DIR="/usr/bin",' bin/kotlinc-jvm &&
+sedit 's,^KOTLIN_HOME=.*,KOTLIN_HOME="/usr/share/kotlin",' bin/kotlinc

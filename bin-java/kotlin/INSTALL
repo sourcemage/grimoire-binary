@@ -1,0 +1,6 @@
+mkdir -p $INSTALL_ROOT/usr/{bin,share/kotlin}
+mkdir -p $INSTALL_ROOT/usr/share/kotlin/{lib,licenses}
+install -m755 bin/{kotlin,kotlinc,kotlinc-js,kotlinc-jvm} $INSTALL_ROOT/usr/bin
+install -m644 lib/*.jar $INSTALL_ROOT/usr/share/kotlin/lib
+install -m644 build.txt $INSTALL_ROOT/usr/share/kotlin/
+install -m644 license/third_party/*.txt license/*.txt $INSTALL_ROOT/usr/share/kotlin/licenses
