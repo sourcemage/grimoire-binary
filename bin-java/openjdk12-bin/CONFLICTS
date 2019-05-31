@@ -8,4 +8,5 @@ conflicts  jre1.5-bin  &&
 conflicts  jre6-bin    &&
 conflicts  jre7-bin    &&
 conflicts  jre8-bin    &&
+conflicts  openjdk12   &&
 conflicts  server-jre8-bin
