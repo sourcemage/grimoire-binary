@@ -1,5 +1,5 @@
            SPELL=firefox-bin
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
          VERSION=52.0
           SOURCE=firefox-$VERSION.tar.bz2
      SOURCE_HASH=sha512:55e553adbb74b246a3638f8fb2db5ed4dfe9342d3f2b8fa8924290a45697b68b8cf56ff8b1722326511d6da700f181d686b9e9234a0becded70298b85d41e305
