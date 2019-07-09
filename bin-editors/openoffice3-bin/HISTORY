@@ -1,3 +1,8 @@
+2019-07-08 Eric Sandall <sandalle@sourcemage.org>
+	* Set 64-bit for EM64T as well.
+	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed
+	  SMGL_COMPAT_ARCHS[1] from x86_64 to em64t.
+
 2012-02-20 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 3.3.0 (Build #9567)
 	  Added official load balanced SOURCE_URL
