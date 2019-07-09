@@ -1,7 +1,7 @@
            SPELL=terraform-tool-bin
           SPELLX=${SPELL/-tool-bin/}
          VERSION=0.11.7
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha512:b7e2abb3d1fe6a36d0c0fcf72eb9412516ff413d8c69fcb6cc68a8ea34e675d464ecb72800f2242343b9bf7207c6082147b3a8e4b706671b117b690f9dab113e
 else
