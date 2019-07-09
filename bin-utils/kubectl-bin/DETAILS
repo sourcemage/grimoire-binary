@@ -1,6 +1,6 @@
            SPELL=kubectl-bin
          VERSION=1.11.0
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha512:a1831c3feb1d534a12cc3e5b6a90fd1c963a2df1e07a2e2f3f1c8f928f99a564ab273982bf970dcb29b63f890c76f92ebb484fb906d09b43fe1a1cc9858a9ad9
 else
