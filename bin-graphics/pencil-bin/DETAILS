@@ -1,7 +1,7 @@
            SPELL=pencil-bin
           SPELLX=Pencil
          VERSION=3.0.4
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha512:ec136038602268a68bf4044f6d9ca4c64a1eaf6132f24b895e81e4fa72e4ed7c88ab84240f04d3e73ab3e4f7ed7eb68172752a9f7e3702bd53f6e663dbfe3019
 else
