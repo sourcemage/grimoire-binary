@@ -1,7 +1,7 @@
            SPELL=lego-bin
           SPELLX=${SPELL/-bin/}
          VERSION=1.0.1
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha512:d94243eb888320ffa66d3ceb665c9dbf524679c966013debaabd52cf31874712e088ac87c86a7d92b45fd37a1280e22e421caf94c139f74a647bd31c33d8744c
 else
