@@ -11,7 +11,7 @@ fi
             SITE="http://download.documentfoundation.org/libreoffice/stable/$VERSION/rpm/"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    HELPLANG_LIST="en-US cs de es fi fr hr it ja nl pl pt ru sl tr"
-if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
        LIBO_ARCH="x86_64"
         URL_ARCH="x86_64"
 else
