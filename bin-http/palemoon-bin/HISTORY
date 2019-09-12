@@ -1,3 +1,6 @@
+2019-09-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 28.7.1; SECURITY_PATCH++
+
 2019-08-02 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 28.7.0
 	* trava90.gpg: added 8FCF9CEC public key (Moonchild (RSA signing key)
