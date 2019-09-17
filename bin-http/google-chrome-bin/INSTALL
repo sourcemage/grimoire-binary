@@ -1,28 +1,12 @@
 install -d -m 0755 $INSTALL_ROOT/opt/google &&
-cp -arv $SOURCE_DIRECTORY/opt/google/* $INSTALL_ROOT/opt/google &&
-cp -arv $SOURCE_DIRECTORY/usr $INSTALL_ROOT/
+cp -rv $SOURCE_DIRECTORY/opt/google/* $INSTALL_ROOT/opt/google &&
+cp -rv $SOURCE_DIRECTORY/usr $INSTALL_ROOT/ &&
 
 if [[ -d $INSTALL_ROOT/usr/lib/xulrunner/plugins ]]
 then
   ln -s $INSTALL_ROOT/usr/lib/xulrunner/plugins \
         $INSTALL_ROOT/opt/google/chrome/plugins
 fi &&
-
-#
-# Google Chrome links to weird .so.1d and .so.0d
-# http://code.google.com/p/chromium/issues/detail?id=13425
-#
-for lib in nss3 nssutil3 smime3 ssl3
-do
-  ln -s $TRACK_ROOT/usr/lib/lib$lib.so \
-        $INSTALL_ROOT/opt/google/chrome/lib$lib.so.1d
-done &&
-
-for lib in plds4 plc4 nspr4
-do
-  ln -s $TRACK_ROOT/usr/lib/lib$lib.so \
-        $INSTALL_ROOT/opt/google/chrome/lib$lib.so.0d
-done
 
 #
 # Create lib64 symlink
