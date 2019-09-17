@@ -3,9 +3,7 @@ depends  dbus-glib           &&
 depends  gconf2              &&
 depends  gtk+2               &&
 depends  nspr                &&
-depends  -sub "3.19.x"  nss  &&
+depends  nss                 &&
 depends  rpm2targz           &&
 depends  xdg-utils           &&
-depends  libxscrnsaver       &&
-
-suggest_depends  xulrunner  ''  ''  'for Mozilla plugins'
+depends  libxscrnsaver
