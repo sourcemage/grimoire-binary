@@ -1,0 +1,6 @@
+mkdir -p "$INSTALL_ROOT/opt/openjdk13" &&
+
+cp -pPR "${SOURCE_DIRECTORY}"/* "${INSTALL_ROOT}/opt/openjdk13/" &&
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SPELL_DIRECTORY/java.sh  ${INSTALL_ROOT}/etc/profile.d/

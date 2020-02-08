@@ -1,3 +1,6 @@
+2020-02-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* bin-java/openjdk13-bin: new spell, OpenJDK version 13
+
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
 	* FUNCTIONS: In disable_pic, check 64-bit for EM64T as well.
 	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed

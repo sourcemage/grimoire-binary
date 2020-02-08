@@ -1,0 +1,11 @@
+conflicts  j2sdk       &&
+conflicts  j2sdk-bin   &&
+conflicts  jdk1.5-bin  &&
+conflicts  jdk6-bin    &&
+conflicts  jdk7-bin    &&
+conflicts  jdk8-bin    &&
+conflicts  jre1.5-bin  &&
+conflicts  jre6-bin    &&
+conflicts  jre7-bin    &&
+conflicts  jre8-bin    &&
+conflicts  server-jre8-bin

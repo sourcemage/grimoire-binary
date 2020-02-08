@@ -1,0 +1,30 @@
+           SPELL=openjdk13-bin
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  x86-64|64)
+         VERSION=13.0.2+8
+        XVERSION=${VERSION%+*}
+             VER=${VERSION##*+}
+          SOURCE="openjdk-${VERSION}.zip"
+   SOURCE_URL[0]=https://github.com/ojdkbuild/contrib_jdk13u-ci/releases/download/jdk-${XVERSION}%2B${VER}/jdk-${XVERSION}-ojdkbuild-linux-x64.zip
+     SOURCE_HASH=sha512:aa298ffd63fc611c63b9918c7bc3a4a164db334018fd753dab6f55be78fae3e3fbfe8d25340610f67a66f0f8093597dd4a1d65818ff0790f5b0d81cccf949957
+  ;;
+  *)
+         VERSION=Unsupported
+          SOURCE=
+  ;;
+esac
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk-${XVERSION}-ojdkbuild-linux-x64"
+        WEB_SITE="https://openjdk.java.net"
+  STAGED_INSTALL=off
+      LICENSE[0]=GPL
+         ENTERED=20200208
+           SHORT="a free and open-source implementation of the Java Platform"
+cat << EOF
+OpenJDK (Open Java Development Kit) is a free and open-source implementation of
+the Java Platform, Standard Edition (Java SE). It is the result of an effort
+Sun Microsystems began in 2006. The implementation is licensed under the GNU
+General Public License (GNU GPL) version 2 with a linking exception. Were
+it not for the GPL linking exception, components that linked to the Java
+class library would be subject to the terms of the GPL license. OpenJDK is
+the official reference implementation of Java SE since version 7.
+EOF
