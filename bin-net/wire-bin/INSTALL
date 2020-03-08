@@ -1,5 +1,7 @@
 cp -dRv opt/Wire "${INSTALL_ROOT}/opt" &&
 
+chmod 4755 "${INSTALL_ROOT}/opt/Wire/chrome-sandbox" &&
+
 install -vm 644 usr/share/applications/wire-desktop.desktop "${INSTALL_ROOT}/usr/share/applications/wire-desktop.desktop" &&
 
 for size in 32 256; do

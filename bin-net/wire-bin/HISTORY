@@ -1,3 +1,7 @@
+2020-03-08 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.14.2921 (amd64)
+	* INSTALL: corrected perms
+
 2019-12-22 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.11.2912 (amd64)
 
