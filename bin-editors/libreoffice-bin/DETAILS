@@ -4,10 +4,10 @@ fi
            SPELL=libreoffice-bin
           SPELLX=libreoffice
 if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
-         VERSION=6.2.4
-   BUILD_VERSION=2
+         VERSION=7.0.0
+   BUILD_VERSION=3
 else
-         VERSION=6.1.6
+         VERSION=6.4.5
    BUILD_VERSION=3
 fi
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then

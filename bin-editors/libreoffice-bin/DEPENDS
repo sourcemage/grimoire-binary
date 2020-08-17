@@ -5,4 +5,5 @@ depends  zlib          &&
 depends  OPENGL        &&
 depends  glu           &&
 depends  CUPS          &&
+depends  cairo         &&
 optional_depends JAVA '' '' 'scripting support'
