@@ -1,3 +1,6 @@
+2020-12-21 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 28.17.0; SECURITY_PATCH++; drop i686 arch
+
 2020-11-24 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 28.16.0; SECURITY_PATCH++
 
