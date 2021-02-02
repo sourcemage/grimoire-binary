@@ -1,9 +1,9 @@
            SPELL=palemoon-bin
           SPELLX=${SPELL/-bin}
-         VERSION=28.17.0
-  SECURITY_PATCH=28
+         VERSION=29.0.0
+  SECURITY_PATCH=29
             ARCH=x86_64
-          SOURCE=${SPELLX}-${VERSION}.linux-${ARCH}-gtk2.tar.xz
+          SOURCE=${SPELLX}-${VERSION}.linux-${ARCH}-${PALEMOON_GTK}.tar.xz
          SOURCE2=${SOURCE}.sig
    SOURCE_URL[0]=http://linux.palemoon.org/datastore/release/${SOURCE}
   SOURCE2_URL[0]=${SOURCE_URL}.sig

@@ -1,3 +1,7 @@
+2021-02-02 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 29.0.0; SECURITY_PATCH++
+	* PREPARE, DEPENDS: added gtk+3 build
+
 2020-12-21 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 28.17.0; SECURITY_PATCH++; drop i686 arch
 

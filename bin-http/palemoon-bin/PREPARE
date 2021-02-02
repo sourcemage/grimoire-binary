@@ -1,0 +1,3 @@
+config_query_list PALEMOON_GTK "Pale Moon can use GTK+2 or GTK+3. Which build to use?" \
+                               gtk2 \
+                               gtk3
