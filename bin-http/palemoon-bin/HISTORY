@@ -1,3 +1,6 @@
+2021-02-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 29.0.1; SECURITY_PATCH++
+
 2021-02-02 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 29.0.0; SECURITY_PATCH++
 	* PREPARE, DEPENDS: added gtk+3 build
