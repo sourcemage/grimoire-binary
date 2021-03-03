@@ -1,7 +1,7 @@
            SPELL=palemoon-bin
           SPELLX=${SPELL/-bin}
-         VERSION=29.0.1
-  SECURITY_PATCH=30
+         VERSION=29.1.0
+  SECURITY_PATCH=31
             ARCH=x86_64
           SOURCE=${SPELLX}-${VERSION}.linux-${ARCH}-${PALEMOON_GTK}.tar.xz
          SOURCE2=${SOURCE}.sig
