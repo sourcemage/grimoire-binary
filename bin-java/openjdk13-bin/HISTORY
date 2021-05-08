@@ -1,7 +1,7 @@
-2020-04-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-04-25 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 13.0.3+3
 
-2020-02-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-02-08 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL, java.sh,
 	  PRE_BUILD, PROVIDES: spell created
 
