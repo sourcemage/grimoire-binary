@@ -1,0 +1,18 @@
+optional_depends llvm "" "" "to build NodeJS with clang rather than gcc" &&
+
+if ! is_depends_enabled ${SPELL} llvm; then
+  depends -sub CXX gcc
+fi &&
+
+depends PYTHON &&
+depends brotli  '--shared-brotli'  &&
+depends c-ares  '--shared-cares'   &&
+depends nghttp2 '--shared-nghttp2' &&
+depends libuv '--shared-libuv' &&
+depends zlib '--shared-zlib' &&
+depends icu '--with-intl=system-icu' &&
+
+optional_depends SSL \
+                 "--shared-openssl" \
+                 "" \
+                 "to use system SSL library instead of bundled"

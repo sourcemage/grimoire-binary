@@ -1,0 +1,6 @@
+DEST=$INSTALL_ROOT/opt/nodejs
+mkdir -p $DEST &&
+cd $SOURCE_DIRECTORY &&
+cp -af include  lib  LICENSE  README.md  share bin $DEST
+#cp -af * $DEST
+

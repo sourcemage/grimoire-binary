@@ -1,0 +1,15 @@
+           SPELL=nodejs-bin
+          SPELLX=node
+         VERSION=16.2.0
+     SOURCE_HASH=sha512:5e8a9602a6b3998a5091a4c7f347e344e6bc07d47ae8ca5b5a3ea170022759bd004c962a9f2039334cac53f19b1160aeee5929462dc57c2c7a38c60bcd703fa1
+          SOURCE=$SPELLX-v$VERSION-linux-x64.tar.xz
+   SOURCE_URL[0]=https://nodejs.org/dist/v${VERSION}/$SOURCE
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELLX-v$VERSION-linux-x64"
+         ARCHIVE="off"
+        WEB_SITE=https://nodejs.org/
+         ENTERED=20210524
+      LICENSE[0]=MIT
+           SHORT="platform for building fast, scalable network applications"
+cat << EOF
+platform for building fast, scalable network applic
+EOF
