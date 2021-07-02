@@ -1,3 +1,6 @@
+2021-07-02 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/packer-bin: new spell, tool for building machine images
+
 2021-07-01 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-net/consul-bin: new spell, service discovery and configuration tool
 	* bin-utils/consul-template-bin: new spell, template rendering and

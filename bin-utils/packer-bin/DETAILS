@@ -1,0 +1,31 @@
+           SPELL=packer-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=1.7.3
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:1a8719f0797e9e45abd98d2eb38099b09e5566ec212453052d2f21facc990c73:UPSTREAM_HASH
+else
+            ARCH=386
+     SOURCE_HASH=sha512:492abc450286ace97563e7d3cd6c6add86ebc21daca1d566c65a4a3c867979f0:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.packer.io/
+         ENTERED=20210702
+      LICENSE[0]=MPL
+           SHORT="tool for building machine images"
+cat << EOF
+This is a binary version of Packer.
+
+Packer is a tool for building identical machine images for multiple platforms
+from a single source configuration.
+
+Packer is lightweight, runs on every major operating system, and is highly
+performant, creating machine images for multiple platforms in parallel.
+Packer comes out of the box with support for many platforms, the full list of
+which can be found at https://www.packer.io/docs/builders.
+
+Support for other platforms can be added via plugins.
+EOF
