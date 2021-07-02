@@ -1,0 +1,35 @@
+#!/bin/bash
+
+. /etc/sysconfig/consul
+
+PROGRAM=/usr/bin/consul
+PIDFILE=/var/run/consul/consul.pid
+ARGS="agent -config-dir=/etc/consul.d -pid-file=$PIDFILE $CONSUL_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  TIMEOUT=3
+  PIDFILE_DIR=$(dirname $PIDFILE)
+
+  [ -d $PIDFILE_DIR ] || mkdir $PIDFILE_DIR && chown consul:consul $PIDFILE_DIR
+
+  su consul -s /bin/sh -c "$PROGRAM $ARGS &> /dev/null" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  kill -INT $(cat ${PIDFILE} 2> /dev/null) &> /dev/null
+
+  evaluate_retval
+}
+
+. /etc/init.d/smgl_init

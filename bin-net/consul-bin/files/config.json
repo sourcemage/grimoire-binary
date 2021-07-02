@@ -1,0 +1,6 @@
+{
+    "server": false,
+    "ui": false,
+    "enable_syslog": true,
+    "data_dir": "/var/lib/consul"
+}

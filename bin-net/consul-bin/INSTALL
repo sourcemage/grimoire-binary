@@ -1,0 +1,19 @@
+# /usr/bin is handled by smgl-fhs
+install -vm 755 consul "${INSTALL_ROOT}/usr/bin" &&
+
+local config_dir="${INSTALL_ROOT}/etc/${SPELLX}.d" &&
+local data_dir="${INSTALL_ROOT}/var/lib/${SPELLX}" &&
+
+if [ ! -d "${config_dir}" ]; then
+  install -vm 750 -o root -g consul -d "${config_dir}"
+fi &&
+
+if [ ! -d "${data_dir}" ]; then
+  install -vm 750 -o consul -g consul -d "${data_dir}"
+fi &&
+
+install_config_file "${SPELL_DIRECTORY}/files/config.json" \
+                    "${config_dir}/config.json" &&
+
+chown root:consul "${config_dir}/config.json" &&
+chmod 0640 "${config_dir}/config.json"

@@ -1,0 +1,24 @@
+           SPELL=consul-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=1.10.0
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:7cd2e67ce2779c74ce18d880ccdfdc00a655eb71a6a7a956e6d3b71e7937ca0f:UPSTREAM_HASH
+else
+            ARCH=386
+     SOURCE_HASH=sha256:c3276f6b87035691d7dee13e18c5e8e4aa2c9fa506a5182eaa1fb9dde547e3aa:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.consul.io/
+         ENTERED=20210701
+      LICENSE[0]=MPL
+           SHORT="service discovery and configuration tool"
+cat << EOF
+This is a binary version of Consul.
+
+Consul is a tool for service discovery and configuration. Consul is distributed,
+highly available, and extremely scalable.
+EOF
