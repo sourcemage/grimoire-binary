@@ -1,0 +1,29 @@
+#!/bin/bash
+
+. /etc/sysconfig/vault
+
+PROGRAM=/usr/bin/vault
+ARGS="server -config=/etc/vault.d $VAULT_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  TIMEOUT=3
+
+  su vault -s /bin/sh -c "set -o pipefail; $PROGRAM $ARGS 2>&1 | logger -ip daemon.info -t vault" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  killproc "vault server" SIGINT
+}
+
+. /etc/init.d/smgl_init

@@ -1,0 +1,19 @@
+# /usr/bin is handled by smgl-fhs
+install -vm 755 vault "${INSTALL_ROOT}/usr/bin" &&
+
+local config_dir="${INSTALL_ROOT}/etc/${SPELLX}.d" &&
+local data_dir="${INSTALL_ROOT}/var/lib/${SPELLX}" &&
+
+if [ ! -d "${config_dir}" ]; then
+  install -vm 750 -o root -g vault -d "${config_dir}"
+fi &&
+
+if [ ! -d "${data_dir}" ]; then
+  install -vm 750 -o vault -g vault -d "${data_dir}"
+fi &&
+
+install_config_file "${SPELL_DIRECTORY}/files/vault.hcl" \
+                    "${config_dir}/vault.hcl" &&
+
+chown root:vault "${config_dir}/vault.hcl" &&
+chmod 0640 "${config_dir}/vault.hcl"

@@ -2,7 +2,8 @@
 	* bin-net/consul-bin: new spell, service discovery and configuration tool
 	* bin-utils/consul-template-bin: new spell, template rendering and
 	  notifications with Consul
-	* accounts, groups: added account data for consul-bin and
+	* bin-security/vault-bin: new spell, tool for managing secrets
+	* accounts, groups: added account data for consul-bin, vault-bin and
 	  consul-template-bin spells
 
 2021-06-04 Treeve Jelbert <treeve@sourcemage.org>

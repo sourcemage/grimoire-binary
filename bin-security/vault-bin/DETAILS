@@ -1,0 +1,31 @@
+           SPELL=vault-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=1.7.3
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:8453132a93b755c0a89dd4b2f1a99bd4af06f8167b81917f117080839031e03f:UPSTREAM_HASH
+else
+            ARCH=386
+     SOURCE_HASH=sha256:bc68f2e611097e08f1d6c045a787036383085b51b85073c8f0a78ae5dc5f8b0b:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.vaultproject.io/
+         ENTERED=20210701
+      LICENSE[0]=MPL
+           SHORT="tool for managing secrets"
+cat << EOF
+Vault is a tool for securely accessing secrets. A secret is anything that you
+want to tightly control access to, such as API keys, passwords, certificates,
+and more. Vault provides a unified interface to any secret, while providing
+tight access control and recording a detailed audit log.
+
+A modern system requires access to a multitude of secrets: database credentials,
+API keys for external services, credentials for service-oriented architecture
+communication, etc. Understanding who is accessing what secrets is already very
+difficult and platform-specific. Adding on key rolling, secure storage, and
+detailed audit logs is almost impossible without a custom solution. This is
+where Vault steps in.
+EOF
