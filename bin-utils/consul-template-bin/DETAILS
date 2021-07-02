@@ -1,0 +1,28 @@
+           SPELL=consul-template-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.26.0
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:d4b1d8dc46289a4bdbb73301cd1dbdd9b41eddcab4103f006c5bf9637f7e4381:UPSTREAM_HASH
+else
+            ARCH=386
+     SOURCE_HASH=sha256:5e82abd3e1516970d86e81d4acc4c929183c7a1fc55b0b6b01ef3b56a3b5d183:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://github.com/hashicorp/consul-template
+         ENTERED=20210701
+      LICENSE[0]=MPL
+           SHORT="template rendering and notifications with Consul"
+cat << EOF
+This is a binary version of consul-template.
+
+This project provides a convenient way to populate values from Consul into the
+file system using the consul-template daemon.
+
+The daemon consul-template queries a Consul or Vault cluster and updates any
+number of specified templates on the file system. As an added bonus, it can
+optionally run arbitrary commands when the update process completes.
+EOF

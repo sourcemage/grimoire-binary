@@ -1,6 +1,9 @@
 2021-07-01 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-net/consul-bin: new spell, service discovery and configuration tool
-	* accounts, groups: added account data for consul-bin spell
+	* bin-utils/consul-template-bin: new spell, template rendering and
+	  notifications with Consul
+	* accounts, groups: added account data for consul-bin and
+	  consul-template-bin spells
 
 2021-06-04 Treeve Jelbert <treeve@sourcemage.org>
 	* bin-devel/nodejs-bin: Nodejs

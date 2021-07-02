@@ -1,0 +1,14 @@
+# /usr/bin is handled by smgl-fhs
+install -vm 755 consul-template "${INSTALL_ROOT}/usr/bin" &&
+
+local config_dir="${INSTALL_ROOT}/etc/${SPELLX}.d" &&
+
+if [ ! -d "${config_dir}" ]; then
+  install -vm 750 -o root -g consul-template -d "${config_dir}"
+fi &&
+
+install_config_file "${SPELL_DIRECTORY}/files/default.conf" \
+                    "${config_dir}/default.conf" &&
+
+chown root:consul-template "${config_dir}/default.conf" &&
+chmod 0640 "${config_dir}/default.conf"

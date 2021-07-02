@@ -1,0 +1,35 @@
+#!/bin/bash
+
+. /etc/sysconfig/consul-template
+
+PROGRAM=/usr/bin/consul-template
+PIDFILE=/var/run/consul-template/consul-template.pid
+ARGS="-config=/etc/consul-template.d -pid-file=$PIDFILE $CONSUL_TEMPLATE_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  TIMEOUT=3
+  PIDFILE_DIR=$(dirname $PIDFILE)
+
+  [ -d $PIDFILE_DIR ] || mkdir $PIDFILE_DIR && chown consul-template:consul-template $PIDFILE_DIR
+
+  su consul-template -s /bin/sh -c "$PROGRAM $ARGS &> /dev/null" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  kill -INT $(cat ${PIDFILE} 2> /dev/null) &> /dev/null
+
+  evaluate_retval
+}
+
+. /etc/init.d/smgl_init
