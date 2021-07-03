@@ -1,5 +1,7 @@
 2021-07-02 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/packer-bin: new spell, tool for building machine images
+	* bin-utils/envconsul-bin: new spell, start subprocess with envvar
+	  populated from Consul and Vault
 
 2021-07-01 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-net/consul-bin: new spell, service discovery and configuration tool
