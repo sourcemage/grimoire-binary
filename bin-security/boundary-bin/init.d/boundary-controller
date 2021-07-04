@@ -1,0 +1,29 @@
+#!/bin/bash
+
+. /etc/sysconfig/boundary
+
+PROGRAM=/usr/bin/boundary
+ARGS="server -config=/etc/boundary/controller.hcl $BOUNDARY_CONTROLLER_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  TIMEOUT=3
+
+  su boundary -s /bin/sh -c "set -o pipefail; $PROGRAM $ARGS 2>&1 | logger -ip daemon.info -t boundary-controller" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  killproc "boundary server -config=/etc/boundary/controller.hcl" SIGINT
+}
+
+. /etc/init.d/smgl_init

@@ -1,3 +1,8 @@
+2021-07-03 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-security/boundary-bin: new spell, network resources access
+	  controller
+	* accounts, groups: added account data for boundary-bin spell
+
 2021-07-02 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/packer-bin: new spell, tool for building machine images
 	* bin-utils/envconsul-bin: new spell, start subprocess with envvar

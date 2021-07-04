@@ -1,0 +1,38 @@
+           SPELL=boundary-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.4.0
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:3a7242a9d9e577af7ec023b53713599e2b9d24d68a0b06b12ddd7d297fe909c2:UPSTREAM_HASH
+else
+            ARCH=386
+     SOURCE_HASH=sha256:a41e343b44dfe8e991ca2250dd5c8b2d04f5652ebfe812d149751c3fe9e532eb:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
+   SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.boundaryproject.io/
+         ENTERED=20210703
+      LICENSE[0]=MPL
+           SHORT="network resources access controller"
+cat << EOF
+Boundary provides simple and secure access to hosts and services.
+
+Traditional approaches like SSH bastion hosts or VPNs require distributing and
+managing credentials, configuring network controls like firewalls, and
+exposing the private network. Boundary provides a secure way to access hosts
+and critical systems without having to manage credentials or expose your
+network, and is entirely open source.
+
+Boundary is designed to be straightforward to understand, highly scalable, and
+resilient. It can run in clouds, on-prem, secure enclaves and more, and does
+not require an agent to be installed on every end host.
+
+Unlike firewalls, Boundary performs per-access authentication and
+authorization checks, allowing for much higher level mappings of users to
+services or hosts than at network layers. Although complementary to secrets
+managers (like HashiCorp's own Vault), Boundary fills a different niche,
+allowing the credential that is eventually used to be hidden entirely from the
+user.
+EOF

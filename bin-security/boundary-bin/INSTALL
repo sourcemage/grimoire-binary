@@ -1,0 +1,17 @@
+# /usr/bin is handled by smgl-fhs
+install -vm 755 boundary "${INSTALL_ROOT}/usr/bin" &&
+
+local config_dir="${INSTALL_ROOT}/etc/${SPELLX}" &&
+
+if [ ! -d "${config_dir}" ]; then
+  install -vm 750 -o root -g boundary -d "${config_dir}"
+fi &&
+
+install_config_file "${SPELL_DIRECTORY}/files/controller.hcl" \
+                    "${config_dir}/controller.hcl" &&
+
+install_config_file "${SPELL_DIRECTORY}/files/worker.hcl" \
+                    "${config_dir}/worker.hcl" &&
+
+chown root:boundary "${config_dir}/"*.hcl &&
+chmod 0640 "${config_dir}/"*.hcl
