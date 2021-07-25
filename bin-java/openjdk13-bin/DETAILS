@@ -1,12 +1,13 @@
            SPELL=openjdk13-bin
 case "${SMGL_COMPAT_ARCHS[0]}" in
   x86-64|64)
-         VERSION=13.0.3+3
-        XVERSION=${VERSION%+*}
+         VERSION=13.0.5.1+1
+       X3VERSION=$(echo $VERSION | cut -f1,2,3 -d.)
+       X4VERSION=$(echo $VERSION | cut -f1,2,3,4 -d. | sed -e 's:+.*::')
              VER=${VERSION##*+}
           SOURCE="openjdk-${VERSION}.zip"
-   SOURCE_URL[0]=https://github.com/ojdkbuild/contrib_jdk13u-ci/releases/download/jdk-${XVERSION}%2B${VER}/jdk-${XVERSION}-ojdkbuild-linux-x64.zip
-     SOURCE_HASH=sha512:b0268084be45bf5d011df8668fe1daccfc7de647758e4c6ff0d126e80e39647fb0ecab76b2505358efe9db2935878c4ea2ce16aa806b662cbb4082139ea49c72
+   SOURCE_URL[0]=https://github.com/ojdkbuild/contrib_jdk13u-ci/releases/download/jdk-${X4VERSION}%2B${VER}/jdk-${X3VERSION}-ojdkbuild-linux-x64.zip
+     SOURCE_HASH=sha512:adb29f5db0cc4f7f6e52438a530468369fe65857d0516d796b4bf65800959428a525e37cb0b2da63d8736f3176b40a17a4c82aa45ef510de03b4bb5ea226d656
   ;;
   *)
          VERSION=Unsupported
