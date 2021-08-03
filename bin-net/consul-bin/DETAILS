@@ -1,12 +1,13 @@
            SPELL=consul-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=1.10.0
+         VERSION=1.10.1
+  SECURITY_PATCH=1
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha256:7cd2e67ce2779c74ce18d880ccdfdc00a655eb71a6a7a956e6d3b71e7937ca0f:UPSTREAM_HASH
+     SOURCE_HASH=sha256:abd9a7696e2eeed66fdb28965c220a2ba45ee5cd79ff263557f5392291aab730:UPSTREAM_HASH
 else
             ARCH=386
-     SOURCE_HASH=sha256:c3276f6b87035691d7dee13e18c5e8e4aa2c9fa506a5182eaa1fb9dde547e3aa:UPSTREAM_HASH
+     SOURCE_HASH=sha256:8f4f0806562965bf86017f77d787b7077bc455d5fa3150ec85246f19daaf81dd:UPSTREAM_HASH
 fi
           SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
    SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}

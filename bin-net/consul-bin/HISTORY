@@ -1,3 +1,6 @@
+2021-08-02 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.10.1; SECURITY_PATCH=1
+
 2021-07-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, init.d, files: created
 	  spell, version 1.10.0
