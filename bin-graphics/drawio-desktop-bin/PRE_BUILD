@@ -1,0 +1,6 @@
+default_pre_build &&
+cd "${SOURCE_DIRECTORY}" &&
+
+verify_file &&
+
+ar p "${SOURCE_CACHE}/${SOURCE}" data.tar.xz | tar -xJf -

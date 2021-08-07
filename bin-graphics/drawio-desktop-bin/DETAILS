@@ -1,0 +1,17 @@
+           SPELL=drawio-desktop-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=14.6.13
+          SOURCE=${SPELLX/-desktop/}-amd64-${VERSION}.deb
+   SOURCE_URL[0]=https://github.com/jgraph/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:2eefdcd347f176a2bcdf64edb72552ccf2659be4626292d08aa96dee3d7acd29b2ec5e881908b2c74ae887d543094cf0f32f4fa519e7a1a12d399e411d9fe7b7
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX/-desktop/}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.diagrams.net/
+         ENTERED=20210807
+      LICENSE[0]=APACHE
+           SHORT="diagram drawing application built on web technology"
+cat << EOF
+This is a binary version of drawio-desktop.
+
+drawio-desktop is a diagrams.net desktop app based on Electron.
+EOF

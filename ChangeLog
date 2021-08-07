@@ -1,3 +1,7 @@
+2021-08-07 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-graphics/drawio-desktop-bin: new spell, diagram drawing
+	  application built on web technology
+
 2021-07-03 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-security/boundary-bin: new spell, network resources access
 	  controller

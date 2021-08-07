@@ -1,0 +1,18 @@
+cp -dRv opt/drawio "${INSTALL_ROOT}/opt" &&
+
+chmod 4755 "${INSTALL_ROOT}/opt/drawio/chrome-sandbox" &&
+
+install -vm 644 usr/share/applications/drawio.desktop "${INSTALL_ROOT}/usr/share/applications/drawio.desktop" &&
+install -vm 644 usr/share/mime/packages/drawio.xml "${INSTALL_ROOT}/usr/share/mime/packages/drawio.xml" &&
+
+for size in $(ls usr/share/icons/hicolor/); do
+  local icon_dir="usr/share/icons/hicolor/${size}/apps" &&
+
+  if [ ! -d "${INSTALL_ROOT}/${icon_dir}" ]; then
+    mkdir -vp "${INSTALL_ROOT}/${icon_dir}"
+  fi &&
+
+  install -vm 644 "${icon_dir}/drawio.png" "${INSTALL_ROOT}/${icon_dir}/drawio.png"
+done &&
+
+ln -vsf "${TRACK_ROOT}/opt/drawio/drawio" "${INSTALL_ROOT}/usr/bin/drawio"
