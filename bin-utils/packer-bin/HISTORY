@@ -1,3 +1,6 @@
+2021-09-18 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.7.5
+
 2021-07-02 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, FINAL: created spell,
 	  version 1.7.3
