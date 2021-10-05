@@ -1,0 +1,9 @@
+local target="install" &&
+
+if [[ ${BTOP_SUID_ROOT} == y ]]; then
+  target="${target} setuid"
+fi &&
+
+make_single &&
+make DESTDIR="${INSTALL_ROOT}" PREFIX=/usr ${target} &&
+make_normal

@@ -1,3 +1,6 @@
+2021-10-04 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/btop++-bin: new spell, resource monitor
+
 2021-08-07 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-graphics/drawio-desktop-bin: new spell, diagram drawing
 	  application built on web technology

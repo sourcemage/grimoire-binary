@@ -1,0 +1,22 @@
+           SPELL=btop++-bin
+          SPELLX=${SPELL/++-bin/}
+         VERSION=1.0.13
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+           ARCH=x86_64
+     SOURCE_HASH=sha512:d69323d9af540d40da3636af9951ab2c039a7da2248170c8039c541031bca9a2a8340e63105add0e28301a827026769ea6d949a87453d4289272b6826e36f249
+else
+           ARCH=i686
+     SOURCE_HASH=sha512:fe063e2acb38d01b2361ddb25dcfd14b52e9cf2c384095e4fd16d5b1b2f2326eb60092d1cf4f076921f193d4c94367f7673d0c6169068915d2b1d64d3c2665ea
+fi
+          SOURCE=${SPELLX}-${VERSION}-linux-${ARCH}.tbz
+   SOURCE_URL[0]=https://github.com/aristocratos/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://github.com/aristocratos/btop
+      LICENSE[0]=APACHE
+         ENTERED=20211004
+        KEYWORDS=""
+           SHORT="resource monitor"
+cat << EOF
+This is a binary, statically-linked version of btop++."
+EOF
