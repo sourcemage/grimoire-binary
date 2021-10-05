@@ -1,13 +1,13 @@
            SPELL=firefox-bin
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
-         VERSION=91.0.2
-     SOURCE_HASH=sha512:3f55759a6a3f976c91153d7629a801b41fd9d1c6003bbca3b4f40474c07daf941c5b226e51915d5c1df3d023f2eac91ab4c42d7606b64dcfdeca6144c180a1ff
+         VERSION=93.0
+#     SOURCE_HASH=sha512:
   SECURITY_PATCH=35
           SOURCE=firefox-$VERSION.tar.bz2
-#         SOURCE2=$SOURCE.asc
-#      SOURCE_GPG="firefox.gpg:$SOURCE2"
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE
-#  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE2
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/$SOURCE2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
          VERSION=24.0
