@@ -1,3 +1,6 @@
+2021-10-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.20
+
 2021-10-04 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, {PRE_,}BUILD, INSTALL, CONFIGURE, CONFLICTS: created spell,
 	  version 1.0.13
