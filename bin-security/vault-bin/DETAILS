@@ -1,12 +1,12 @@
            SPELL=vault-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=1.8.2
+         VERSION=1.8.5
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha256:d74724d6cc22bf1e1c7c519009b0176809acf6f1c20ee56107de0cab54cd8463:UPSTREAM_HASH
+     SOURCE_HASH=sha256:97d7ac9145ffdf256ab91045a4857a640ecaa7c56bbd66b61fb70990620f3d33:UPSTREAM_HASH
 else
             ARCH=386
-     SOURCE_HASH=sha256:ef8525b217f08c363e4045ce0790a3677eb0214333c5ebd8951521dd4d01146d:UPSTREAM_HASH
+     SOURCE_HASH=sha256:d9f205b7b6856852c895ccefd3d93465dbff05e1cc69a065daf4006526c18ad5:UPSTREAM_HASH
 fi
           SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.zip
    SOURCE_URL[0]=https://releases.hashicorp.com/${SPELLX}/${VERSION}/${SOURCE}
