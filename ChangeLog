@@ -1,3 +1,6 @@
+2022-05-18 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/gitmux-bin: new spell, Git in your tmux status bar
+
 2021-10-04 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/btop++-bin: new spell, resource monitor
 

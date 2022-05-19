@@ -1,0 +1,22 @@
+           SPELL=gitmux-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.7.7
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha512:bc7f2690520f34196538f2f66820f5eda5e2e91e701fd06d9a8943d6c2af59ce9d1d192c55190175ed3f6eee5ff36b4bf9ae7ab77532471e792c6c1891f22e8c
+else
+            ARCH=386
+     SOURCE_HASH=sha512:ef1dcd9781e2e07ac919694473358ca774cb7cbbbed73f79cb05e41fa665744601b776ddc2cd3cd33bec957026e8568cac741f638efe5c400222c61040b530bf
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/arl/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://github.com/arl/gitmux
+      LICENSE[0]=MIT
+         ENTERED=20220518
+        KEYWORDS="scm"
+           SHORT="Git in your tmux status bar"
+cat << EOF
+Binary version of gitmux.
+EOF
