@@ -1,14 +1,14 @@
            SPELL=btop++-bin
           SPELLX=${SPELL/++-bin/}
-         VERSION=1.1.1
+         VERSION=1.2.6
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
            ARCH=x86_64
-     SOURCE_HASH=sha512:f1503652168d3aa68dabbd264828295a75fc086091d012031f93beda968ec9150b52ec0f337b476d03a8e624cbe970ea9889219d62652d79e390a734de0c09b0
+     SOURCE_HASH=sha512:32ca4684acffb784671efa09799d3af8463c9f8e17e07575996fb9c84ebe50e02b57512b83ff0c2618833c404b5c63ccdbec045254edbea7b017eaee57d12c70
 else
            ARCH=i686
-     SOURCE_HASH=sha512:65f9a83b0f0777ee20451271ea6e3d090e56cb73a5fcaf43338d3ab3e8e16475f777090679ba128a1983c3a1bd9d6514af2129f5f634092cb9bb761bbdf055bf
+     SOURCE_HASH=sha512:fed66a87ea89c1a303c1422749041e9af8c64d9f2dd6645ff7d38bc24ad0e1a457c3315a805a29d9c955fbec7fd068721dba3e844761940be4021ce68467a6ca
 fi
-          SOURCE=${SPELLX}-${VERSION}-${ARCH}-linux-musl.tbz
+          SOURCE=${SPELLX}-${ARCH}-linux-musl.tbz
    SOURCE_URL[0]=https://github.com/aristocratos/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
      GATHER_DOCS=off
