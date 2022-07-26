@@ -1,0 +1,20 @@
+           SPELL=onlyoffice-bin
+          SPELLX=${SPELL/-bin/}-desktopeditors
+         VERSION=7.1.1
+            ARCH=amd64
+          SOURCE=${SPELLX}-${VERSION}_${ARCH}.deb
+   SOURCE_URL[0]=https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${VERSION}/${SPELLX}_${ARCH}.deb
+     SOURCE_HASH=sha512:e62d9299b0e8b4f5972af54bbe27672f31271bb5eb7f94794aa7fac09d2cca3f4db4743d025b6bcd4841ca57a90a9994da4aed27ca4fd80730d0e284266ae1b0
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.onlyoffice.com/
+         ENTERED=20220725
+      LICENSE[0]=AGPL
+           SHORT="office suite that combines text, spreadsheet and presentation editors"
+cat << EOF
+ONLYOFFICE Desktop Editors is a free office suite that combines text,
+spreadsheet and presentation editors allowing to create, view and edit
+documents stored on your Linux PC without an Internet connection.
+
+It is fully compatible with Office Open XML formats: .docx, .xlsx, .pptx.
+EOF

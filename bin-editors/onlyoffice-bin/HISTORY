@@ -1,0 +1,3 @@
+2022-07-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, FINAL: created spell,
+	  version 7.1.1

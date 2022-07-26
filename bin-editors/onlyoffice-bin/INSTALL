@@ -1,0 +1,18 @@
+cp -dRv opt/onlyoffice "${INSTALL_ROOT}/opt" &&
+cp -Rv usr/bin/*desktopeditors "${INSTALL_ROOT}/usr/bin" &&
+
+chmod 4755 "${INSTALL_ROOT}/opt/onlyoffice/desktopeditors/chrome-sandbox" &&
+
+install -vm 644 usr/share/applications/onlyoffice-desktopeditors.desktop \
+                "${INSTALL_ROOT}/usr/share/applications/onlyoffice-desktopeditors.desktop" &&
+
+# icons
+local _file
+local _res
+
+while read -r -d '' _file; do
+  _res="$(sed 's/\.png$//;s/^.*-//' <<< "$_file")"
+  install -d -m755 "${INSTALL_ROOT}/usr/share/icons/hicolor/${_res}x${_res}/apps"
+  ln -s "${INSTALL_ROOT}/opt/onlyoffice/desktopeditors/asc-de-${_res}.png" \
+        "${INSTALL_ROOT}/usr/share/icons/hicolor/${_res}x${_res}/apps/onlyoffice-desktopeditors.png"
+done < <(find "${INSTALL_ROOT}/opt/onlyoffice/desktopeditors" -maxdepth 1 -type f -name 'asc-de-*.png' -print0)
