@@ -1,9 +1,9 @@
            SPELL=wire-bin
           SPELLX=Wire
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
-         VERSION=3.21.2936
+         VERSION=3.28.2946
             ARCH=amd64
-     SOURCE_HASH=sha512:c7722a3f51437a9cd9de98e5c8389751e9b4ee4c6607e56d944772144e2ef41142f82638a5017823463b8ffa99c811cf225fd023ab72fadd6a5be732d5c1f21e
+     SOURCE_HASH=sha512:33f9e4217fd432a07b503de2ebb7b33640a7c06bafcfb0981b6d0299096d0e191b32993a8fb3a047a91ea5e23b1f262502a945db1f9be2d137bfb972f3c22b9a
 else
          VERSION=3.6.2885
             ARCH=i386
