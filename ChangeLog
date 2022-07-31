@@ -1,3 +1,6 @@
+2022-07-30 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/grit-bin: new spell, multitree-based personal task manager
+
 2022-07-25 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-editors/onlyoffice-bin: new spell, office suite that combines
 	  text, spreadsheet and presentation editors

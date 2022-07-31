@@ -1,0 +1,19 @@
+           SPELL=grit-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.3.0
+            ARCH=amd64
+          SOURCE=${SPELLX}_v${VERSION}_linux_${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/climech/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:1ab30f2a54433533bc31e0adb350d36b6519a4a0def670c8520eaf9500011144:UPSTREAM_HASH
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}_v${VERSION}_linux_${ARCH}"
+        DOC_DIRS=""
+        WEB_SITE=https://github.com/climech/grit
+      LICENSE[0]=MIT
+         ENTERED=20220730
+        KEYWORDS=""
+           SHORT="multitree-based personal task manager"
+cat << EOF
+Grit is an experimental personal task manager that represents tasks as nodes
+of a multitree, a class of directed acyclic graphs. The structure enables the
+subdivision of tasks, and supports short-term as well as long-term planning.
+EOF
