@@ -1,3 +1,6 @@
+2022-09-04 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-net/syncthing-bin: new spell, open decentralized synchronization utility
+
 2022-07-30 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/grit-bin: new spell, multitree-based personal task manager
 

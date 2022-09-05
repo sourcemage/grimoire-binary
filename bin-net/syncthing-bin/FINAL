@@ -1,0 +1,4 @@
+message "${MESSAGE_COLOR}You also want to consider the following:\n"
+message "# Increase maximum receive socket buffer size to 2MiB for QUIC connections"
+message "# see https://github.com/lucas-clemente/quic-go/wiki/UDP-Receive-Buffer-Size"
+message "echo \"net.core.rmem_max=2097152\" >> /etc/sysctl.conf${DEFAULT_COLOR}\n"
