@@ -1,6 +1,7 @@
            SPELL=syncthing-bin
           SPELLX=${SPELL/-bin/}
          VERSION=1.20.4
+      PATCHLEVEL=1
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha256:ce577b08236c14ce4e3f2f589791b2521086bdd2ce952800847f0acd1b753dbe:UPSTREAM_HASH

@@ -1,3 +1,8 @@
+# binaries require /lib64
+if [ ! -d "${INSTALL_ROOT}/lib64" ]; then
+  ln -vsf "${TRACK_ROOT}/lib" "${INSTALL_ROOT}/lib64"
+fi &&
+
 message "${MESSAGE_COLOR}You also want to consider the following:\n"
 message "# Increase maximum receive socket buffer size to 2MiB for QUIC connections"
 message "# see https://github.com/lucas-clemente/quic-go/wiki/UDP-Receive-Buffer-Size"

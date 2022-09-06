@@ -1,0 +1,33 @@
+#!/bin/bash
+
+. /etc/sysconfig/syncthing
+
+PROGRAM=/usr/bin/syncthing
+ARGS="--no-browser --no-default-folder --no-restart --logflags=0 --home=/var/lib/syncthing $SYNCTHING_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  TIMEOUT=3
+
+  su syncthing -s /bin/sh -c "set -o pipefail; $PROGRAM $ARGS 2>&1 | logger -ip daemon.info -t syncthing" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  killproc "syncthing serve"
+}
+
+reload() {
+  _restart
+}
+
+. /etc/init.d/smgl_init

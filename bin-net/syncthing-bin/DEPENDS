@@ -1,0 +1,2 @@
+# for syslog logging
+depends util-linux

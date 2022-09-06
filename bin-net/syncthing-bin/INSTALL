@@ -1,1 +1,7 @@
-install -vm 755 syncthing "${INSTALL_ROOT}/usr/bin/syncthing"
+install -vm 755 syncthing "${INSTALL_ROOT}/usr/bin/syncthing" &&
+
+local home_dir="${INSTALL_ROOT}/var/lib/${SPELLX}" &&
+
+if [ ! -d "${home_dir}" ]; then
+  install -vm 750 -o syncthing -g syncthing -d "${home_dir}"
+fi
