@@ -1,8 +1,8 @@
            SPELL=firefox-bin
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
-         VERSION=103.0.2
+         VERSION=104.0.2
 #     SOURCE_HASH=sha512:
-  SECURITY_PATCH=36
+  SECURITY_PATCH=37
           SOURCE=firefox-$VERSION.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
