@@ -1,3 +1,6 @@
+2022-10-21 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.22.0
+
 2022-09-05 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: PATCHLEVEL=1
 	* BUILD, INSTALL, init.d: added init framework
