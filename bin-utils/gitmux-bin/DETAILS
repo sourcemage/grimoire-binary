@@ -1,17 +1,16 @@
            SPELL=gitmux-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=0.7.7
+         VERSION=0.9.1
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha512:bc7f2690520f34196538f2f66820f5eda5e2e91e701fd06d9a8943d6c2af59ce9d1d192c55190175ed3f6eee5ff36b4bf9ae7ab77532471e792c6c1891f22e8c
+     SOURCE_HASH=sha512:837454da5fc892e361752df80393898ebe0d3a394e7c7e797471bf82622821a89dd20347610fe780241f8faf5b30de81cb126eb467510a3f371b47ffc577bb36
 else
             ARCH=386
-     SOURCE_HASH=sha512:ef1dcd9781e2e07ac919694473358ca774cb7cbbbed73f79cb05e41fa665744601b776ddc2cd3cd33bec957026e8568cac741f638efe5c400222c61040b530bf
+     SOURCE_HASH=sha512:cf731a2d1d4f7d0dc852ea6cf4c902ebd17d9f386ef8695acc078e437eb5cf6a323d5741391f26ac16153f770e31ad5af3744555dc03dbc920e2dec8493273c8
 fi
-          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.tar.gz
+          SOURCE=${SPELLX}_v${VERSION}_linux_${ARCH}.tar.gz
    SOURCE_URL[0]=https://github.com/arl/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
-     GATHER_DOCS=off
         WEB_SITE=https://github.com/arl/gitmux
       LICENSE[0]=MIT
          ENTERED=20220518
