@@ -1,0 +1,1 @@
+install -vm 755 chezmoi "${INSTALL_ROOT}/usr/bin/chezmoi"

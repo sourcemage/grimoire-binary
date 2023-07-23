@@ -1,0 +1,31 @@
+           SPELL=chezmoi-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=2.35.2
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=amd64
+     SOURCE_HASH=sha256:ca8c500767dc0017caa04c530d2848321c86b2fe00e43b57d11a30fca9647316:UPSTREAM_HASH
+else
+            ARCH=i386
+     SOURCE_HASH=sha256:b0b596ebdd60c7ceb4de4af95dc91638d7f7e5468a33274a2b44cc9d77210bec:UPSTREAM_HASH
+fi
+          SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/twpayne/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
+        WEB_SITE=https://www.chezmoi.io/
+      LICENSE[0]=MIT
+         ENTERED=2023
+        KEYWORDS="dotfiles"
+           SHORT="dotfiles manager across multiple diverse machines"
+cat << EOF
+chezmoi helps you manage your personal configuration files across multiple
+machines.
+
+chezmoi provides many features beyond symlinking or using a bare git repo
+including:
+
+- templates (to handle small differences between machines)
+- password manager support (to store your secrets securely)
+- importing files from archives (great for shell and editor plugins)
+- full file encryption (using gpg or age)
+- running scripts (to handle everything else)
+EOF

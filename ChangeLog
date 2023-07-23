@@ -1,3 +1,7 @@
+2023-07-21 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/chezmoi-bin: new spell, dotfiles manager across multiple
+	  diverse machines
+
 2022-09-05 Vlad Glagolev <stealth@sourcemage.org>
 	* accounts, groups: added account data for syncthing-bin
 
