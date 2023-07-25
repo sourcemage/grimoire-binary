@@ -13,7 +13,7 @@ fi
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
         WEB_SITE=https://www.chezmoi.io/
       LICENSE[0]=MIT
-         ENTERED=2023
+         ENTERED=20230723
         KEYWORDS="dotfiles"
            SHORT="dotfiles manager across multiple diverse machines"
 cat << EOF
