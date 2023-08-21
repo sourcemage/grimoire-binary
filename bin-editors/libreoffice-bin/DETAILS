@@ -4,8 +4,8 @@ fi
            SPELL=libreoffice-bin
           SPELLX=libreoffice
 if [[ "${LIBREOFFICE_BRANCH}" == "fresh" ]]; then
-         VERSION=7.5.4
-   BUILD_VERSION=2
+         VERSION=7.6.0
+   BUILD_VERSION=3
 else
          VERSION=7.4.7
    BUILD_VERSION=2
