@@ -1,0 +1,20 @@
+           SPELL=kopia-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.14.1
+            ARCH=x64
+          SOURCE=${SPELLX}-${VERSION}-linux-${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/kopia/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+     SOURCE_HASH=sha256:43aa0e4b87e1c422071b43dd94188cd7c3e28faa7b957d28b2ab7854dd8f0bd8:UPSTREAM_HASH
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}-linux-${ARCH}"
+        DOC_DIRS=""
+        WEB_SITE=https://github.com/kopia/kopia
+      LICENSE[0]=APACHE
+         ENTERED=20230918
+        KEYWORDS="backup"
+           SHORT="cross-platform backup tool"
+cat << EOF
+Kopia is a fast and secure open-source backup/restore tool that allows you to
+create encrypted snapshots of your data and save the snapshots to remote or
+cloud storage of your choice, to network-attached storage or server, or
+locally on your machine.
+EOF

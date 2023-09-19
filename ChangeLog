@@ -1,3 +1,6 @@
+2023-09-18 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-archive/kopia-bin: new spell, cross-platform backup tool
+
 2023-07-21 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/chezmoi-bin: new spell, dotfiles manager across multiple
 	  diverse machines
