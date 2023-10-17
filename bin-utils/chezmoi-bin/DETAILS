@@ -1,12 +1,12 @@
            SPELL=chezmoi-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=2.40.0
+         VERSION=2.40.3
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha256:8467d0f33a14119511af50a11b3c1d0b7126e582e0a29d70bf43d4d841bf25c4:UPSTREAM_HASH
+     SOURCE_HASH=sha256:4e92516ac449de79ad83a7c12acf06d30a732dc0383e374d74326a3c42d3fcad:UPSTREAM_HASH
 else
             ARCH=i386
-     SOURCE_HASH=sha256:a034d739326166ebeb6c2e6304d778bb3e2cd6321270e4f2da1428b5b83eda68:UPSTREAM_HASH
+     SOURCE_HASH=sha256:57c037995539923377c5193adbc11d09cad4cd104392ac470cfd01701cad7f52:UPSTREAM_HASH
 fi
           SOURCE=${SPELLX}_${VERSION}_linux_${ARCH}.tar.gz
    SOURCE_URL[0]=https://github.com/twpayne/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
