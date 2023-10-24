@@ -1,2 +1,5 @@
+2023-10-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.15.0
+
 2023-09-18 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, BUILD, INSTALL: created spell, version 0.14.1
