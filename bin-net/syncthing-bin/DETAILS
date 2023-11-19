@@ -1,12 +1,12 @@
            SPELL=syncthing-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=1.24.0
+         VERSION=1.26.1
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
-     SOURCE_HASH=sha256:b6e514d61f9be7d516483762e91e10c1644427e35d88c79edb64cbc6256e1036:UPSTREAM_HASH
+     SOURCE_HASH=sha256:71f79ea13938657a75e258eb1cccdec360819117060f5feabef467df625f963e:UPSTREAM_HASH
 else
             ARCH=386
-     SOURCE_HASH=sha256:2a7a76bf499188226f0a74b35bb2a6e217dad025348c00dc79a7246cbd13ce28:UPSTREAM_HASH
+     SOURCE_HASH=sha256:3f8273d67c526c09272b131774478c67b63615fdd572cb9e3320ad3cb3a9fc79:UPSTREAM_HASH
 fi
           SOURCE=${SPELLX}-linux-${ARCH}-v${VERSION}.tar.gz
    SOURCE_URL[0]=https://github.com/syncthing/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
