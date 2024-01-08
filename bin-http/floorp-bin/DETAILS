@@ -1,0 +1,18 @@
+# Watch: https://github.com/Floorp-Projects/Floorp/releases tags/v([0-9.]+)[.]tar
+           SPELL=floorp-bin
+         VERSION=11.7.1
+          SOURCE=floorp-${VERSION}.linux-x86-64.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/floorp"
+   SOURCE_URL[0]=https://github.com/Floorp-Projects/Floorp/releases/download/v${VERSION}/floorp-11.7.1.linux-x86_64.tar.bz2
+     SOURCE_HASH=sha512:99a6a166092b0ba7465907592e5ac8df9349c5e10af1c4b45e08257ebbc6a328d63a22d2a859eca4f56363b33af9fb0125856c5f55dec515ad5fe3903d0bc368
+      LICENSE[0]=MOZILLA
+        WEB_SITE=https://floorp.app/
+         ENTERED=20240107
+        KEYWORDS="mozilla http web browser internet"
+           SHORT="fork of firefox with excellent privacy and flexibility"
+cat << EOF
+Unlimited customization with Floorp -
+
+Floorp is built on Firefox and was built in Japan and is a
+new browser with excellent privacy & flexibility.
+EOF

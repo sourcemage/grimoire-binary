@@ -1,0 +1,8 @@
+depends PKG-CONFIG &&
+depends zlib       &&
+depends JPEG       &&
+depends libpng     &&
+depends perl       &&
+depends gtk+3      &&
+depends freetype2  &&
+depends libidl
