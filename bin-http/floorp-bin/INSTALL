@@ -3,5 +3,4 @@ INSTALLDIR="${INSTALL_ROOT}/opt/floorp"
 mkdir -pv "${INSTALLDIR}" &&
 mkdir -p "${INSTALL_ROOT}/usr/share/pixmaps/" &&
 cp -Rv "${SOURCE_DIRECTORY}"/* "${INSTALLDIR}" &&
-install -v "${SCRIPT_DIRECTORY}/floorp-bin" "${INSTALL_ROOT}/usr/bin/" &&
-install -v "${SCRIPT_DIRECTORY}/floorp.png" "${INSTALL_ROOT}/usr/share/pixmaps/"
+install -v "${SCRIPT_DIRECTORY}/floorp-bin" "${INSTALL_ROOT}/usr/bin/"

@@ -1,4 +1,7 @@
 2024-01-07 Conner Clere <xenanthropy@sourcemage.org>
+	* INSTALL: remove line regarding installing icon
+
+2024-01-07 Conner Clere <xenanthropy@sourcemage.org>
 	* BUILD, DEPENDS, INSTALL, PROVIDES, floorp-bin, DETAILS, floorp.desktop:
 	  version 11.7.1, new spell
 
