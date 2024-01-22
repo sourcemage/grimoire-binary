@@ -1,3 +1,6 @@
+2024-01-22 Conner Clere <xenanthropy@sourcemage.org>
+	* DETAILS: version 11.8.1, fix SOURCE and SOURCE_URL
+
 2024-01-07 Conner Clere <xenanthropy@sourcemage.org>
 	* INSTALL: remove line regarding installing icon
 
