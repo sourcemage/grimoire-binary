@@ -1,0 +1,10 @@
+install -vm 755 micro "${INSTALL_ROOT}/usr/bin/micro" &&
+
+install -vm 755 -d "${INSTALL_ROOT}/usr/share/man/man1" &&
+install -vm 644 micro.1 "${INSTALL_ROOT}/usr/share/man/man1/micro.1" &&
+
+install -vm 755 -d "${INSTALL_ROOT}/usr/share/applications" &&
+install -vm 644 micro.desktop "${INSTALL_ROOT}/usr/share/applications" &&
+
+install -vm 755 -d "${INSTALL_ROOT}/usr/share/icons/hicolor/scalable/apps" &&
+install -vm 644 micro.svg "${INSTALL_ROOT}/usr/share/icons/hicolor/scalable/apps"

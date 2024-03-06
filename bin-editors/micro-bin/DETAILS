@@ -1,0 +1,29 @@
+           SPELL=micro-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=2.0.13
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
+            ARCH=64
+     SOURCE_HASH=sha512:058cb67aebbc8bf0dccb7d1437dec1751bf59a3ec93d1cdccfc6bcd99049f90c5e0c25ecb6b515593d7e365775d3e4e47c05170d33be993273753f5130ab7fed
+else
+            ARCH=32
+     SOURCE_HASH=sha512:fbdb72fc28c0cb45f78d8bf1b4b1f6216f8b861aa87912fdde1c0973791576da9a1faaef5b0d7fbbce19c6c8ce5d41161f190ef37ad5cc42e5ca8e2df31bbd5c
+fi
+          SOURCE=${SPELLX}-${VERSION}-linux${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/zyedidia/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
+        WEB_SITE=https://micro-editor.github.io/
+      LICENSE[0]=MIT
+         ENTERED=20240305
+        KEYWORDS=""
+           SHORT="modern and intuitive terminal-based text editor"
+cat << EOF
+Micro is a terminal-based text editor that aims to be easy to use and intuitive,
+while also taking advantage of the full capabilities of modern terminals.
+
+It comes as one single, batteries-included, static binary with no dependencies,
+and you can download and use it right now.
+
+As the name indicates, micro aims to be somewhat of a successor to the nano
+editor by being easy to install and use in a pinch, but micro also aims to be
+enjoyable to use full time.
+EOF
