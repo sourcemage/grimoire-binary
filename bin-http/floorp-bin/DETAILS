@@ -1,10 +1,11 @@
 # Watch: https://github.com/Floorp-Projects/Floorp/releases tags/v([0-9.]+)[.]tar
            SPELL=floorp-bin
-         VERSION=11.9.0
+         VERSION=11.12.2
+  SECURITY_PATCH=1
           SOURCE=floorp-${VERSION}.linux-x86_64.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/floorp"
    SOURCE_URL[0]=https://github.com/Floorp-Projects/Floorp/releases/download/v${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:98eba6c6299d80c4687c044e68ae24766a103377e8030cd00ecfdebb396a3508c139ad6a297e3e68370c82f9e8783c0143a88385e174074f502257da73705cfb
+     SOURCE_HASH=sha512:f233852b7c3aed2cca386a0dc5db93b96297d1493994c2a2b3a577f03a0c5b2f25225ceb0729a2679e827902630495d1eaea4f84b4041506cd72de25d1deb96c
       LICENSE[0]=MOZILLA
         WEB_SITE=https://floorp.app/
          ENTERED=20240107
