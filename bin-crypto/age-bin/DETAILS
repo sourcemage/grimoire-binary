@@ -1,0 +1,18 @@
+           SPELL=age-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=1.2.0
+            ARCH=amd64
+     SOURCE_HASH=sha512:f394fb33ba6b1903bdfaf887b3e2fef9687bcdb9211442db22ca41614722b4009a89b702bf4925afbd1dc933f343070bbbcfeeeb4a8148594092ff99fec590a1
+          SOURCE=${SPELLX}-v${VERSION}-linux-${ARCH}.tar.gz
+   SOURCE_URL[0]=https://github.com/FiloSottile/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}"
+        WEB_SITE=https://github.com/FiloSottile/age
+      LICENSE[0]=BSD
+         ENTERED=20240819
+        KEYWORDS="encryption ssh-key"
+           SHORT="simple, modern and secure encryption tool"
+cat << EOF
+age is a simple, modern and secure file encryption tool, format, and Go library.
+
+It features small explicit keys, no config options, and UNIX-style composability.
+EOF

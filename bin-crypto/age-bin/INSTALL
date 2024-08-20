@@ -1,0 +1,2 @@
+install -vm 755 age "${INSTALL_ROOT}/usr/bin/age" &&
+install -vm 755 age-keygen "${INSTALL_ROOT}/usr/bin/age-keygen"
