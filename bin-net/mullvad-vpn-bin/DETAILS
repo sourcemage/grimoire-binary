@@ -1,0 +1,19 @@
+           SPELL=mullvad-vpn-bin
+if [[ "${MULLVAD_VPN_BIN_BRANCH}" == beta ]]; then
+         VERSION=2024.5-beta1
+     SOURCE_HASH=sha512:b83f65e339f714fe273c1201e8453a0aa5494d3a3e12dd28a507ffab54b7b0c5030b5750eb34fe346b35a07685e44784b7ac80ef9dda7f36dc95b89c86998950
+else
+         VERSION=2024.4
+     SOURCE_HASH=sha512:da22c07c5d855a86c74e7d02c1b340e108e096ea29afee962ac933cc248dbd238a9a4f7b672f028d7501cf02f05d67f3b75e81909353ee73ca9c60b5dcf9d913
+fi
+          SOURCE=MullvadVPN-${VERSION}_amd64.deb
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=https://github.com/mullvad/mullvadvpn-app/releases/download/$VERSION/$SOURCE
+      LICENSE[0]=GPL
+        WEB_SITE=https://www.mullvad.net
+         ENTERED=20240821
+        KEYWORDS="network mullvad vpn"
+           SHORT="mullvad vpn client app"
+cat << EOF
+The Mullvad VPN client app for desktop
+EOF

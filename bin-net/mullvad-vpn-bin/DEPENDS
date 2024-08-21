@@ -1,0 +1,7 @@
+depends PKG-CONFIG &&
+depends alsa-lib   &&
+depends gtk+3      &&
+depends iputils    &&
+depends libnftnl   &&
+depends libnotify  &&
+depends nss

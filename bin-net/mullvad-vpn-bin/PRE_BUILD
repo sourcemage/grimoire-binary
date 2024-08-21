@@ -1,0 +1,12 @@
+mk_source_dir "${SOURCE_DIRECTORY}" &&
+cd "${SOURCE_DIRECTORY}" &&
+verify_file '' &&
+
+ar x "${INSTALL_ROOT}/var/spool/sorcery/$SOURCE" &&
+tar xJf data.tar.xz &&
+rm data.tar.xz control.tar.gz debian-binary _gpgbuilder &&
+
+chmod 4755 "${SOURCE_DIRECTORY}/opt/Mullvad VPN/chrome-sandbox" &&
+
+mv "${SOURCE_DIRECTORY}/usr/local/share/zsh" "${SOURCE_DIRECTORY}/usr/share/" &&
+rm -r "${SOURCE_DIRECTORY}/usr/local"

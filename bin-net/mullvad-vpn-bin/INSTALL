@@ -1,0 +1,4 @@
+find . | cpio --pass-through --make-directories --unconditional --verbose \
+              "${INSTALL_ROOT}/" &&
+
+cp "${SPELL_DIRECTORY}/mullvad-vpn.sh" "${INSTALL_ROOT}/usr/bin/mullvad-vpn"

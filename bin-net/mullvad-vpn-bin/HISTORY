@@ -1,0 +1,4 @@
+2024-08-21 Conner Clere <xenanthropy@sourcemage.org>
+	* BUILD, DEPENDS, PRE_BUILD, PREPARE, DETAILS, INSTALL, mullvad-vpn.sh:
+	  version 2024.4 (and 2024.5-beta1) added, new spell
+
