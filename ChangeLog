@@ -1,3 +1,6 @@
+2024-08-21 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-utils/remote_syslog2-bin: new spell, lightweight syslog shipper
+
 2024-08-21 Conner Clere <xenanthropy@sourcemage.org>
 	* bin-net/mullvad-vpn-bin: new spell, mullvad vpn desktop app
 

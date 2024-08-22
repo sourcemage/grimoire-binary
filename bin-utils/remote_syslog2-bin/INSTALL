@@ -1,0 +1,3 @@
+install -vm 755 remote_syslog "${INSTALL_ROOT}/usr/sbin/remote_syslog2" &&
+
+install_config_file example_config.yml "${INSTALL_ROOT}/etc/log_files.yml"

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. /etc/sysconfig/remote_syslog2
+
+PROGRAM=/usr/sbin/remote_syslog2
+PIDFILE=/var/run/remote_syslog2.pid
+ARGS="--pid-file $PIDFILE $REMOTE_SYSLOG2_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+. /etc/init.d/smgl_init
