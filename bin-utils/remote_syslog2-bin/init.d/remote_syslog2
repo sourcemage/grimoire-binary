@@ -8,4 +8,8 @@ ARGS="--pid-file $PIDFILE $REMOTE_SYSLOG2_ARGS"
 RUNLEVEL=3
 NEEDS="+network"
 
+reload() {
+  _restart
+}
+
 . /etc/init.d/smgl_init

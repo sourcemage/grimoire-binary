@@ -1,2 +1,6 @@
+2024-08-22 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: PATCHLEVEL=1
+	* init.d/remote_syslog2: fix non-supported HUP
+
 2024-08-21 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, BUILD, INSTALL, init.d: created spell, version 0.21

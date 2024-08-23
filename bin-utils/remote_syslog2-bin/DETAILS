@@ -1,6 +1,7 @@
            SPELL=remote_syslog2-bin
           SPELLX=${SPELL/-bin/}
          VERSION=0.21
+      PATCHLEVEL=1
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=amd64
      SOURCE_HASH=sha512:fbb413780648876bd77b1f1ee9ab49a14348883f2d5d583ba1a0b5eff059d0a79fa624d31b44a5a94070761b5751db854bc55643a1d0d801fd3ca61f7911ac27
