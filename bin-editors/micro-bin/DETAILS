@@ -1,12 +1,12 @@
            SPELL=micro-bin
           SPELLX=${SPELL/-bin/}
-         VERSION=2.0.13
+         VERSION=2.0.14
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=64
-     SOURCE_HASH=sha512:058cb67aebbc8bf0dccb7d1437dec1751bf59a3ec93d1cdccfc6bcd99049f90c5e0c25ecb6b515593d7e365775d3e4e47c05170d33be993273753f5130ab7fed
+     SOURCE_HASH=sha512:6a0c5fe3b57b1b38fde748564f46680410f95891d19e2ab888f156c55652210acccd881e5302c1ee6f7725adfaf5c62d00da458a47d81e58fdc6aa18c50109db
 else
             ARCH=32
-     SOURCE_HASH=sha512:fbdb72fc28c0cb45f78d8bf1b4b1f6216f8b861aa87912fdde1c0973791576da9a1faaef5b0d7fbbce19c6c8ce5d41161f190ef37ad5cc42e5ca8e2df31bbd5c
+     SOURCE_HASH=sha512:e2aa4e6fa9f2be063bfc9ae73b892b822e97416237a0657e80b571d10c160d5be3c2e81772c7b27abb27df028b535914ea15a98772ad42a03efadecfa79e04df
 fi
           SOURCE=${SPELLX}-${VERSION}-linux${ARCH}.tar.gz
    SOURCE_URL[0]=https://github.com/zyedidia/${SPELLX}/releases/download/v${VERSION}/${SOURCE}
