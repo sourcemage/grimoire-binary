@@ -1,0 +1,45 @@
+#!/bin/bash
+
+. /etc/sysconfig/beszel-agent
+
+PROGRAM=/usr/bin/beszel-agent
+ARGS="$BESZEL_AGENT_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  getpids $PROGRAM
+
+  if [ -n "$pidlist" ]; then
+    $SET_WCOL
+    print_status warning running
+    exit 0
+  fi
+
+  TIMEOUT=3
+
+  [ -n "$LISTEN" ] && export LISTEN="$LISTEN"
+  [ -n "$KEY" ] && export KEY="$KEY"
+  [ -n "$EXTRA_FILESYSTEMS" ] && export EXTRA_FILESYSTEMS="$EXTRA_FILESYSTEMS"
+
+  su beszel-agent -s /bin/sh -c "set -o pipefail; exec 2>/dev/null; $PROGRAM $ARGS 2>&1 | logger -ip daemon.info -t beszel-agent" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  killproc "beszel-agent"
+}
+
+reload() {
+  _restart
+}
+
+. /etc/init.d/smgl_init

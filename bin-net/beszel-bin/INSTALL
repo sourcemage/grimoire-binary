@@ -1,0 +1,9 @@
+for bin in beszel beszel-agent; do
+  install -vm 755 "$bin" "${INSTALL_ROOT}/usr/bin/$bin"
+done &&
+
+local home_dir="${INSTALL_ROOT}/var/lib/${SPELLX}" &&
+
+if list_find "$INIT_INSTALLED" "beszel" && [ ! -d "${home_dir}" ]; then
+  install -vm 750 -o beszel -g beszel -d "${home_dir}"
+fi

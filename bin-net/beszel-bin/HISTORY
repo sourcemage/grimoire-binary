@@ -1,0 +1,2 @@
+2025-03-30 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, {PRE_,}BUILD, INSTALL, init.d: created spell, version 0.10.2

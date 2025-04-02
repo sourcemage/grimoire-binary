@@ -1,0 +1,35 @@
+           SPELL=beszel-bin
+          SPELLX=${SPELL/-bin/}
+         VERSION=0.10.2
+            ARCH=amd64
+          SOURCE=${SPELLX}_linux_${ARCH}-${VERSION}.tar.gz
+         SOURCE2=${SPELLX}-agent_linux_${ARCH}-${VERSION}.tar.gz
+   SOURCE_URL[0]=https://github.com/henrygd/${SPELLX}/releases/download/v${VERSION}/${SPELLX}_linux_${ARCH}.tar.gz
+  SOURCE2_URL[0]=https://github.com/henrygd/${SPELLX}/releases/download/v${VERSION}/${SPELLX}-agent_linux_${ARCH}.tar.gz
+     SOURCE_HASH=sha256:ba0abea66a9716b3e8c42c4d35d5ec6fe8c53a6d7a88391efdc3a1babe7b5154:UPSTREAM_HASH
+    SOURCE2_HASH=sha256:2a20d2753390cb974f857e2cbede73f26196fdb00843cdffd88b6ad385fea9f3:UPSTREAM_HASH
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://beszel.dev/
+      LICENSE[0]=MIT
+         ENTERED=20250401
+        KEYWORDS="monitoring"
+           SHORT="lightweight server monitoring hub with historical data, Docker stats, and alerts"
+cat << EOF
+Beszel is a lightweight server monitoring platform that includes Docker
+statistics, historical data, and alert functions.
+
+It has a friendly web interface, simple configuration, and is ready to use out
+of the box. It supports automatic backup, multi-user, OAuth authentication,
+and API access.
+
+Features:
+  o Lightweight: Smaller and less resource-intensive than leading solutions.
+  o Simple: Easy setup, no need for public internet exposure.
+  o Docker stats: Tracks CPU, memory, and network usage history for each container.
+  o Alerts: Configurable alerts for CPU, memory, disk, bandwidth, temperature, and status.
+  o Multi-user: Users manage their own systems. Admins can share systems across users.
+  o OAuth / OIDC: Supports many OAuth2 providers. Password auth can be disabled.
+  o Automatic backups: Save and restore data from disk or S3-compatible storage.
+  o REST API: Use or update your data in your own scripts and applications.
+EOF

@@ -1,4 +1,6 @@
 2025-04-01 Vlad Glagolev <stealth@sourcemage.org>
+	* bin-net/beszel-bin: new spell, lightweight server monitoring hub with
+	  historical data, Docker stats, and alerts
 	* accounts, groups: add beszel, beszel-account
 
 2024-08-21 Vlad Glagolev <stealth@sourcemage.org>

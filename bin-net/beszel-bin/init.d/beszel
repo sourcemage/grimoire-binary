@@ -1,0 +1,41 @@
+#!/bin/bash
+
+. /etc/sysconfig/beszel
+
+PROGRAM=/usr/bin/beszel
+ARGS="serve $BESZEL_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+start() {
+  echo "Starting $NAME..."
+
+  getpids $PROGRAM
+
+  if [ -n "$pidlist" ]; then
+    $SET_WCOL
+    print_status warning running
+    exit 0
+  fi
+
+  TIMEOUT=3
+
+  su beszel -s /bin/sh -c "set -o pipefail; exec 2>/dev/null; $PROGRAM $ARGS 2>&1 | logger -ip daemon.info -t beszel" &
+  ppid=$!
+
+  sleep $TIMEOUT && pgrep -P $ppid > /dev/null || wait $ppid
+
+  evaluate_retval
+}
+
+stop() {
+  echo "Stopping $NAME..."
+
+  killproc "beszel serve"
+}
+
+reload() {
+  _restart
+}
+
+. /etc/init.d/smgl_init
