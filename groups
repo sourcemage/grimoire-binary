@@ -7,3 +7,5 @@ consul-template:218:
 vault:219:
 boundary:220:
 syncthing:230:
+beszel:234:
+beszel-agent:235:

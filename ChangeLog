@@ -1,3 +1,6 @@
+2025-04-01 Vlad Glagolev <stealth@sourcemage.org>
+	* accounts, groups: add beszel, beszel-account
+
 2024-08-21 Vlad Glagolev <stealth@sourcemage.org>
 	* bin-utils/remote_syslog2-bin: new spell, lightweight syslog shipper
 
